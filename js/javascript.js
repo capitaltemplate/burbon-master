@@ -36,6 +36,22 @@ function init() {
 }
 // Google Maps end
 
+// background color - navigation
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+            $(".navbar-scroll-background").css("background" , "#313131");
+        }
+
+        else{
+            $(".navbar-scroll-background").css("background" , "transparent");
+        }
+    })
+})
+// background color - navigation -end
+
+
 jQuery(document).ready(function( $ ) {
     // subscribe:
     $("#buttonSubscribe").click(function(){
