@@ -291,11 +291,11 @@ p {
     border-bottom: transparent;
 }
 
-.navbar-default .navbar-toggle {
+.navbar-toggler-icon {
     background-image: url(../images/menu-icon.png);
-    margin-top: 28px;
-    border-color: transparent;
-    background-color: transparent;
+    margin: 0px 25px;
+    /*border-color: transparent;*/
+    /*background-color: transparent;*/
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -346,9 +346,15 @@ p {
 }
 
 .navbar-nav>li>a {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 12px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    /*background-color: #313131;*/
+    text-align: center;
+    margin-top: -10px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -390,15 +396,6 @@ p {
 
 .nav>li>a {
     display: inline;
-}
-
-.navbar-nav>li>a {
-    line-height: 50px;
-    color: #fff;
-    font-weight: 100;
-    letter-spacing: 4px;
-    font-size: 12px;
-    text-transform: uppercase;
 }
 
 .navbar-nav>li>a:hover {
@@ -3212,6 +3209,14 @@ ul {
         font-size: 11px;
     }
 
+    .title h3 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
     .item h3 {
         font-size: 45px;
         letter-spacing: 20px;
@@ -3278,6 +3283,8 @@ ul {
         color: #fff;
     }
 
+
+
     ul#example li span {
         font-size: 30px;
         line-height: 45px;
@@ -3324,7 +3331,7 @@ ul {
 
     .yt p {
         font-size: 18px;
-        /*margin-bottom: 150px;*/
+        margin-bottom: 150px;
     }
 
     .button-yt p {
@@ -3364,64 +3371,64 @@ ul {
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .jumbotron h2 {
-        font-size: 24px;
-        letter-spacing: 5px;
-    }
+/*@media only screen and (max-width: 500px) {*/
+    /*.jumbotron h2 {*/
+        /*font-size: 24px;*/
+        /*letter-spacing: 5px;*/
+    /*}*/
 
-    .navbar-brand {
-        padding: 16px 0px;
-    }
+    /*.navbar-brand {*/
+        /*padding: 16px 0px;*/
+    /*}*/
 
-    .navbar-brand>img {
-        margin-top: -21px;
-        margin-left: 0px;
-    }
+    /*.navbar-brand>img {*/
+        /*margin-top: -24px;*/
+        /*margin-left: -15px;*/
+    /*}*/
 
-    .item h3 {
-        font-size: 25px;
-        letter-spacing: 4px;
-    }
+    /*.item h3 {*/
+        /*font-size: 25px;*/
+        /*letter-spacing: 4px;*/
+    /*}*/
 
-    .yt h4  {
-        font-size: 16px;
-        margin-bottom: 10px;
-        letter-spacing: 5px;
-    }
+    /*.yt h4  {*/
+        /*font-size: 16px;*/
+        /*margin-bottom: 10px;*/
+        /*letter-spacing: 5px;*/
+    /*}*/
 
-    .yt h5  {
-        font-size: 25px !important;
-        letter-spacing: 5px;
-        margin-bottom: 20px;
-    }
+    /*.yt h5  {*/
+        /*font-size: 25px !important;*/
+        /*letter-spacing: 5px;*/
+        /*margin-bottom: 20px;*/
+    /*}*/
 
-    .yt p {
-        font-size: 14px;
-        margin-bottom: 150px;
-    }
+    /*.yt p {*/
+        /*font-size: 14px;*/
+        /*margin-bottom: 150px;*/
+    /*}*/
 
-    .button-yt p {
-        margin-bottom: 10px;
-    }
+    /*.button-yt p {*/
+        /*margin-bottom: 10px;*/
+    /*}*/
 
-    .plans-border {
-        margin: 20px;
-        margin-bottom: 50px;
-    }
-    .plans-border2 {
-        margin: 20px;
-        margin-bottom: 50px;
-    }
-    .plans-border3 {
-        margin: 20px;
-        margin-bottom: 50px;
-    }
+    /*.plans-border {*/
+        /*margin: 20px;*/
+        /*margin-bottom: 50px;*/
+    /*}*/
+    /*.plans-border2 {*/
+        /*margin: 20px;*/
+        /*margin-bottom: 50px;*/
+    /*}*/
+    /*.plans-border3 {*/
+        /*margin: 20px;*/
+        /*margin-bottom: 50px;*/
+    /*}*/
 
-    .carousel-control {
-        display: none;
-    }
-}
+    /*.carousel-control {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
 /*---------------------------------------------------------------*/
 /* responsive-end*/
 /*---------------------------------------------------------------*/
