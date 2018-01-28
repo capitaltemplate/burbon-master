@@ -201,8 +201,16 @@ jQuery(document).ready(function( $ ) {
         itemsDesktopSmall : [979,3]
     });
 
+
     var containerEl = document.querySelector('.gallery');
-    var mixer = mixitup(containerEl);
+    mixitup(containerEl);
+    $('.carousel').carousel();
+
+    $('#example').countdown({
+        date: '12/24/2022 23:59:59'
+    }, function () {
+        alert('Merry Christmas!');
+    });
 
 });
 
