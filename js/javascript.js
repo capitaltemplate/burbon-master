@@ -1,3 +1,4 @@
+"use strict";
 
 // Google Maps
 google.maps.event.addDomListener(window, 'load', init);
@@ -52,7 +53,7 @@ $(document).ready(function(){
 // background color - navigation -end
 
 
-$(document).on("ready", function( $ ) {
+$(document).ready(function( $ ) {
     // subscribe:
     $("#buttonSubscribe").on("click", function(){
         var vemail = $("#email").val();
@@ -174,9 +175,6 @@ $(document).on("ready", function( $ ) {
     // ScrollReveal
     window.sr = new scrollReveal();
 
-    // cache the window object
-    $window = $(window);
-
     $('section[data-type="background"]').each(function(){
 // declare the variable to affect the defined data-type
         var $scroll = $(this);
@@ -184,7 +182,7 @@ $(document).on("ready", function( $ ) {
         $(window).scroll(function() {
 // HTML5 proves useful for helping with creating JS functions!
 // also, negative value because we're scrolling upwards
-            var yPos = -($window.scrollTop() / $scroll.data('speed'));
+            var yPos = -($(window).scrollTop() / $scroll.data('speed'));
 
 // background position
             var coords = '50% '+ yPos + 'px';

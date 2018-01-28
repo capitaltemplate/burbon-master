@@ -1,3 +1,4 @@
+"use strict";
 /* CountDown Clock v1.0.0.0 - https://github.com/e-piksel/countdown */
 (function ($) {
 	$.fn.countdown = function (options, callback) {
@@ -99,7 +100,7 @@
 			container.find('.minutes_text').text(text_minutes);
 			container.find('.seconds_text').text(text_seconds);
 		};
-		
+
 		// start
 		var interval = setInterval(countdown, 1000);
 	};
