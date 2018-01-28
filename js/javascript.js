@@ -52,15 +52,15 @@ $(document).ready(function(){
 // background color - navigation -end
 
 
-jQuery(document).ready(function( $ ) {
+$(document).on("ready", function( $ ) {
     // subscribe:
-    $("#buttonSubscribe").click(function(){
+    $("#buttonSubscribe").on("click", function(){
         var vemail = $("#email").val();
-        if(vemail=='')
+        if(vemail==='')
         {
             alert("Please fill out the form");
         }
-        else if(vemail==''){alert('Email field is required')}
+        else if(vemail===''){alert('Email field is required')}
         else{
             $.get("php/email.php", { email:vemail },
                 function(response, status){
@@ -71,11 +71,11 @@ jQuery(document).ready(function( $ ) {
     });
 
     // contact
-    $("#buttonContact").click(function(){
+    $("#buttonContact").on("click", function(){
         var vname = $("#InputName").val();
         var vemail = $("#InputEmail").val();
         var vmessage = $("#InputMessage").val();
-        if(vname=='' || vemail=='' || vmessage=='')
+        if(vname==='' || vemail==='' || vmessage==='')
         {
             alert("Please fill out the form");
         }
