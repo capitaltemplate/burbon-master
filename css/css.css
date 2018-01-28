@@ -985,29 +985,12 @@ p {
     margin-bottom: 290px;
 }
 
-/*.opac-carousel {*/
-    /*background-color: rgba(0,0,0,0.5);*/
-    /*height: 1020px;*/
-    /*margin-top: -1020px;*/
-    /*position: relative;*/
-/*}*/
-
-.carousel-bg-opacity {
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    filter: alpha(opacity=60);
-    /* IE */
-    -moz-opacity: 0.6;
-    /* Mozilla */
-    opacity: 0.6;
+.opac-carousel {
+    background-color: rgba(0,0,0,0.5);
+    height: 1020px;
+    margin-top: -1020px;
+    position: relative;
 }
-
 /*---------------------------------------------------------------*/
 /* carousel-end */
 /*---------------------------------------------------------------*/
