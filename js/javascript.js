@@ -42,7 +42,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         if (scroll > 300) {
-            $(".navbar-scroll-background").css("background" , "#313131");
+            $(".navbar-scroll-background").css("background" , "rgba(49, 49, 49, 0.8)");
         }
 
         else{

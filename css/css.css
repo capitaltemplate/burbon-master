@@ -271,6 +271,7 @@ p {
     color: #313131;
     margin-bottom: 35px;
 }
+
 /*---------------------------------------------------------------*/
 /* typography-end */
 /*---------------------------------------------------------------*/
@@ -522,7 +523,7 @@ p {
 }
 
 .jumbo  {
-    /*padding-top: 400px;*/
+    padding-top: 400px;
     text-align: center;
     color: #fff;
 }
@@ -809,7 +810,7 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    text-align: left;
+    text-align: left !important;
     text-shadow: 0 0px 0px rgba(0, 0, 0, .0);
 }
 
@@ -1010,9 +1011,6 @@ p {
     color: #fff;
 }
 
-.yt h2 {
-
-}
 
 
 .yt h3 {
@@ -1043,7 +1041,8 @@ p {
 }
 
 .yt h2 {
-    font-weight: 100;
+    font-weight: 700;
+    font-size: 84px;
 }
 
 .button-yt {
@@ -1237,8 +1236,8 @@ blockquote footer, blockquote small, blockquote .small{
 .team-text {
     padding-top: 70px;
     padding-bottom: 100px;
-    padding-right: 100px;
-    padding-left: 100px;
+    /*padding-right: 100px;*/
+    /*padding-left: 100px;*/
     text-align: center;
     color: #313131;
     font-size: 13px;
@@ -1825,6 +1824,10 @@ ul.count-down li p {
 
 .control[data-filter] + .control[data-sort] {
     margin-left: .75rem;
+}
+
+.project2 h2{
+    padding-top: 15px;
 }
 
 /* Container
@@ -2542,7 +2545,7 @@ hr {
 }
 
 .jumbotron-sub h2 {
-    margin-top: 200px;
+    margin-top: -200px;
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing: 10px;
@@ -2568,11 +2571,11 @@ hr {
     text-transform: uppercase;
     padding: 15px;
     margin: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .contact-us-subpage h2 {
-    margin-top: 55px;
+    /*margin-top: 55px;*/
     color: #313131;
 }
 
@@ -2584,6 +2587,7 @@ hr {
 
 .contact-address-subpage {
     padding: 10px;
+    display: inline;
 }
 
 .contact-subpage {
@@ -2635,8 +2639,14 @@ hr {
 /*---------------------------------------------------------------*/
 /* FAQ*/
 /*---------------------------------------------------------------*/
+.fade {
+    opacity: 1;
+}
+
 .faq-cat-content {
     margin-top: 55px;
+    border: 1px solid #ddd;
+
 }
 
 .faq-cat-tabs li a {
@@ -2700,6 +2710,7 @@ hr {
     padding: 25px;
     padding-bottom: 44px;
     background-color: #fff;
+    border: 1px solid #ddd;
 }
 
 .panel-default>.panel-heading:hover {
@@ -2713,7 +2724,7 @@ hr {
     font-size: 14px;
     padding-left: 25px;
     padding-top: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 1px;
     background-color: #313131;
     color: #fff;
 }
@@ -2745,7 +2756,7 @@ hr {
 }
 
 .faq-header h2 {
-    padding-top: 30px;
+    padding-top: 70px;
     padding-bottom: 15px;
 }
 
@@ -2762,6 +2773,16 @@ hr {
     color: #fff;
     font-weight: 100;
 }
+
+.grid-system h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.grid-system h2 {
+    text-align: center;
+}
+
 /*---------------------------------------------------------------*/
 /* FAQ-end*/
 /*---------------------------------------------------------------*/
@@ -3188,6 +3209,10 @@ ul {
 }
 
 @media only screen and (max-width: 1250px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
 
     #email {
         width: 275px;
@@ -3215,6 +3240,14 @@ ul {
 
     .carousel-caption p {
         font-size: 16px;
+    }
+
+    .jumbotron-ver2 {
+        height: 620px;
+    }
+
+    .jumbotron-ver2 h1 {
+        font-size: 42px;
     }
 
     .item h3 {
@@ -3254,6 +3287,14 @@ ul {
 }
 
 @media only screen and (max-width: 750px) {
+    .navbar-scroll-background {
+        padding-left: 0px;
+    }
+
+    .navbar-toggler-icon {
+        margin: 0px 0px;
+    }
+
     .jumbotron {
         height: 650px;
     }
@@ -3283,6 +3324,18 @@ ul {
         color: #fff;
     }
 
+    .jumbotron-ver2 {
+        height: 520px;
+    }
+
+    .jumbotron-ver2 h1 {
+        font-size: 24px;
+    }
+
+    .tlt2 p {
+        font-size: 12px;
+        top: 38%;
+    }
 
 
     ul#example li span {
