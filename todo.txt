@@ -1,0 +1,15 @@
++3. CODE VALIDATION: Some of your files contain validation errors that will need to be fixed. Please be sure that all files validate before resubmitting. You can validate HTML at http://validator.w3.org
+4. JavaScript scrolling it's not working as expecting and affect the overall user experience of them item.
+5. SCROLLING ANIMATIONS: The scrolling animations are currently overused. Animation is a tool that should be used sparingly to help enforce the concept of your design. Please consider where you are using animations and their purpose.
+6. SPACING AND ALIGNMENT: There are spacing and alignment issues in this item. Please make sure that all elements are aligned properly and spacing is consistent from section to section. Here are some articles with more information regarding negative space and proper spacing: http://webdesign.tutsplus.com/articles/using-white-space-or-negative-space-in-your-designs--webdesign-3401, http://webdesign.tutsplus.com/articles/adding-space-to-your-designs--webdesign-14836 - http://envato.d.pr/1U52
+7. RESPONSIVE ISSUES: Your files are either inaccurately represented as responsive or have responsive layout issues. Please take a moment to make sure that your design layout looks correct at different breakpoints and that all text is scaled appropriately for smaller devices. - Tablet breakpoint needs improvements. You should handle better the way you are organizing components in the screen.
++8. LATEST JQUERY: Make sure you are using the latest version of jQuery, i.e. if you are using jQuery 1.x make sure is the latest version. See more: https://code.jquery.com/jquery/ Include jQuery locally CDN links are not allowed.
++9. LOCAL COPY OF LIBRARIES: please make sure you include and use a local copy of all the files need it for the template to run correctly. - http://envato.d.pr/HKCx
++10. You can do this in one request, please refer to Google Fonts documentation - http://envato.d.pr/sCav
+???? 11. Missing double quote: http://envato.d.pr/X35T
+
++12. Please move inline JavaScript code into external files.
+!!!!! 13. SPECIFICITY: Please make sure you improve the specificity in your css code, there are too many !important declarations.
+
++14. STRICT MODE REQUIRED: All JavaScript should be written with “use strict” mode on. Please note that strict mode is scoped. For concise code it is recommended to placed on top of the Javascript file. +_
++15. PROPER EVENT BINDING: Consider using the preferred .on() method rather than .click(), .bind(), .hover(), .load(), .ready(), etc. For best performance and concise code use event delegation whenever possible: https://codepen.io/32bitkid/post/understanding-delegated-javascript-events
