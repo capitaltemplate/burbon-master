@@ -3372,6 +3372,10 @@ hr {
         font-size: 30px;
     }
 
+    .team-text {
+        padding-bottom: 30px;
+    }
+
     .plans-border {
         margin: 40px;
         margin-bottom: 50px;
