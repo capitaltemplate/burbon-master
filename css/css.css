@@ -2050,6 +2050,10 @@ a:hover figcaption {
     margin-bottom: 10px;
 }
 
+.contact-form {
+    margin-right: 10em;
+}
+
 .form-control {
     display: block;
     width: 100%;
@@ -2724,6 +2728,10 @@ hr {
         margin: 25px;
         margin-bottom: 50px;
     }
+
+    .contact-form {
+        margin-right: 0em;
+    }
 }
 
 @media only screen and (max-width: 1250px) {
@@ -2894,6 +2902,10 @@ hr {
         top: 30%;
     }
 
+    .about-icons-content {
+        display: inline-flex;
+    }
+
     ul#example li span {
         font-size: 30px;
         line-height: 45px;
@@ -2993,11 +3005,34 @@ hr {
         margin-right: .5em;
     }
 
+    .contact-form {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    /*.lead.lnr {*/
+        /*padding-right: 25px;*/
+        /*display: table-cell;*/
+    /*}*/
+    /**/
+    /*.contact-icon {*/
+        /*padding: 0em 1em 0em 3em;*/
+        /*display: table;*/
+    /*}*/
+
+    .input-group-addon {
+        padding: 0px;
+    }
+
     .control {
         margin: .5em;
     }
     .control[data-filter] + .control[data-sort]{
         margin: .5em;
+    }
+
+    address {
+        margin-bottom: 100px;
     }
 }
 /*---------------------------------------------------------------*/
