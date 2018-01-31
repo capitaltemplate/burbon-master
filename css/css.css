@@ -139,7 +139,7 @@ Input, textarea:	Arial, Helvetica, sans-serif;
 
 body{
     color: #313131;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     height: 100%;
     overflow: scroll;
 }
@@ -774,11 +774,14 @@ p {
     text-shadow: 0 0px 0px rgba(0, 0, 0, .0);
     vertical-align: middle;
     width: 70%;
+    /*background-color: red;*/
+    bottom: 0px;
 }
 
 .carousel-center {
     display: table-cell;
     vertical-align: middle;
+    /*background-color: green;*/
 }
 
 .carousel-caption-ver2 {
@@ -871,7 +874,7 @@ p {
 }
 
 .title h3 {
-    font-size: 5vw;
+    font-size: 6vw;
     letter-spacing: 1.0vw;
     display: inline-block;
     text-transform: uppercase;
@@ -879,7 +882,7 @@ p {
 }
 .carousel-caption p {
     color: #fff;
-    font-size: 2.0vw;
+    font-size: 1.6vw;
     letter-spacing: 1px;
     margin-top: 0px;
     margin-bottom: 1.0vh;
@@ -3131,7 +3134,7 @@ hr {
     }
 
     .btn.btn-lg {
-        padding: 10px 20px;
+        padding: 0.7em 0.7em;
     }
     .counters {
       width:95%;
