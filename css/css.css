@@ -247,9 +247,7 @@ h4 {
 p {
     font-weight: 100;
     font-size: .9em;
-    line-height: 180%;
     color: #313131;
-    margin-bottom: 35px;
 }
 /*---------------------------------------------------------------*/
 /* typography-end */
@@ -1111,7 +1109,7 @@ blockquote footer, blockquote small, blockquote .small{
 .text-aboutus {
     color: #313131;
     text-align: justify;
-    padding: 1em;
+    padding: 0 1em 1em;
     font-size: 1.1em;
 }
 .text-aboutteam {
@@ -1125,16 +1123,21 @@ blockquote footer, blockquote small, blockquote .small{
 }
 
 .about-icons-content {
-    margin-bottom: 10px;
+    display: inline-flex;
     text-align: left;
+    height: 5rem;
+    width: 100%;
 }
 
 .about-icon {
+    display: inline;
     font-size: 40px;
     margin-left: 10px;
+    line-height: 5rem;
 }
 
 .about-icon-text {
+    line-height: 5rem;
     display: inline;
     padding-left: 2em;
     font-weight: 100;
