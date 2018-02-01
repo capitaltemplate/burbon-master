@@ -2755,6 +2755,10 @@ hr {
         padding-left: 0.5rem;
     }
 
+    .jumbotron {
+        height: 750px;
+    }
+
     #email {
         width: 275px;
         background-color: transparent;
