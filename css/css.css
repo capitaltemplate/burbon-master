@@ -699,7 +699,7 @@ p {
 /********************************/
 /*          Custom Buttons      */
 /********************************/
-.btn.btn-lg {padding: 1em 2em;}
+.btn.btn-lg {padding: 0.5em 1em;}
 .btn.btn-hero,
 .btn.btn-hero:hover,
 .btn.btn-hero:focus {
@@ -1252,29 +1252,28 @@ blockquote footer, blockquote small, blockquote .small{
 
 .plans-border {
     border: 1px solid #777;
-    margin: 125px;
-    padding: 20px;
+    padding: 25px 120px 25px 120px;
     text-align: center;
     color: #fff;
-    margin-top: 80px;
+    margin-bottom: 8em;
+    margin-left: 5em;
 }
 
 .plans-border2 {
     border: 3px solid #fff;
-    margin: 125px;
-    padding: 20px;
+    padding: 35px 140px 35px 140px;
     text-align: center;
     color: #fff;
-    margin-top: 80px;
+    margin-bottom: 8em;
 }
 
 .plans-border3 {
     border: 1px solid #becfd3;
-    margin: 125px;
-    padding: 20px;
+    padding: 25px 120px 25px 120px;
     text-align: center;
     color: #fff;
-    margin-top: 80px;
+    margin-bottom: 8em;
+    margin-right: 5em;
 }
 
 .plans h2 {
@@ -1516,6 +1515,7 @@ ul.count-down li p {
 .what p {
     color: #313131;
     font-size: .9em;
+    text-align: justify;
 }
 
 .webdesign {
@@ -1996,7 +1996,7 @@ a:hover figcaption {
 
 .download {
     text-align: center;
-    margin: 3rem auto 3rem;
+    margin: 5rem auto 5rem;
 }
 
 .download h2 {
@@ -2731,14 +2731,17 @@ hr {
     .plans-border {
         margin: 25px;
         margin-bottom: 50px;
+        padding: 35px 90px 35px 90px;
     }
     .plans-border2 {
         margin: 25px;
         margin-bottom: 50px;
+        padding: 35px 90px 35px 90px;
     }
     .plans-border3 {
         margin: 25px;
         margin-bottom: 50px;
+        padding: 35px 90px 35px 90px;
     }
 
     .contact-form {
@@ -2991,14 +2994,17 @@ hr {
     .plans-border {
         margin: 40px;
         margin-bottom: 50px;
+        padding: 25px 55px 25px 55px;
     }
     .plans-border2 {
         margin: 40px;
         margin-bottom: 50px;
+        padding: 25px 55px 25px 55px;
     }
     .plans-border3 {
         margin: 40px;
         margin-bottom: 50px;
+        padding: 25px 55px 25px 55px;
     }
 
     .btn.btn-lg {
