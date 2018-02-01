@@ -524,7 +524,8 @@ p {
     font-weight: 700;
     letter-spacing: 10px;
     position: absolute;
-    top: 53%;
+    /*top: 53%;*/
+    margin-top: 80px;
     left: 50%;
     width: 80%;
     z-index: 3;
@@ -546,8 +547,8 @@ p {
     font-weight: 100;
     color: #fff;
     opacity: 0.8;
-    padding-top: 50px;
-    top: 40%;
+    margin-top: -50px;
+    /*top: 40%;*/
     left: 50%;
     text-transform: uppercase;
     position: absolute;
@@ -2728,6 +2729,10 @@ hr {
         font-size: 45px;
     }
 
+    .tlt2 p {
+        /*top: 32%;*/
+    }
+
     .plans-border {
         margin: 25px;
         margin-bottom: 90px;
@@ -2797,7 +2802,7 @@ hr {
 
     .tlt2 p {
         font-size: .9em;
-        top: 35%;
+        /*top: 35%;*/
     }
 
     .btn.btn-lg {
@@ -2811,7 +2816,7 @@ hr {
     }
 
     .yt h4  {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
 
@@ -2819,6 +2824,10 @@ hr {
         font-size: 45px;
         letter-spacing: 20px;
         margin-bottom: 20px;
+    }
+
+    .yt-ver2 h5 {
+        font-size: 45px !important;
     }
 
     .yt p {
@@ -2918,7 +2927,7 @@ hr {
 
     .tlt2 p {
         font-size: .75em;
-        top: 30%;
+        /*top: 30%;*/
     }
 
     .about-icons-content {
@@ -2960,7 +2969,7 @@ hr {
     }
 
     .yt-ver2 h5 {
-        font-size: 44px !important;
+        font-size: 25px !important;
     }
 
     .header-carousel h2 {
