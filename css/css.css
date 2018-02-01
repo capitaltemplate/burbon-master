@@ -982,8 +982,7 @@ p {
 .testimonial-border {
     border-top: 1px solid #313131;
     width: 50px;
-    padding-bottom: 15px;
-    margin: 0 auto;
+    margin: 1.5rem auto 1.5rem;
 }
 
 .testimonial-border-white {
@@ -1072,8 +1071,8 @@ blockquote footer, blockquote small, blockquote .small{
 /* 9. about us */
 /*---------------------------------------------------------------*/
 .about-text {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     text-align: center;
     color: #313131;
     font-size: 13px;
@@ -1082,7 +1081,6 @@ blockquote footer, blockquote small, blockquote .small{
 .about-text h2 {
     font-weight: 100;
     font-size: 1.5em;
-    margin-bottom: 1.5em;
     letter-spacing: .33em;
     text-transform: uppercase;
 }
@@ -1093,10 +1091,6 @@ blockquote footer, blockquote small, blockquote .small{
     font-size: 10px;
     color: #313131;
     text-align: center;
-}
-
-.about-oontent {
-    margin-top: 50px;
 }
 
 .about-oontent h4 {
@@ -1123,27 +1117,36 @@ blockquote footer, blockquote small, blockquote .small{
 }
 
 .about-icons-content {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
     text-align: left;
     height: 5rem;
     width: 100%;
+    /*background-color: red;*/
+    vertical-align: middle;
 }
 
 .about-icon {
-    display: inline;
+    display: inline-block;
     font-size: 40px;
     margin-left: 10px;
-    line-height: 5rem;
 }
 
 .about-icon-text {
-    line-height: 5rem;
-    display: inline;
+    display: inline-block;
+    vertical-align: middle;
     padding-left: 2em;
     font-weight: 100;
     font-size: .9em;
     text-transform: uppercase;
     letter-spacing: .4em;
+    /*background-color: green;*/
+    height: 1rem;
+}
+
+.about-icon-text p {
+    line-height: 1rem;
 }
 /*---------------------------------------------------------------*/
 /* about us end */
@@ -1475,30 +1478,28 @@ ul.count-down li p {
     font-size: 40px !important;
 }
 
+#what_we_do {
+    margin: 4.5rem auto 4.5rem;
+}
 
 .what_we_do {
     text-align: center;
-    margin-top: 90px;
 }
 
 .what_we_do h2 {
     font-weight: 100;
     font-size: 1.2em;
-    margin-bottom: 1.5em;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
 .what {
-    margin-top: 20px;
     text-align: center;
-    margin-bottom: 45px;
 }
 .what h2 {
     text-align: center;
     font-weight: 100;
     font-size: .9em;
-    margin-bottom: 1.5em;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -1511,7 +1512,6 @@ ul.count-down li p {
 .webdesign {
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 20px;
 }
 
 .copywriting {
@@ -1533,16 +1533,16 @@ ul.count-down li p {
 /* progress-bar start*/
 /*---------------------------------------------------------------*/
 .prog-bar {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
 }
+
 .prog-bar h2 {
     text-align: center;
     margin-bottom: 1.2em;
 }
 
 .progress_bar {
-    padding-bottom: 60px;
     text-align: center;
 }
 
@@ -1987,23 +1987,21 @@ a:hover figcaption {
 
 .download {
     text-align: center;
+    margin: 3rem auto 3rem;
 }
 
 .download h2 {
     color: #313131;
-    padding-top: 4em;
     font-weight: 100;
     font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 10px;
-    margin-bottom: 1.5em;
 }
 
 .download p {
     /*background-image: url(../images/download.png);*/
     background-repeat: no-repeat;
-    margin: 0 auto;
-    padding-top: 1.2em;
+    margin: 0 auto 1.5rem;
     color: #313131;
     font-size: .9em;
 }
@@ -2017,7 +2015,6 @@ a:hover figcaption {
     color: #313131;
     text-transform: uppercase;
     padding: 1em;
-    margin: 2em 2em 5em 2em;
 }
 
 /*---------------------------------------------------------------*/
@@ -2201,12 +2198,15 @@ hr {
 
 .logo-brand {
     border-top: 1px solid #d1d1d1;
+    
+}
+
+.logo-brand-space {
+    margin: 3rem auto 3rem;   
 }
 
 .logo-brand h2 {
     color: #313131;
-    padding-top: 3em;
-    margin-bottom: 1.5em;
     font-weight: 100;
     font-size: 1.1em;
     text-transform: uppercase;
