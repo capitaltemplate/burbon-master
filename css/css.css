@@ -481,11 +481,9 @@ p {
     background-image: url(../images/b1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1020px;
 }
 
 .jumbo  {
-    padding-top: 400px;
     text-align: center;
     color: #fff;
 }
@@ -509,25 +507,18 @@ p {
     transform: translate3d(-50%,-50%,0);
 }
 
-.tlt p {
-    margin-bottom: 18px;
+.tlt  {
     font-size: 20px;
     letter-spacing: 7px;
     font-weight: 100;
     color: #fff;
     opacity: 0.8;
-    padding-top: 50px;
 }
 
 .jumbotron-ver2 h1 {
     font-size: 84px;
     font-weight: 700;
     letter-spacing: 10px;
-    position: absolute;
-    /*top: 53%;*/
-    margin-top: 80px;
-    left: 50%;
-    width: 80%;
     z-index: 3;
     color: #fff;
     text-align: center;
@@ -540,41 +531,49 @@ p {
     transform: translate3d(-50%,-50%,0);
 }
 
-.tlt2 p {
-    margin-bottom: 18px;
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: 100;
-    color: #fff;
-    opacity: 0.8;
-    margin-top: -50px;
-    /*top: 40%;*/
-    left: 50%;
-    text-transform: uppercase;
-    position: absolute;
-    -webkit-transform: translate3d(-50%,-50%,0);
-    -moz-transform: translate3d(-50%,-50%,0);
-    -ms-transform: translate3d(-50%,-50%,0);
-    -o-transform: translate3d(-50%,-50%,0);
-    transform: translate3d(-50%,-50%,0);
-}
-
-.title {
-    display: inline;
-}
 
 .opac {
     background-color: rgba(0,0,0,0.5);
-    height: 1020px;
-    margin-top: -1020px;
+    height: 100vmax;
+    margin-top: -100vmax;
+}
+
+#start {
+    height: 100%;
+    width: 100%;
 }
 
 .jumbotron-ver2 {
-    margin-bottom: 0px;
     background-image: url(../images/b4.jpg);
-    background-size: cover;
+    height: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 1020px;
+    background-size: cover;
+}
+
+.jumbotron-ver2-container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.jumbotron-ver2-center {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.moving-text {
+    margin: 0;
+    font-size: 5vw;
+}
+
+.jumbotron-ver2-title {
+    font-size: 2vmax;
+    font-weight: 100;
+    color: #fff;
+    opacity: 0.8;
+    text-transform: uppercase;
 }
 
 /********************************/
@@ -2741,10 +2740,6 @@ hr {
         font-size: 45px;
     }
 
-    .tlt2 p {
-        /*top: 32%;*/
-    }
-
     .plans-border {
         margin: 25px;
         margin-bottom: 90px;
@@ -2800,10 +2795,6 @@ hr {
         font-size: 1.8em;
     }
 
-    .jumbotron-ver2 {
-        height: 620px;
-    }
-
     .jumbotron-ver2 h1 {
         font-size: 42px;
     }
@@ -2812,10 +2803,10 @@ hr {
         font-size: 1.8em;
     }
 
-    .tlt2 p {
-        font-size: .9em;
-        /*top: 35%;*/
-    }
+    /*.tlt2 p {*/
+        /*font-size: .9em;*/
+        /*!*top: 35%;*!*/
+    /*}*/
 
     .btn.btn-lg {
         padding: .5em 1.4em;
@@ -2929,18 +2920,14 @@ hr {
         color: #fff;
     }
 
-    .jumbotron-ver2 {
-        height: 520px;
-    }
-
     .jumbotron-ver2 h1 {
         font-size: 24px;
     }
 
-    .tlt2 p {
-        font-size: .75em;
-        /*top: 30%;*/
-    }
+    /*.tlt2 p {*/
+        /*font-size: .75em;*/
+        /*!*top: 30%;*!*/
+    /*}*/
 
     .about-icons-content {
         display: inline-flex;
