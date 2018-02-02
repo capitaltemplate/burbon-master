@@ -200,8 +200,7 @@ $(document).ready(function( $ ) {
     });
 
 
-    var containerEl = document.querySelector('.gallery');
-    mixitup(containerEl);
+    document.querySelector('.gallery');
     $('.carousel').carousel();
 
     $('#example').countdown({

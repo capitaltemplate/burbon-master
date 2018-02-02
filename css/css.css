@@ -934,10 +934,22 @@ p {
 /*---------------------------------------------------------------*/
 
 .youtube {
-    width: auto;
-    height: 1050px;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+
     text-align: center;
     color: #fff;
+    padding: 0;
+    z-index: -1000;
+}
+
+.youtube-overflow {
+    top: 35vmin;
+    position: absolute;
+    z-index: 500;
+    text-align: center;
+    background-color: rgba(27, 27, 27, 0.38);
 }
 
 .youtube-gallery {
@@ -2208,11 +2220,11 @@ hr {
 
 .logo-brand {
     border-top: 1px solid #d1d1d1;
-    
+
 }
 
 .logo-brand-space {
-    margin: 3rem auto 3rem;   
+    margin: 3rem auto 3rem;
 }
 
 .logo-brand h2 {
@@ -2721,7 +2733,7 @@ hr {
     }
 
     .youtube {
-        height: 750px;
+
     }
 
     .yt h3{
@@ -2835,7 +2847,7 @@ hr {
     }
 
     .youtube {
-        height: 650px;
+
     }
 
     .yt h3 {
@@ -2983,7 +2995,7 @@ hr {
     }
 
     .youtube {
-        height: 450px;
+
     }
 
     .yt h3 {
