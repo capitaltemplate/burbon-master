@@ -147,7 +147,7 @@ body{
     border: solid 1px;
     color: #fff;
     font-weight: 100;
-    font-size: 0.7em;
+    font-size: 2vh;
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 0px;
@@ -246,7 +246,7 @@ h4 {
 
 p {
     font-weight: 100;
-    font-size: .9em;
+    font-size: 1em;
     color: #313131;
 }
 /*---------------------------------------------------------------*/
@@ -325,7 +325,7 @@ p {
     color: #fff;
     font-weight: 100;
     letter-spacing: 4px;
-    font-size: 14px;
+    font-size: 1.6vh;
     text-transform: uppercase;
     text-align: center;
     margin-top: -10px;
@@ -481,6 +481,8 @@ p {
     background-image: url(../images/b1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .jumbo  {
@@ -488,10 +490,10 @@ p {
     color: #fff;
 }
 
-.jumbotron h2 {
+.jumbotron h2  {
     position: absolute;
-    font-size: 2.2em;
-    letter-spacing: 30px;
+    font-size: 2vmax;
+    letter-spacing: 1.5vw;
     top: 50%;
     left: 50%;
     width: 80%;
@@ -507,29 +509,30 @@ p {
     transform: translate3d(-50%,-50%,0);
 }
 
-.tlt  {
-    font-size: 20px;
-    letter-spacing: 7px;
+.tlt p {
+    font-size: 1vmax;
+    padding-top: 4vh;
+    letter-spacing: .8vh;
     font-weight: 100;
     color: #fff;
     opacity: 0.8;
 }
 
-.jumbotron-ver2 h1 {
-    font-size: 84px;
-    font-weight: 700;
-    letter-spacing: 10px;
-    z-index: 3;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-    -webkit-transform: translate3d(-50%,-50%,0);
-    -moz-transform: translate3d(-50%,-50%,0);
-    -ms-transform: translate3d(-50%,-50%,0);
-    -o-transform: translate3d(-50%,-50%,0);
-    transform: translate3d(-50%,-50%,0);
-}
+/*.jumbotron-ver2 h1 {*/
+    /*font-size: 84px;*/
+    /*font-weight: 700;*/
+    /*letter-spacing: 10px;*/
+    /*z-index: 3;*/
+    /*color: #fff;*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    /*text-shadow: 1px 1px 0 rgba(0,0,0,.75);*/
+    /*-webkit-transform: translate3d(-50%,-50%,0);*/
+    /*-moz-transform: translate3d(-50%,-50%,0);*/
+    /*-ms-transform: translate3d(-50%,-50%,0);*/
+    /*-o-transform: translate3d(-50%,-50%,0);*/
+    /*transform: translate3d(-50%,-50%,0);*/
+/*}*/
 
 
 .opac {
@@ -541,6 +544,10 @@ p {
 #start {
     height: 100%;
     width: 100%;
+}
+
+.youtube-hero {
+    position: absolute;
 }
 
 .jumbotron-ver2 {
@@ -565,15 +572,20 @@ p {
 
 .moving-text {
     margin: 0;
-    font-size: 5vw;
+    font-size: 4.5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 1;
+    letter-spacing: 1vh;
 }
 
 .jumbotron-ver2-title {
-    font-size: 2vmax;
+    font-size: 1.2vmax;
     font-weight: 100;
     color: #fff;
     opacity: 0.8;
     text-transform: uppercase;
+    letter-spacing: .09vw;
 }
 
 /********************************/
@@ -699,7 +711,7 @@ p {
 /********************************/
 /*          Custom Buttons      */
 /********************************/
-.btn.btn-lg {padding: 0.5em 1em;}
+.btn.btn-lg {padding: 0.5em 2vh;}
 .btn.btn-hero,
 .btn.btn-hero:hover,
 .btn.btn-hero:focus {
@@ -759,17 +771,6 @@ p {
     text-align: left !important;
     top: 50%;
     margin-top: -50px;
-
-    /*position: absolute;*/
-    /*right: 15%;*/
-    /*bottom: 20px;*/
-    /*left: 15%;*/
-    /*z-index: 10;*/
-    /*padding-top: 20px;*/
-    /*padding-bottom: 20px;*/
-    /*color: #fff;*/
-    /*text-align: left !important;*/
-    /*text-shadow: 0 0px 0px rgba(0, 0, 0, .0);*/
 }
 
 .carousel-item {
@@ -848,8 +849,8 @@ p {
 }
 
 .title h3 {
-    font-size: 2.6em;
-    letter-spacing: .9em;
+    font-size: 4vh;
+    letter-spacing: 4vh;
     display: inline-block;
     text-transform: uppercase;
     margin: 1em .0em .5em 0em;
@@ -857,7 +858,7 @@ p {
 }
 .carousel-caption p {
     color: #fff;
-    font-size: 1.3em;
+    font-size: 2.3vh;
     letter-spacing: 1px;
     margin-top: 0px;
     margin-bottom: 1em;
@@ -875,30 +876,21 @@ p {
 }
 
 .yt h4  {
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-size: 2.2vh;
+    letter-spacing: .3vh;
     font-weight: 100;
-    margin-top:0px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 2vh;
     color: #fff;
 }
 
-.yt h5  {
-     font-size: 44px !important;
-     font-weight: 100 !important;
-     letter-spacing: 30px !important;
-     display: inline-block !important;
-     text-transform: uppercase !important;
-     margin-bottom: 25px !important;
- }
-
 .yt-ver2 h5  {
-    font-size: 84px !important;
+    font-size: 8vh !important;
     font-weight: 700 !important;
-    letter-spacing: 10px !important;
+    letter-spacing: 1.3vh !important;
     display: inline-block !important;
     text-transform: uppercase !important;
-    margin-bottom: 25px !important;
+    margin-bottom: 2vh !important;
 }
 
 .yt p {
@@ -944,25 +936,16 @@ p {
 }
 
 .youtube-overflow {
-    top: 35vmin;
-    position: absolute;
+    top: 30vmin;
     z-index: 500;
     text-align: center;
-    background-color: rgba(27, 27, 27, 0.38);
 }
 
-.youtube-gallery {
-    width: auto;
-    height: 400px;
-    text-align: center;
-    color: #fff;
-}
-
-.yt h3 {
+.youtube-overflow h2 {
     position: absolute;
-    font-size: 44px;
-    letter-spacing: 30px;
-    top: 47%;
+    font-size: 2vmax;
+    letter-spacing: 1.5vw;
+    top: 50%;
     left: 50%;
     width: 80%;
     z-index: 3;
@@ -975,6 +958,13 @@ p {
     -ms-transform: translate3d(-50%,-50%,0);
     -o-transform: translate3d(-50%,-50%,0);
     transform: translate3d(-50%,-50%,0);
+}
+
+.youtube-gallery {
+    width: auto;
+    height: 400px;
+    text-align: center;
+    color: #fff;
 }
 
 .yt h2 {
@@ -1203,7 +1193,7 @@ blockquote footer, blockquote small, blockquote .small{
 
 #team h2 {
     text-align: center;
-    margin-top: 3.8em;
+    margin-top: 2.8em;
     padding-bottom: 1em;
 }
 
@@ -2717,10 +2707,6 @@ hr {
         font-size: 48px;;
     }
 
-    .yt h4  {
-        margin-bottom: 40px;
-    }
-
     .yt h5  {
         font-size: 48px;
         letter-spacing: 30px;
@@ -2767,8 +2753,8 @@ hr {
         padding-left: 0.5rem;
     }
 
-    .jumbotron {
-        height: 750px;
+    .navbar-nav>li>a {
+        font-size: 1.8vh;
     }
 
     #email {
@@ -2792,25 +2778,20 @@ hr {
     }
 
     .jumbotron h2 {
-        font-size: 1.8em;
+        font-size: 4vh;
     }
 
-    .jumbotron-ver2 h1 {
-        font-size: 42px;
+    .youtube-overflow h2{
+        font-size: 4vh;
     }
 
-    .title h3 {
-        font-size: 1.8em;
+    .tlt p {
+        font-size: 2vh;
     }
-
-    /*.tlt2 p {*/
-        /*font-size: .9em;*/
-        /*!*top: 35%;*!*/
-    /*}*/
 
     .btn.btn-lg {
         padding: .5em 1.4em;
-        font-size: .9em;
+        font-size: 2.2vh;
     }
 
     .item h3 {
@@ -2818,27 +2799,8 @@ hr {
         letter-spacing: 20px;
     }
 
-    .yt h4  {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .yt h5  {
-        font-size: 45px;
-        letter-spacing: 20px;
-        margin-bottom: 20px;
-    }
-
-    .yt-ver2 h5 {
-        font-size: 45px !important;
-    }
-
     .yt p {
         font-size: 22px;
-    }
-
-    .youtube {
-
     }
 
     .yt h3 {
@@ -2881,17 +2843,22 @@ hr {
         margin: 0px 0px;
     }
 
-    .jumbotron {
-        height: 650px;
+    .jumbotron-ver2-title {
+    font-size: 2.2vh;
+    }
+
+    .moving-text {
+        font-size: 6.5vw;
+        letter-spacing: 0.8vw;
     }
 
     .title h3 {
-        font-size: 1.4em;
-        letter-spacing: 10px;
+        font-size: 4vh;
+        letter-spacing: 1vh;
     }
 
     .carousel-caption p {
-        font-size: 1em;
+        font-size: 3vh;
     }
 
     .hero h1 {
@@ -2908,26 +2875,10 @@ hr {
         font-size: 44px;
     }
 
-    .jumbotron h2 {
-        font-size: 1.2em;
-        letter-spacing: 15px;
-    }
-
-    .jumbotron p {
-        margin-bottom: 20px;
-        font-size: .75em;
-        font-weight: 100;
-        color: #fff;
-    }
-
     .jumbotron-ver2 h1 {
         font-size: 24px;
     }
 
-    /*.tlt2 p {*/
-        /*font-size: .75em;*/
-        /*!*top: 30%;*!*/
-    /*}*/
 
     .about-icons-content {
         display: inline-flex;
@@ -2952,23 +2903,12 @@ hr {
         letter-spacing: 10px;
     }
 
-    .yt h4  {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .yt h5  {
-        font-size: 25px !important;
-        letter-spacing: 10px !important;
-        margin-bottom: 20px;
+    .yt h4 {
+        font-size: 2.8vh;
     }
 
     .header-carousel-ver2 h2 {
         font-size: 44px !important;
-    }
-
-    .yt-ver2 h5 {
-        font-size: 25px !important;
     }
 
     .header-carousel h2 {
@@ -2979,10 +2919,6 @@ hr {
     .yt p {
         font-size: 18px;
         margin-bottom: 150px;
-    }
-
-    .youtube {
-
     }
 
     .yt h3 {
@@ -3020,7 +2956,7 @@ hr {
     }
 
     .btn.btn-lg {
-        font-size: .9em;
+        font-size: 2.5vh;
         padding: 0.7em 0.7em;
     }
     .counters {
@@ -3039,16 +2975,6 @@ hr {
         margin-left: 2em;
         margin-right: 2em;
     }
-
-    /*.lead.lnr {*/
-        /*padding-right: 25px;*/
-        /*display: table-cell;*/
-    /*}*/
-    /**/
-    /*.contact-icon {*/
-        /*padding: 0em 1em 0em 3em;*/
-        /*display: table;*/
-    /*}*/
 
     .input-group-addon {
         padding: 0px;
