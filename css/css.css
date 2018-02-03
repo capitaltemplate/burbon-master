@@ -962,7 +962,7 @@ blockquote footer, blockquote small, blockquote .small{
 
 .about-text h2 {
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 1.3rem;
     letter-spacing: .33em;
     text-transform: uppercase;
 }
@@ -1019,7 +1019,7 @@ blockquote footer, blockquote small, blockquote .small{
     vertical-align: middle;
     padding-left: 2em;
     font-weight: 100;
-    font-size: .9em;
+    font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: .4em;
     height: 1rem;
@@ -1027,6 +1027,7 @@ blockquote footer, blockquote small, blockquote .small{
 
 .about-icon-text p {
     line-height: 1rem;
+    font-size: .9em;
 }
 /*---------------------------------------------------------------*/
 /* about us end */
@@ -1112,7 +1113,7 @@ blockquote footer, blockquote small, blockquote .small{
     text-align: center;
     color: #fff;
     font-weight: 100;
-    font-size: 1.2em;
+    font-size: 1.3rem;
     padding-bottom: 1.2em;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -1362,7 +1363,7 @@ ul.count-down li p {
 
 .what_we_do h2 {
     font-weight: 100;
-    font-size: 1.2em;
+    font-size: 1.3rem;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -1863,7 +1864,7 @@ a:hover figcaption {
 .download h2 {
     color: #313131;
     font-weight: 100;
-    font-size: 1.2em;
+    font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 10px;
 }
@@ -1905,7 +1906,7 @@ a:hover figcaption {
 .contact-us h2 {
     margin-bottom: 1.5em;
     font-weight: 100;
-    font-size: 1.1em;
+    font-size: 1.3rem;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -2076,9 +2077,9 @@ hr {
 .logo-brand h2 {
     color: #313131;
     font-weight: 100;
-    font-size: 1.1em;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     text-align: center;
 }
 /*---------------------------------------------------------------*/
@@ -2305,6 +2306,7 @@ hr {
 .text-subpages {
     display: table-cell;
     vertical-align: middle;
+    padding-top: 30px;
 }
 
 .text-subpages h2 {
@@ -2637,8 +2639,8 @@ hr {
     }
 
     .navbar-nav>li>a {
-        font-size: 1.8vh;
-        letter-spacing: .5vh;
+        font-size: 2vh;
+        letter-spacing: .2vh;
     }
 
     #email {
@@ -2699,7 +2701,7 @@ hr {
     }
 
     .text-subpages p {
-        font-size: 1.8vh;
+        font-size: 1.4vh;
     }
 }
 
@@ -2722,6 +2724,10 @@ hr {
     .navbar-brand>img {
         margin-left: -40px;
         padding-right: 0px;
+    }
+
+    .navbar-brand-sub img {
+        display: none;
     }
 
 
@@ -2883,6 +2889,11 @@ hr {
 
     .panel-title {
         font-size: 3vh;
+    }
+
+    .text-subpages h2 {
+        font-size: 3vh;
+        letter-spacing: 1vh;
     }
 
 }
