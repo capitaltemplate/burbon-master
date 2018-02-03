@@ -203,6 +203,14 @@ $(document).ready(function( $ ) {
     document.querySelector('.gallery');
     $('.carousel').carousel();
 
+    //<script>
+    var containerEl = document.querySelector('.gallery');
+
+    var mixer = mixitup(containerEl);
+
+    $('.carousel').carousel();
+    //</script>
+
     $('#example').countdown({
         date: '12/24/2022 23:59:59'
     }, function () {
