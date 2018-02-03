@@ -2703,6 +2703,16 @@ hr {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .navbar-nav > li > a {
+        background: #313131;
+    }
+
+    .dropdown-item {
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .navbar-brand {
         display: inline-block;
