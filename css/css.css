@@ -1856,6 +1856,10 @@ a:hover figcaption {
     margin: 5rem auto 5rem;
 }
 
+.subpage {
+    margin: 0rem auto 0rem;
+}
+
 .download h2 {
     color: #313131;
     font-weight: 100;
@@ -1895,7 +1899,7 @@ a:hover figcaption {
 .contact-us {
     text-align: center;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .contact-us h2 {
@@ -2466,11 +2470,12 @@ hr {
 }
 
 .panel-title {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 1.5vh;
+    font-weight: 300;
     color: #313131;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: left;
+    letter-spacing: .5vh;
 }
 
 .panel-title:hover {
@@ -2552,6 +2557,10 @@ hr {
 
 .grid-system h2 {
     text-align: center;
+}
+
+.typography {
+    margin-bottom: 8vh;
 }
 
 /*---------------------------------------------------------------*/
@@ -2860,6 +2869,10 @@ hr {
 
     address {
         margin-bottom: 100px;
+    }
+
+    .panel-title {
+        font-size: 3vh;
     }
 
 }
