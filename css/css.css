@@ -1145,10 +1145,10 @@ ul#example {
 ul#example li { display: inline-block; }
 
 ul#example li span {
-    font-size: 72px;
+    font-size: 5vh;
     font-weight: 100;
     line-height: 80px;
-    padding: 20px;
+    padding: 3vh;
 }
 
 ul#example li.seperator {
