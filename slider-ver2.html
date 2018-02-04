@@ -38,7 +38,7 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-scroll-background">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#preloader">
         <img alt="Brand" src="images/logo.png">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -49,7 +49,7 @@
     <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="page-scroll nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="page-scroll nav-link" href="#preloader">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="page-scroll nav-link" href="#about">ABOUT US</a>
@@ -465,16 +465,18 @@
     <section id="works">
         <div class="controls">
             <h1 class="pull-left">OUR WORKS</h1>
-            <button type="button" class="control" data-filter="all">All</button>
-            <button type="button" class="control" data-filter=".people">People</button>
-            <button type="button" class="control" data-filter=".nature">Nature</button>
-            <button type="button" class="control" data-filter=".other">Other</button>
-            <!--<button type="button" class="control" data-filter="none">None</button>-->
+            <div class="works-buttons">
+                <button type="button" class="control" data-filter="all">All</button>
+                <button type="button" class="control" data-filter=".people">People</button>
+                <button type="button" class="control" data-filter=".nature">Nature</button>
+                <button type="button" class="control" data-filter=".other">Other</button>
+                <!--<button type="button" class="control" data-filter="none">None</button>-->
 
-            <button type="button" class="control" data-sort="default:asc"><span class="lnr lnr-chevron-down"></span>
-            </button>
-            <button type="button" class="control" data-sort="default:desc"><span class="lnr lnr-chevron-up"></span>
-            </button>
+                <button type="button" class="control" data-sort="default:asc"><span class="lnr lnr-chevron-down"></span>
+                </button>
+                <button type="button" class="control" data-sort="default:desc"><span class="lnr lnr-chevron-up"></span>
+                </button>
+            </div>
         </div>
         <div id="gallery">
 
