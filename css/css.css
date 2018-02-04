@@ -1441,9 +1441,10 @@ ul.count-down li p {
 /*---------------------------------------------------------------*/
 /* 13. gallery*/
 /*---------------------------------------------------------------*/
+
 .controls {
-    padding: 3rem;
-    font-size: 10px;
+    padding: 0rem 3rem 3rem 3rem;
+    font-size: 0.7rem;
     text-align: right;
 }
 
@@ -1468,7 +1469,7 @@ ul.count-down li p {
 
 .controls h1 {
     color: #fff;
-    margin: 0;
+    margin-bottom: 3rem;
 }
 
 .control[data-filter]:after {
@@ -1613,14 +1614,20 @@ ul.count-down li p {
 }
 
 .gallery-box {
-    padding-left: 0px;
-    padding-right: 0px;
     background-image: url('../images/background1.jpg');
+    padding: 3rem 0 3rem;
 
 }
-.gallery {
-    /*height:400px;*/
+
+.works-buttons {
+    display: inline-block;
 }
+
+#gallery {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 #gallery h1 {
     position: relative;
     top: 150px;
@@ -2752,10 +2759,6 @@ hr {
     }
     .counters {
       width:95%;
-    }
-
-    .controls {
-        padding: 1.5em;
     }
 
     .control:first-of-type {
