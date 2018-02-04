@@ -702,15 +702,24 @@ p {
 /*---------------------------------------------------------------*/
 /* 7. video */
 /*---------------------------------------------------------------*/
-.youtube {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: contain;
 
+.video-container {
+    min-height: 100vh;
+    object-fit: contain;
+    text-align: center;
+    padding: 0;
+    z-index: -1200;
+    overflow: hidden !important;
+}
+
+.youtube {
+    min-height: 100vh;
+    object-fit: contain;
     text-align: center;
     color: #fff;
     padding: 0;
     z-index: -1000;
+    overflow: hidden !important;
 }
 
 .youtube-overflow {
@@ -2490,10 +2499,6 @@ hr {
 
     .yt p {
         font-size: 18px;
-    }
-
-    .youtube {
-
     }
 
     .yt h3{
