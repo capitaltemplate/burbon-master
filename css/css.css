@@ -207,7 +207,6 @@ body{
 /*---------------------------------------------------------------*/
 /*  preloader-end */
 /*---------------------------------------------------------------*/
-
 /*---------------------------------------------------------------*/
 /* 3. typography */
 /*---------------------------------------------------------------*/
@@ -254,7 +253,6 @@ p {
 /*---------------------------------------------------------------*/
 /* typography-end */
 /*---------------------------------------------------------------*/
-
 /*---------------------------------------------------------------*/
 /* 4. navbar */
 /*---------------------------------------------------------------*/
@@ -277,57 +275,11 @@ p {
     margin: 0px 25px;
 }
 
-/*.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {*/
-    /*background-color: transparent;*/
-/*}*/
-
-/*.navbar-toggle {*/
-    /*position: relative;*/
-    /*float: right;*/
-    /*padding: 9px 12px;*/
-    /*margin-top: 8px;*/
-    /*margin-right: 15px;*/
-    /*background-color: #313131;*/
-    /*background-image: none;*/
-/*}*/
-
-/*.navbar-default .navbar-nav>li>a {*/
-    /*color: #fff;*/
-    /*font-weight: 100;*/
-    /*letter-spacing: .35em;*/
-    /*font-size: 0.9em;*/
-    /*background: transparent;*/
-/*}*/
-
-/*.navbar-default .navbar-nav>li>a:hover {*/
-    /*color: #ddd;*/
-    /*opacity: 0.8;*/
-/*}*/
-
-/*.navbar-default .navbar-collapse, .navbar-default .navbar-form {*/
-    /*border-color: #fff;*/
-    /*height: auto;*/
-/*}*/
-
-/*.navbar-right {*/
-    /*margin-top: 10px;*/
-/*}*/
-
-/*.navbar-text {*/
-    /*margin-top: 15px;*/
-/*}*/
-
-/*.navbar-default .navbar-text {*/
-    /*color: #41414f;*/
-    /*font-weight: 700;*/
-    /*font-size: 25px;*/
-/*}*/
-
 .navbar-nav>li>a {
     line-height: 25px;
     color: #fff;
     font-weight: 100;
-    letter-spacing: .5vh;
+    letter-spacing: .3vh;
     font-size: 1.4vh;
     text-transform: uppercase;
     text-align: center;
@@ -339,57 +291,13 @@ p {
     color: #fff;
 }
 
-/*.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .close.navbar-nav>.active>a:focus {*/
-    /*color: #fff;*/
-    /*opacity: 0.9;*/
-/*}*/
-
-
 .navbar-brand {
     padding: 0;
 }
 
-/*.navbar-expand-lg {*/
-    /*padding: 0;*/
-/*}*/
-
-
-/*.navbar-default .navbar-brand {*/
-    /*background-image: url(../images/background1.jpg);*/
-    /*height: 74px;*/
-/*}*/
-
-/*.navbar-default .navbar-brand:hover {*/
-    /*background-color: #313131;*/
-/*}*/
-
-/*.navbar-brand>img {*/
-    /*display: block;*/
-    /*margin-top: 0px;*/
-    /*margin-left: 0px;*/
-    /*padding-right: 25px;*/
-/*}*/
-
-/*.nav>li>a {*/
-    /*display: inline;*/
-/*}*/
-
 .navbar-nav>li>a:hover {
     color: rgba(255,255,255,.75);
 }
-
-/*.top-nav-collapse {*/
-    /*padding: 0;*/
-    /*background-image: url(../images/background1.jpg);*/
-/*}*/
-
-/*.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {*/
-    /*background-color: transparent;*/
-/*}*/
-
-/*.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {*/
-    /*color: #fff;*/
-/*}*/
 
 .dropdown-menu {
     background-color: #313131;
@@ -437,7 +345,6 @@ p {
 /*---------------------------------------------------------------*/
 /* navbar-end */
 /*---------------------------------------------------------------*/
-
 .scroll-top-wrapper {
     position: fixed;
     opacity: 0;
@@ -479,7 +386,7 @@ p {
 /*---------------------------------------------------------------*/
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url(../images/b1.jpg);
+    background-image: url(../images/b1.jpg); /* path to your background image at static.html */
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -601,7 +508,6 @@ p {
 @media screen and (min-width: 980px){
     .hero { width: 980px; }
 }
-
 /*---------------------------------------------------------------*/
 /* 6. carousel */
 /*---------------------------------------------------------------*/
@@ -658,7 +564,7 @@ p {
 }
 
 .fill_1 {
-    background-image: url('../images/b2.jpg');
+    background-image: url('../images/b2.jpg');/* path to your background image at slider.html */
     width: 100%;
     height: 100%;
     background-position: center;
@@ -669,7 +575,7 @@ p {
 }
 
 .fill_2 {
-    background-image: url('../images/b3.jpg');
+    background-image: url('../images/b3.jpg');/* path to your background image at slider.html */
     width: 100%;
     height: 100%;
     background-position: center;
@@ -680,7 +586,7 @@ p {
 }
 
 .fill_3 {
-    background-image: url('../images/b1.jpg');
+    background-image: url('../images/b1.jpg');/* path to your background image at slider.html */
     width: 100%;
     height: 100%;
     background-position: center;
@@ -691,7 +597,7 @@ p {
 }
 
 .fill_1-ver2 {
-    background-image: url('../images/b5.jpg');
+    background-image: url('../images/b5.jpg');/* path to your background image at slider-ver2.html */
     width: 100%;
     height: 100%;
     background-position: center;
@@ -702,7 +608,7 @@ p {
 }
 
 .fill_2-ver2 {
-    background-image: url('../images/b6.jpg');
+    background-image: url('../images/b6.jpg');/* path to your background image at slider-ver2.html */
     width: 100%;
     height: 100%;
     background-position: center;
@@ -713,7 +619,7 @@ p {
 }
 
 .fill_3-ver2 {
-    background-image: url('../images/b7.jpg');
+    background-image: url('../images/b7.jpg');/* path to your background image at slider-ver2.html */
     width: 100%;
     height: 100%;
     background-position: center;
@@ -855,11 +761,11 @@ p {
 /* 8. testimonial */
 /*---------------------------------------------------------------*/
 .testimonial {
-    background: url(../images/testimonial.jpg)50% 0 fixed;
+    background: url(../images/testimonial.jpg)50% 0 fixed;/* path to your background image -testimonial */
 }
 
 .testimonial-video {
-    background: url(../images/background1.jpg);
+    background: url(../images/background1.jpg);/* path to your background image -testimonial-video */
 }
 
 .testimonial-border {
@@ -1032,7 +938,6 @@ blockquote footer, blockquote small, blockquote .small{
 /*---------------------------------------------------------------*/
 /* about us end */
 /*---------------------------------------------------------------*/
-
 /*---------------------------------------------------------------*/
 /* 9. Our-Team */
 /*---------------------------------------------------------------*/
@@ -1102,7 +1007,7 @@ blockquote footer, blockquote small, blockquote .small{
 /*---------------------------------------------------------------*/
 
 .plans-background{
-    background-image: url('../images/background1.jpg');
+    background-image: url('../images/background1.jpg');/* path to your background image -pricing */
 }
 
 .plans-pricing {
@@ -1322,7 +1227,6 @@ ul.count-down li p {
 .title-404 h3 {
     font-size: 33px !important;
 }
-
 /*---------------------------------------------------------------*/
 /* 11. what we do */
 /*---------------------------------------------------------------*/
@@ -1459,7 +1363,6 @@ ul.count-down li p {
 /*---------------------------------------------------------------*/
 /* progress-bar end */
 /*---------------------------------------------------------------*/
-
 /*---------------------------------------------------------------*/
 /* 12. animate-numbers*/
 /*---------------------------------------------------------------*/
@@ -1481,7 +1384,6 @@ ul.count-down li p {
 }
 
 .number h2{
-    /*display: inline-block;*/
     font-weight: 100;
     font-size: 40px;
     color: #fff;
@@ -1524,15 +1426,12 @@ ul.count-down li p {
     display: inline;
     padding-right: 10px;
 }
-
 .number-white p {
     color: #313131;
 }
-
 /*---------------------------------------------------------------*/
 /* 13. gallery*/
 /*---------------------------------------------------------------*/
-
 .controls {
     padding: 3rem;
     font-size: 10px;
@@ -1710,11 +1609,9 @@ ul.count-down li p {
     background-image: url('../images/background1.jpg');
 
 }
-
 .gallery {
     /*height:400px;*/
 }
-
 #gallery h1 {
     position: relative;
     top: 150px;
@@ -1743,7 +1640,6 @@ figure {
     overflow: hidden;
     z-index: 100;
     margin: 0px;
-
 }
 
 figcaption {
@@ -1840,12 +1736,10 @@ a:hover figcaption {
 /*---------------------------------------------------------------*/
 /* gallery-end*/
 /*---------------------------------------------------------------*/
-
 /*---------------------------------------------------------------*/
 /* 14. download */
 /*---------------------------------------------------------------*/
 #home {
-    /*background: url(../images/blured.jpg) 50% 0 fixed;*/
     height: auto;
     margin: 0 auto;
     width: 100%;
@@ -1870,7 +1764,6 @@ a:hover figcaption {
 }
 
 .download p {
-    /*background-image: url(../images/download.png);*/
     background-repeat: no-repeat;
     margin: 0 auto 1.5rem;
     color: #313131;
@@ -1894,7 +1787,7 @@ a:hover figcaption {
 /* 15. Contact*/
 /*---------------------------------------------------------------*/
 .contact-background {
-    background-image: url(../images/background1.jpg);
+    background-image: url(../images/background1.jpg);/* path to your background image -contact */
 }
 
 .contact-us {
@@ -1935,7 +1828,6 @@ a:hover figcaption {
     background-image: none;
     border-radius: 0px;
     border: 1px solid #fff;
-
 }
 
 .input-group-addon {
@@ -2083,7 +1975,7 @@ hr {
     text-align: center;
 }
 /*---------------------------------------------------------------*/
-/* owl-carousel*/
+/* owl-carousel-end*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /* 17. subscribe */
@@ -2145,7 +2037,7 @@ hr {
 /*---------------------------------------------------------------*/
 .footer {
     height: 170px;
-    background: url(../images/background1.jpg);
+    background: url(../images/background1.jpg);/* path to your background image -footer */
 
 }
 
@@ -2190,15 +2082,15 @@ hr {
 }
 
 #footerPinterest {
-    background-image: url('../images/social-icons/white/pinterest.png');
+    background-image: url('../images/social-icons/white/pinterest.png');/* path to your social icons image */
 }
 
 #footerFacebook {
-    background-image: url('../images/social-icons/white/facebook.png');
+    background-image: url('../images/social-icons/white/facebook.png');/* path to your social icons image */
 }
 
 #footerTwitter {
-    background-image: url('../images/social-icons/white/twitter.png');
+    background-image: url('../images/social-icons/white/twitter.png');/* path to your social icons image */
 }
 
 .icon {
@@ -2241,15 +2133,15 @@ hr {
 }
 
 .footerPinterestteam {
-    background-image: url('../images/social-icons/grey/pinterest.png');
+    background-image: url('../images/social-icons/grey/pinterest.png');/* path to your social icons image in team */
 }
 
 .footerFacebookteam {
-    background-image: url('../images/social-icons/grey/facebook.png');
+    background-image: url('../images/social-icons/grey/facebook.png');/* path to your social icons image in team*/
 }
 
 .footerTwitterteam {
-    background-image: url('../images/social-icons/grey/twitter.png');
+    background-image: url('../images/social-icons/grey/twitter.png');/* path to your social icons image in team*/
 }
 
 .icon-team {
@@ -2295,7 +2187,7 @@ hr {
 .jumbotron-sub {
     display: table;
     margin-bottom: 0px;
-    background-image: url(../images/b1.jpg);
+    background-image: url(../images/b1.jpg);/* path to your sub-page hero image background */
     background-size: cover;
     background-repeat: no-repeat;
     height: 45vh;
@@ -2322,8 +2214,6 @@ hr {
     padding: 2vh;
     text-transform: uppercase;
 }
-
-
 /*---------------------------------------------------------------*/
 /*  download */
 /*---------------------------------------------------------------*/
@@ -2338,7 +2228,6 @@ hr {
 
 .subpage h2, .subpage p {
     color: #fff !important;
-
 }
 
 .buy-theme-white {
@@ -2376,7 +2265,6 @@ hr {
 .contact-subpage-map {
     margin-top: 150px;
 }
-
 /*---------------------------------------------------------------*/
 /* project-page 1*/
 /*---------------------------------------------------------------*/
@@ -2423,7 +2311,6 @@ hr {
 .faq-cat-content {
     margin-top: 55px;
     border: 1px solid #ddd;
-
 }
 
 .faq-cat-tabs li a {
@@ -2564,15 +2451,18 @@ hr {
 .typography {
     margin-bottom: 8vh;
 }
-
 /*---------------------------------------------------------------*/
 /* FAQ-end*/
 /*---------------------------------------------------------------*/
 
 /*---------------------------------------------------------------*/
-/* responsive*/
+/* Responsive*/
 /*---------------------------------------------------------------*/
 @media only screen and (max-width: 1550px) {
+
+    .navbar-nav>li>a {
+        font-size: 1.5vh;
+    }
 
     .modalDialog > div {
         width: 785px;
@@ -2639,7 +2529,7 @@ hr {
     }
 
     .navbar-nav>li>a {
-        font-size: 2vh;
+        font-size: 1.6vh;
         letter-spacing: .2vh;
     }
 
@@ -2895,7 +2785,6 @@ hr {
         font-size: 3vh;
         letter-spacing: 1vh;
     }
-
 }
 /*---------------------------------------------------------------*/
 /* responsive-end*/
