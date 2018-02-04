@@ -1862,6 +1862,7 @@ a:hover figcaption {
 
 #InputMessage {
     height: 13em;
+    background: transparent;
 }
 
 input[type="text"]{
