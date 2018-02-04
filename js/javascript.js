@@ -167,10 +167,10 @@ $(document).ready(function( $ ) {
     $('body').delay(350).css({'overflow':'visible'});
 
     // counterUp
-    //$('span').counterUp({
-    //    delay: 10, // the delay time in ms
-    //    time: 1000 // the speed time in ms
-    //});
+    $('span.counterg').counterUp({
+       delay: 10, // the delay time in ms
+       time: 1000 // the speed time in ms
+    });
 
     // ScrollReveal
     window.sr = new scrollReveal();
