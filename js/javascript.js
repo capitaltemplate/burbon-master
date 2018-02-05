@@ -4,7 +4,7 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if (scroll > 300) {
+        if (scroll > 100) {
             $(".navbar-scroll-background").css("background" , "rgba(49, 49, 49, 0.8)");
         }
 
@@ -171,8 +171,6 @@ $(document).ready(function( $ ) {
         var containerEl = document.querySelector('.gallery');
         mixitup(containerEl);
     }
-
-    $('.carousel').carousel();
 
     $('#example').countdown({
         date: '12/24/2022 23:59:59'
