@@ -965,6 +965,10 @@ blockquote footer, blockquote small, blockquote .small{
     font-size: 13px;
 }
 
+.team-text-subpage {
+    margin-top: 8vh;
+}
+
 #team {
     padding: 4.5rem 0 4.5rem;
 }
