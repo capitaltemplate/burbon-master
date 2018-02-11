@@ -21,6 +21,7 @@
     <!-- scroll Plugin -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
+    <link href="sass/style.css" rel="stylesheet">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
@@ -32,7 +33,7 @@
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Preloader -->
 <!--<div id="preloader">-->
-    <!--<div id="status"></div>-->
+<!--<div id="status"></div>-->
 <!--</div>-->
 <!-- Preloader-end -->
 
@@ -100,16 +101,17 @@
 <!--[jumotron end]-->
 
 <!--[About Us]-->
-<div class="container">
-    <section id="about" class="mt-5 mb-5">
-        <div class="row About-Us">
-            <div class="col-md-12 about-text">
-                <div>
-                    <h2>About Studio</h2>
-                    <div class="testimonial-border"></div>
 
-                    <div class="row about-oontent">
-                        <div class="col-md-4">
+<section id="about">
+    <div class="container-fluid">
+        <div class="about-text">
+            <div>
+                <h2>About Studio</h2>
+                <div class="testimonial-border"></div>
+
+                <div class="row about-content justify-content-around">
+                    <div class="col-md-4">
+                        <div class="inner">
                             <div class="about-icons-content">
                                 <div class="lnr lnr-diamond about-icon"
                                      data-anijs="if:mouseover, do: rubberBand animated"
@@ -126,7 +128,9 @@
                                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
                             </p>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="inner">
                             <div class="about-icons-content">
                                 <div class="lnr lnr-coffee-cup about-icon"
                                      data-anijs="if:mouseover, do: rubberBand animated"
@@ -142,7 +146,9 @@
                                 ultricies nec, pellentesque eu, pretium quis.
                             </p>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="inner">
                             <div class="about-icons-content">
                                 <div class="lnr lnr-rocket about-icon"
                                      data-anijs="if:mouseover, do: rubberBand animated"
@@ -162,8 +168,9 @@
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
 <!--[About Us end]-->
 
 <!--[testimonial]-->
@@ -231,14 +238,14 @@
 <!--[testimonial-end]-->
 
 <!--[Our Team]-->
-<div class="container">
-    <section id="team" class="mt-5 mb-5">
+<section id="team">
+<div class="container-fluid">
         <h2>Our Team</h2>
         <div class="testimonial-border"></div>
-        <div class="row our-team">
+        <div class="row our-team justify-content-around">
 
             <div class="col-md-4 team-text">
-                <div>
+                <div class="inner">
                     <img class="img  photo" src="images/team/clarke.jpg" alt=""/>
                     <div>
                         <h2>Emilia Foster</h2>
@@ -267,7 +274,7 @@
                 </div>
             </div>
             <div class="col-md-4 team-text">
-                <div>
+                <div class="inner">
                     <img class="img photo" src="images/team/blunt.jpg" alt=""/>
                     <div>
                         <h2>Emily Gloss</h2>
@@ -296,7 +303,7 @@
                 </div>
             </div>
             <div class="col-md-4 team-text">
-                <div>
+                <div class="inner">
                     <img class="img photo" src="images/team/vickander.jpg" alt=""/>
                     <div>
                         <h2>Alicia DeNico</h2>
@@ -326,8 +333,8 @@
             </div>
 
         </div>
-    </section>
 </div>
+    </section>
 <!--[Our Team end]-->
 
 <!--[Animate Numbers]-->
@@ -359,7 +366,7 @@
 
 <!--[progress_bar start]-->
 <div class="container prog-bar">
-    <section id="progress" class="mt-5 mb-5">
+    <section id="progress" class="pt-5 pb-5">
         <h2>our skills</h2>
         <div class="testimonial-border"></div>
         <div class="row about-oontent">
@@ -551,7 +558,7 @@
 
 <!--[What we do]-->
 <div class="container-fluid what-we">
-    <section id="what_we_do" class="mt-5 mb-5g">
+    <section id="what_we_do" class="pt-5 pb-5">
         <div class="row what_we_do">
             <div class="col">
                 <h2>Services</h2>
@@ -634,47 +641,53 @@
 
 <!--[plans-pricing]-->
 <div class="container-fluid plans-background">
-    <section id="pricing">
+    <section id="pricing" class="pt-5 pb-5">
         <div id="plans">
             <div class="plans-pricing">
                 <h2>Plans & Pricing</h2>
                 <div class="testimonial-border-white"></div>
             </div>
-            <div class="row plans mt-5 mb-5 justify-content-around">
-                <div class="col-md-auto col-sm-auto  plans-border ">
+            <div class="row plans justify-content-around">
+                <div class="plans-border">
                     <h2 data-sr="wait 0.1s, then enter top and hustle 20px over 1s">19$</h2>
                     <h4>/ month</h4>
-                    <h3>Basic</h3>
-                    <p>24 hour support</p>
-                    <p>25 Photos</p>
-                    <p>5 Free Sessions</p>
-                    <p>up to 10 users</p>
+                    <div class="plans-configurations">
+                        <h3>Basic</h3>
+                        <p>24 hour support</p>
+                        <p>25 Photos</p>
+                        <p>5 Free Sessions</p>
+                        <p>up to 10 users</p>
+                    </div>
                     <div class="button-plans">
                         <a class="btn btn-plans1 btn-lg" href="#" role="button"
                            data-anijs="if: mouseover, do: pulse animated">PURCHASE</a>
                     </div>
                 </div>
-                <div class=" col-md-auto col-sm-auto plans-border2 ">
+                <div class="plans-border2 justify-content-center">
                     <h2 data-sr="wait 0.3s, then enter top and hustle 20px over 1s">49$</h2>
                     <h4>/ month</h4>
-                    <h3>Standard</h3>
-                    <p>24 hour support</p>
-                    <p>50 Photos</p>
-                    <p>50 Free Sesions</p>
-                    <p>up to 50 users</p>
+                    <div class="plans-configurations">
+                        <h3>Standard</h3>
+                        <p>24 hour support</p>
+                        <p>50 Photos</p>
+                        <p>50 Free Sesions</p>
+                        <p>up to 50 users</p>
+                    </div>
                     <div class="button-plans">
                         <a class="btn btn-plans1 btn-lg" href="#" role="button"
                            data-anijs="if: mouseover, do: pulse animated">PURCHASE</a>
                     </div>
                 </div>
-                <div class="col-md-auto col-sm-auto plans-border3 ">
+                <div class="plans-border3">
                     <h2 data-sr="wait 0.5s, then enter top and hustle 20px over 1s">99$</h2>
                     <h4>/ month</h4>
-                    <h3>Professional</h3>
-                    <p>24 hour support</p>
-                    <p>Unlimited Photos</p>
-                    <p>Unlimited Free Sesions </p>
-                    <p>Unlimited users</p>
+                    <div class="plans-configurations">
+                        <h3>Professional</h3>
+                        <p>24 hour support</p>
+                        <p>Unlimited Photos</p>
+                        <p>Unlimited Free Sesions </p>
+                        <p>Unlimited users</p>
+                    </div>
                     <div class="button-plans">
                         <a class="btn btn-plans1 btn-lg" href="#" role="button"
                            data-anijs="if: mouseover, do: pulse animated">PURCHASE</a>

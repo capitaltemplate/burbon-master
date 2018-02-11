@@ -128,12 +128,13 @@ Input, textarea:	Arial, Helvetica, sans-serif;
 /*---------------------------------------------------------------*/
 /* 1. Body */
 /*---------------------------------------------------------------*/
+
 body{
     color: #313131;
     font-family: 'Open Sans', sans-serif;
     height: 100%;
     overflow: scroll;
-   }
+}
 
 ::-webkit-scrollbar {
     display: none;
@@ -210,46 +211,47 @@ body{
 /*---------------------------------------------------------------*/
 /* 3. typography */
 /*---------------------------------------------------------------*/
-h1 {
-    font-weight: 100;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
+/*h1 {*/
+    /*font-weight: 100;*/
+    /*font-size: 2em;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 5px;*/
+/*}*/
 
-h2 {
-    font-weight: 100;
-    font-size: 1.3em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
+/*h2 {*/
+    /*font-weight: 100;*/
+    /*font-size: 1.3em;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 5px;*/
+/*}*/
 
-h3 {
-    font-weight: 100;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
+/*h3 {*/
+    /*font-weight: 100;*/
+    /*font-size: 1.2em;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 5px;*/
+/*}*/
 
-h4 {
-    font-weight: 100;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+/*h4 {*/
+    /*font-weight: 100;*/
+    /*font-size: 1.1em;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 5px;*/
 
-}
- h5 {
-     font-weight: 100;
-     font-size: 1em;
-     text-transform: uppercase;
-     letter-spacing: 5px;
- }
+/*}*/
+ /**/
+/*h5 {*/
+     /*font-weight: 100;*/
+     /*font-size: 1em;*/
+     /*text-transform: uppercase;*/
+     /*letter-spacing: 5px;*/
+/*}*/
 
-p {
-    font-weight: 100;
-    font-size: 1em;
-    color: #313131;
-}
+/*p {*/
+    /*font-weight: 100;*/
+    /*font-size: 1em;*/
+    /*color: #313131;*/
+/*}*/
 /*---------------------------------------------------------------*/
 /* typography-end */
 /*---------------------------------------------------------------*/
@@ -777,15 +779,14 @@ p {
 
 .testimonial-border {
     border-top: 1px solid #313131;
-    width: 50px;
+    width: 5vw;
     margin: 1.5rem auto 1.5rem;
 }
 
 .testimonial-border-white {
     border-top: 1px solid #fff;
-    width: 50px;
-    padding-bottom: 15px;
-    margin: 0 auto;
+    width: 5vw;
+    margin: 1.5rem auto 1.5rem;
 }
 
 .testimonial-border-us {
@@ -871,12 +872,12 @@ blockquote footer, blockquote small, blockquote .small{
     font-size: 0.8rem;
 }
 
-.about-text h2 {
-    font-weight: 100;
-    font-size: 1.3rem;
-    letter-spacing: .33em;
-    text-transform: uppercase;
-}
+/*.about-text h2 {*/
+    /*font-weight: 100;*/
+    /*font-size: 1.3rem;*/
+    /*letter-spacing: .33em;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
 .about-text h3 {
     letter-spacing: 4px;
@@ -907,37 +908,6 @@ blockquote footer, blockquote small, blockquote .small{
     font-size: .9em;
 }
 
-.about-icons-content {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    text-align: left;
-    height: 5rem;
-    width: 100%;
-    vertical-align: middle;
-}
-
-.about-icon {
-    display: inline-block;
-    font-size: 40px;
-    margin-left: 10px;
-}
-
-.about-icon-text {
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 2em;
-    font-weight: 100;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: .4em;
-    height: 1rem;
-}
-
-.about-icon-text p {
-    line-height: 1rem;
-    font-size: .9em;
-}
 /*---------------------------------------------------------------*/
 /* about us end */
 /*---------------------------------------------------------------*/
@@ -953,12 +923,6 @@ blockquote footer, blockquote small, blockquote .small{
     margin-bottom: 20px;
     letter-spacing: 5px;
     text-transform: uppercase;
-}
-
-.team-text {
-    text-align: center;
-    color: #313131;
-    font-size: 13px;
 }
 
 .team-text-subpage {
@@ -1007,48 +971,26 @@ blockquote footer, blockquote small, blockquote .small{
     background-image: url('../images/background1.jpg');/* path to your background image -pricing */
 }
 
-.plans-pricing {
-    padding-top: 90px;
-}
-
 .plans-pricing h2 {
     text-align: center;
     color: #fff;
     font-weight: 100;
     font-size: 1.3rem;
-    padding-bottom: 1.2em;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
-.plans-border {
-    border: 1px solid #777;
-    padding: 25px 120px 25px 120px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 8em;
-    margin-left: 5em;
-}
-
-.plans-border2 {
-    border: 3px solid #fff;
-    padding: 35px 140px 35px 140px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 8em;
-}
-
-.plans-border3 {
-    border: 1px solid #becfd3;
-    padding: 25px 120px 25px 120px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 8em;
-    margin-right: 5em;
+.button-plans {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .plans h2 {
-    font-size: 3.8em;
     font-weight: 100;
     margin-bottom: .1em;
 }
@@ -1056,7 +998,6 @@ blockquote footer, blockquote small, blockquote .small{
 .plans h4 {
     color: #e8e4e3;
     text-transform: uppercase;
-    font-size: .9em;
     letter-spacing: 2px;
 }
 
@@ -1064,9 +1005,7 @@ blockquote footer, blockquote small, blockquote .small{
     font-weight: 100;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1em;
     letter-spacing: 3px;
-    padding-top: 4em;
 }
 
 .plans p {
@@ -1080,8 +1019,6 @@ blockquote footer, blockquote small, blockquote .small{
     border: 1px solid #fff;
     margin: 0 auto;
     color: #fff;
-    margin-top: 3em;
-    margin-bottom: 2em;
     font-weight: 100;
 }
 
@@ -1090,8 +1027,6 @@ blockquote footer, blockquote small, blockquote .small{
     margin: 0 auto;
     color: #313131;
     background-color: #fff;
-    margin-top: 3em;
-    margin-bottom: 2em;
 }
 /*---------------------------------------------------------------*/
 /* plans and pricing end */
@@ -1280,17 +1215,6 @@ ul.count-down li p {
     padding-right: 20px;
 }
 
-.copywriting {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 40px;
-}
-
-.coding {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 40px;
-}
 /*---------------------------------------------------------------*/
 /* what we do - end*/
 /*---------------------------------------------------------------*/
@@ -1596,7 +1520,6 @@ ul.count-down li p {
 
 #gallery h1 {
     position: relative;
-    top: 150px;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 7px;
@@ -1612,7 +1535,6 @@ ul.count-down li p {
 
 .lupa {
     position: relative;
-    padding-top: 150px;
     padding-left: 280px;
 }
 
@@ -1630,7 +1552,6 @@ figcaption {
     text-align: center;
     position: absolute;
     bottom: 0;
-    top: -800px;
     opacity: 0;
     padding: 5px;
 }
@@ -1674,8 +1595,8 @@ a:hover figcaption {
 }
 
 .modalDialog > div {
-    width: 1090px;
-    height: 800px;
+    width: 80vw;
+    height: 80vh;
     color: #000;
     position: relative;
     margin: 7% auto;
@@ -1775,7 +1696,6 @@ a:hover figcaption {
 .contact-us {
     text-align: center;
     color: #fff;
-    padding-top: 80px;
 }
 
 .contact-us h2 {
@@ -1784,14 +1704,6 @@ a:hover figcaption {
     font-size: 1.3rem;
     letter-spacing: 5px;
     text-transform: uppercase;
-}
-
-.contact-us .testimonial-border-white {
-    margin-bottom: 40px;
-}
-
-.input-group .form-control {
-    margin-bottom: 10px;
 }
 
 .contact-form {
@@ -1870,7 +1782,6 @@ input[type="text"]{
 }
 
 address {
-    margin-top: 20px;
     color: #fff;
     font-weight: 100;
 }
@@ -1890,8 +1801,6 @@ address {
 }
 
 hr {
-    margin-top: 60px;
-    margin-bottom: 20px;
     border: 0;
     border-top: 0px solid;
 }
@@ -1902,13 +1811,6 @@ hr {
     margin-right: 20px;
 }
 
-.adress2-subpage {
-    margin-top: 75px;
-}
-
-.adress2-subpage-icon {
-    margin-top: 35px;
-}
 /*---------------------------------------------------------------*/
 /* contact-end*/
 /*---------------------------------------------------------------*/
@@ -1918,7 +1820,7 @@ hr {
 /*---------------------------------------------------------------*/
 #map {
     width: 100%;
-    height: 500px;
+    height: 50vh;
 }
 /*---------------------------------------------------------------*/
 /*  Google-maps-end*/
@@ -2266,13 +2168,10 @@ hr {
 
 .project-description h2 {
     text-align: center;
-    /*margin-top: 150px;*/
-    padding-bottom: 25px;
 }
 
 .text-project h5{
     text-align: center;
-    padding-bottom: 25px;
 }
 
 .text-project p {
@@ -2280,7 +2179,6 @@ hr {
 }
 
 .about-project {
-    margin-top: 100px;
     margin-left: 7%;
     margin-right: 7%;
 }
@@ -2292,12 +2190,10 @@ hr {
 }
 
 .faq-cat-content {
-    margin-top: 55px;
     border: 1px solid #ddd;
 }
 
 .faq-cat-tabs li a {
-    padding: 15px 10px 15px 10px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     color: #777777;
@@ -2330,7 +2226,6 @@ hr {
 
 .nav-tabs {
     border-bottom: none;
-    margin-top: 85px;
 }
 
 .panel-group .panel {
@@ -2441,148 +2336,132 @@ hr {
 /*---------------------------------------------------------------*/
 /* Responsive*/
 /*---------------------------------------------------------------*/
-@media only screen and (max-width: 1550px) {
+/*@media only screen and (max-width: 1550px) {*/
 
-    .navbar-nav>li>a {
-        font-size: 1.5vh;
-    }
+    /*.navbar-nav>li>a {*/
+        /*font-size: 1.5vh;*/
+    /*}*/
 
-    .modalDialog > div {
-        width: 785px;
-        height: 600px;
-        margin-top: 100px;
-    }
+    /*.modalDialog > div {*/
+        /*width: 785px;*/
+        /*height: 600px;*/
+        /*margin-top: 100px;*/
+    /*}*/
 
-    .modalDialog img {
-        height: 75%;
-    }
+    /*.modalDialog img {*/
+        /*height: 75%;*/
+    /*}*/
 
-    #email {
-        width: 300px;
-    }
+    /*#email {*/
+        /*width: 300px;*/
+    /*}*/
 
-    .item h3 {
-        font-size: 48px;;
-    }
+    /*.item h3 {*/
+        /*font-size: 48px;;*/
+    /*}*/
 
-    .yt h5  {
-        font-size: 48px;
-        letter-spacing: 30px;
-        margin-bottom: 40px;
-    }
+    /*.yt h5  {*/
+        /*font-size: 48px;*/
+        /*letter-spacing: 30px;*/
+        /*margin-bottom: 40px;*/
+    /*}*/
 
-    .yt p {
-        font-size: 18px;
-    }
+    /*.yt p {*/
+        /*font-size: 18px;*/
+    /*}*/
 
-    .yt h3{
-        margin-top: 280px;
-        font-size: 45px;
-    }
+    /*.yt h3{*/
+        /*margin-top: 280px;*/
+        /*font-size: 45px;*/
+    /*}*/
 
-    .plans-border {
-        margin: 25px;
-        margin-bottom: 90px;
-        padding: 35px 90px 35px 90px;
-    }
-    .plans-border2 {
-        margin: 25px;
-        margin-bottom: 90px;
-        padding: 35px 90px 35px 90px;
-    }
-    .plans-border3 {
-        margin: 25px;
-        margin-bottom: 90px;
-        padding: 35px 90px 35px 90px;
-    }
+    /*.contact-form {*/
+        /*margin-right: 0em;*/
+    /*}*/
+/*}*/
 
-    .contact-form {
-        margin-right: 0em;
-    }
-}
+/*@media only screen and (max-width: 1250px) {*/
+    /*.navbar-expand-lg .navbar-nav .nav-link {*/
+        /*padding-right: 0.5rem;*/
+        /*padding-left: 0.5rem;*/
+    /*}*/
 
-@media only screen and (max-width: 1250px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
-    }
+    /*.navbar-nav>li>a {*/
+        /*font-size: 1.6vh;*/
+        /*letter-spacing: .2vh;*/
+    /*}*/
 
-    .navbar-nav>li>a {
-        font-size: 1.6vh;
-        letter-spacing: .2vh;
-    }
+    /*#email {*/
+        /*width: 275px;*/
+        /*background-color: transparent;*/
+        /*margin-bottom: 25px;*/
+        /*margin-left: 20px;*/
+    /*}*/
 
-    #email {
-        width: 275px;
-        background-color: transparent;
-        margin-bottom: 25px;
-        margin-left: 20px;
-    }
+    /*.subs .btn-primary {*/
+        /*margin-left:20px;*/
+    /*}*/
 
-    .subs .btn-primary {
-        margin-left:20px;
-    }
+    /*.testimonial {*/
+        /*margin-top: 0px;*/
+    /*}*/
 
-    .testimonial {
-        margin-top: 0px;
-    }
+    /*.jumbotron .tlt {*/
+    /*font-size: 4vh;*/
+    /*}*/
 
-    .jumbotron .tlt {
-    font-size: 4vh;
-    }
+    /*.youtube-overflow .tlt{*/
+        /*font-size: 4vh;*/
+    /*}*/
 
-    .youtube-overflow .tlt{
-        font-size: 4vh;
-    }
+    /*.tlt p {*/
+        /*font-size: 2vh;*/
+    /*}*/
 
-    .tlt p {
-        font-size: 2vh;
-    }
+    /*.btn.btn-lg {*/
+        /*padding: .5em 1.4em;*/
+        /*font-size: 2.2vh;*/
+    /*}*/
 
-    .btn.btn-lg {
-        padding: .5em 1.4em;
-        font-size: 2.2vh;
-    }
+    /*.item h3 {*/
+        /*font-size: 45px;*/
+        /*letter-spacing: 20px;*/
+    /*}*/
 
-    .item h3 {
-        font-size: 45px;
-        letter-spacing: 20px;
-    }
+    /*.yt p {*/
+        /*font-size: 22px;*/
+    /*}*/
 
-    .yt p {
-        font-size: 22px;
-    }
+    /*.yt h3 {*/
+        /*margin-top: 300px;*/
+        /*font-size: 38px;*/
+    /*}*/
+    /*.download p {*/
+        /*font-size: .9em;*/
+    /*}*/
 
-    .yt h3 {
-        margin-top: 300px;
-        font-size: 38px;
-    }
-    .download p {
-        font-size: .9em;
-    }
+    /*#gallery h1 {*/
+        /*display: none;*/
+    /*}*/
 
-    #gallery h1 {
-        display: none;
-    }
+    /*.link-gallery {*/
+        /*margin-top: 35px;*/
+    /*}*/
 
-    .link-gallery {
-        margin-top: 35px;
-    }
+    /*.text-subpages p {*/
+        /*font-size: 1.4vh;*/
+    /*}*/
+/*}*/
 
-    .text-subpages p {
-        font-size: 1.4vh;
-    }
-}
+/*@media only screen and (max-width: 991px) {*/
+    /*.navbar-nav > li > a {*/
+        /*background: #313131;*/
+    /*}*/
 
-@media only screen and (max-width: 991px) {
-    .navbar-nav > li > a {
-        background: #313131;
-    }
-
-    .dropdown-item {
-        text-align: center;
-    }
-}
+    /*.dropdown-item {*/
+        /*text-align: center;*/
+    /*}*/
+/*}*/
 
 /*@media only screen and (max-width: 750px) {*/
     /*.navbar-brand {*/

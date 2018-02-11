@@ -13,6 +13,8 @@ $(window).scroll(function() {
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
+        // alert($anchor.getAttribute("name"));
+        // alert($anchor.css('padding-top'));
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 75
         }, 1500, 'easeInOutExpo');

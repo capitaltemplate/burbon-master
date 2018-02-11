@@ -1,0 +1,135 @@
+html {
+  font-size: 1rem;
+  line-height: 1rem * 1.2; }
+  @media (min-width: 48em) {
+    html {
+      font-size: calc(1rem*1.2);
+      line-height: calc(1rem * 1.4); } }
+  @media (min-width: 64em) {
+    html {
+      font-size: calc(1rem * 1.4);
+      line-height: calc(1rem * 1.6); } }
+  @media (min-width: 85.375em) {
+    html {
+      font-size: calc(1rem * 1.6);
+      line-height: calc(1rem * 1.8); } }
+  @media (min-width: 120em) {
+    html {
+      font-size: calc(1rem * 1.8);
+      line-height: calc(1rem * 2); } }
+  @media (min-width: 160em) {
+    html {
+      font-size: calc(1rem * 4);
+      line-height: calc(1rem * 2.2); } }
+
+.tlt span {
+  font-size: 3rem; }
+
+.tlt p {
+  font-size: calc(1rem*0.8); }
+
+section h2 {
+  font-weight: 100;
+  letter-spacing: 0.33em;
+  text-transform: uppercase; }
+
+section#about {
+  padding: 1rem; }
+  @media (min-width: 48em) {
+    section#about {
+      padding: 3rem; } }
+
+section#team {
+  padding: 1rem; }
+  @media (min-width: 48em) {
+    section#team {
+      padding: 3rem; } }
+
+section#about .inner {
+  padding: 0; }
+  @media (min-width: 120em) {
+    section#about .inner {
+      padding: 1rem; } }
+
+section#team .inner {
+  padding: 0; }
+  @media (min-width: 120em) {
+    section#team .inner {
+      padding: 1rem; } }
+
+.about-icons-content {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-align: left;
+  height: 5rem;
+  width: 100%;
+  vertical-align: middle; }
+
+.about-icon {
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem; }
+
+.about-icon-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 100;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  height: 1rem;
+  margin-left: 0.4rem; }
+
+.plans div h2 {
+  font-size: 3rem; }
+
+.plans div h4 {
+  font-size: 0.6rem; }
+
+.plans div h3 {
+  font-size: 1.2rem; }
+
+.plans div p {
+  font-size: 0.6rem; }
+
+.plans > div {
+  text-align: center;
+  color: #fff;
+  position: relative; }
+
+.plans-border {
+  border: 1px solid #becfd3;
+  width: 80%;
+  padding-top: 2rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 48em) {
+    .plans-border {
+      width: 25%;
+      margin-bottom: 0; } }
+
+.plans-border2 {
+  border: 3px solid #fff;
+  width: 80%;
+  padding-top: 2rem;
+  margin-bottom: 3rem; }
+  @media (min-width: 48em) {
+    .plans-border2 {
+      width: 25%;
+      margin-bottom: 0; } }
+
+.plans-border3 {
+  border: 1px solid #becfd3;
+  width: 80%;
+  padding-top: 2rem; }
+  @media (min-width: 48em) {
+    .plans-border3 {
+      width: 25%;
+      margin-bottom: 0; } }
+
+.plans-configurations {
+  margin-top: 3rem;
+  padding-bottom: 8rem; }
+
+/*# sourceMappingURL=style.css.map */
