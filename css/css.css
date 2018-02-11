@@ -1222,112 +1222,112 @@ ul.count-down li p {
 /* progress-bar start*/
 /*---------------------------------------------------------------*/
 
-.prog-bar h2 {
-    text-align: center;
-    margin-bottom: 1.2em;
-}
+/*.prog-bar h2 {*/
+    /*text-align: center;*/
+    /*margin-bottom: 1.2em;*/
+/*}*/
 
-.progress_bar {
-    text-align: center;
-}
+/*.progress_bar {*/
+    /*text-align: center;*/
+/*}*/
 
-.progress_bar h2 {
-    color: #313131;
-    padding-bottom: 11px;
-}
+/*.progress_bar h2 {*/
+    /*color: #313131;*/
+    /*padding-bottom: 11px;*/
+/*}*/
 
-.progress {
-    position: relative;
-    height: 25px;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
-    border-radius: 0px;
-    background-color: transparent;
-    border: 1px solid #313131;
-}
-.progress > .progress-type {
-    position: absolute;
-    left: 0px;
-    font-weight: 300;
-    font-size: 12px;
-    padding: 4px 30px 2px 10px;
-    color: #313131;
-}
-.progress > .progress-completed {
-    position: absolute;
-    right: 0px;
-    font-weight: 400;
-    padding: 3px 10px 2px;
-    color: #fff;
-}
+/*.progress {*/
+    /*position: relative;*/
+    /*height: 25px;*/
+    /*width: 80%;*/
+    /*margin: 0 auto;*/
+    /*margin-top: 20px;*/
+    /*border-radius: 0px;*/
+    /*background-color: transparent;*/
+    /*border: 1px solid #313131;*/
+/*}*/
+/*.progress > .progress-type {*/
+    /*position: absolute;*/
+    /*left: 0px;*/
+    /*font-weight: 300;*/
+    /*font-size: 12px;*/
+    /*padding: 4px 30px 2px 10px;*/
+    /*color: #313131;*/
+/*}*/
+/*.progress > .progress-completed {*/
+    /*position: absolute;*/
+    /*right: 0px;*/
+    /*font-weight: 400;*/
+    /*padding: 3px 10px 2px;*/
+    /*color: #fff;*/
+/*}*/
 
-.progress-bar {
-    background-color: rgba(0,0,0,0.2);
-    box-shadow: none !important;
-}
+/*.progress-bar {*/
+    /*background-color: rgba(0,0,0,0.2);*/
+    /*box-shadow: none !important;*/
+/*}*/
 /*---------------------------------------------------------------*/
 /* progress-bar end */
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /* 12. animate-numbers*/
 /*---------------------------------------------------------------*/
-.animate-numbers {
-    height: auto;
-}
+/*.animate-numbers {*/
+    /*height: auto;*/
+/*}*/
 
-.number {
-    text-align: center;
-    font-size: 22px;
-}
+/*.number {*/
+    /*text-align: center;*/
+    /*font-size: 22px;*/
+/*}*/
 
-.counter {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 100;
-    display: inline;
-}
+/*.counter {*/
+    /*color: #fff;*/
+    /*font-size: 2em;*/
+    /*font-weight: 100;*/
+    /*display: inline;*/
+/*}*/
 
-.number h2{
-    font-weight: 100;
-    font-size: 40px;
-    color: #fff;
-    padding-right: 10px;
-}
+/*.number h2{*/
+    /*font-weight: 100;*/
+    /*font-size: 40px;*/
+    /*color: #fff;*/
+    /*padding-right: 10px;*/
+/*}*/
 
-.number p{
-    color: #fff;
-    font-size: 0.7em;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
+/*.number p{*/
+    /*color: #fff;*/
+    /*font-size: 0.7em;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 3px;*/
+/*}*/
 
-.count1 {
-    background-image: url('../images/background1.jpg');
-}
-.count2 {
-    background-image: url('../images/background1.jpg');
-}
-.count3 {
-    background-image: url('../images/background1.jpg');
-}
-.count4 {
-    background-image: url('../images/background1.jpg');
-}
+/*.count1 {*/
+    /*background-image: url('../images/background1.jpg');*/
+/*}*/
+/*.count2 {*/
+    /*background-image: url('../images/background1.jpg');*/
+/*}*/
+/*.count3 {*/
+    /*background-image: url('../images/background1.jpg');*/
+/*}*/
+/*.count4 {*/
+    /*background-image: url('../images/background1.jpg');*/
+/*}*/
 
-.count1-white {
-    background: #fff;
-}
+/*.count1-white {*/
+    /*background: #fff;*/
+/*}*/
 
-.counter-white {
-    color: #313131;
-    font-size: 40px;
-    font-weight: 100;
-    display: inline;
-}
-.number-white p {
-    color: #313131;
-}
+/*.counter-white {*/
+    /*color: #313131;*/
+    /*font-size: 40px;*/
+    /*font-weight: 100;*/
+    /*display: inline;*/
+/*}*/
+/*.number-white p {*/
+    /*color: #313131;*/
+/*}*/
 /*---------------------------------------------------------------*/
 /* 13. gallery*/
 /*---------------------------------------------------------------*/
@@ -2009,13 +2009,7 @@ hr {
     -ms-transform: scale(1.2,1.2);
 }
 
-.social-icon-team {
-    display: table;
-    margin: 0 auto;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    padding: 0px;
-}
+
 
 .footerPinterestteam {
     background-image: url('../images/social-icons/grey/pinterest.png');/* path to your social icons image in team */
@@ -2029,35 +2023,7 @@ hr {
     background-image: url('../images/social-icons/grey/twitter.png');/* path to your social icons image in team*/
 }
 
-.icon-team {
-    list-style: none;
-    display: inline-block;
-    height: 30px;
-    width: 41px;
-    vertical-align: middle;
-    margin: 0;
-    margin: 10px
-}
 
-.icon-team a {
-    display: block;
-    background-size: 33px, 33px;
-    width: 33px;
-    height: 33px;
-    opacity: 0.6;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-}
-
-.icon-team a:hover {
-    opacity: 0.9;
-    -webkit-transform: scale(1.2,1.2);
-    -moz-transform: scale(1.2,1.2);
-    -o-transform: scale(1.2,1.2);
-    -ms-transform: scale(1.2,1.2);
-}
 /*---------------------------------------------------------------*/
 /* footer-end*/
 /*---------------------------------------------------------------*/

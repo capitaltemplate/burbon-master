@@ -171,12 +171,5 @@ $(document).ready(function( $ ) {
         var containerEl = document.querySelector('.gallery');
         mixitup(containerEl);
     }
-
-    $('#example').countdown({
-        date: '12/24/2022 23:59:59'
-    }, function () {
-        alert('Merry Christmas!');
-    });
-
 });
 

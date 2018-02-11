@@ -1,6 +1,6 @@
 html {
   font-size: 1rem;
-  line-height: 1rem * 1.2; }
+  line-height: calc(1rem * 1.2); }
   @media (min-width: 48em) {
     html {
       font-size: calc(1rem*1.2);
@@ -34,15 +34,21 @@ section h2 {
   text-transform: uppercase; }
 
 section#about {
-  padding: 1rem; }
+  padding: 2rem 1rem; }
   @media (min-width: 48em) {
     section#about {
       padding: 3rem; } }
 
 section#team {
-  padding: 1rem; }
+  padding: 2rem 1rem; }
   @media (min-width: 48em) {
     section#team {
+      padding: 3rem; } }
+
+section#progress {
+  padding: 2rem 1rem; }
+  @media (min-width: 48em) {
+    section#progress {
       padding: 3rem; } }
 
 section#about .inner {
@@ -52,7 +58,8 @@ section#about .inner {
       padding: 1rem; } }
 
 section#team .inner {
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
   @media (min-width: 120em) {
     section#team .inner {
       padding: 1rem; } }
@@ -73,14 +80,21 @@ section#team .inner {
   margin-right: 0.4rem; }
 
 .about-icon-text {
-  display: inline-block;
+  display: table;
   vertical-align: middle;
   font-weight: 100;
   font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  height: 1rem;
-  margin-left: 0.4rem; }
+  margin-left: 0.4rem;
+  height: 100%; }
+
+.about-icon-text p {
+  vertical-align: middle;
+  display: table-cell;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0; }
 
 .plans div h2 {
   font-size: 3rem; }
@@ -131,5 +145,122 @@ section#team .inner {
 .plans-configurations {
   margin-top: 3rem;
   padding-bottom: 8rem; }
+
+.social-icon-team {
+  display: table;
+  margin: 0 auto;
+  padding: 0px; }
+
+.icon-team {
+  list-style: none;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  vertical-align: middle; }
+
+.icon-team a {
+  display: block;
+  background-size: 2rem, 2rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out; }
+
+.icon-team a:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2); }
+
+.animate-numbers {
+  height: auto; }
+
+.number {
+  text-align: center;
+  font-weight: 100;
+  color: #fff; }
+
+.counter {
+  color: #fff;
+  display: inline; }
+
+.number span {
+  font-size: 3rem; }
+
+.number p {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem auto 1.5rem; }
+
+.count {
+  padding: 0.5rem; }
+  @media (min-width: 48em) {
+    .count {
+      padding: 1.5rem; } }
+
+.count1 {
+  background-image: url("../images/background1.jpg"); }
+
+.count2 {
+  background-image: url("../images/background1.jpg"); }
+
+.count3 {
+  background-image: url("../images/background1.jpg"); }
+
+.count4 {
+  background-image: url("../images/background1.jpg"); }
+
+.count1-white {
+  background: #fff; }
+
+.counter-white {
+  color: #313131;
+  display: inline; }
+
+.number-white p {
+  color: #313131; }
+
+.prog-bar h2 {
+  text-align: center; }
+
+.progress_bar {
+  text-align: center; }
+
+.progress_bar h2 {
+  color: #313131; }
+
+.progress {
+  position: relative;
+  height: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 0px;
+  background-color: transparent;
+  border: 1px solid #313131; }
+
+.progress > .progress-type {
+  position: absolute;
+  left: 0px;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.2rem 2rem 0.1rem 1rem;
+  color: #313131; }
+
+.progress > .progress-completed {
+  position: absolute;
+  right: 0px;
+  font-weight: 400;
+  padding: 0.2rem 1rem 0.1rem;
+  color: #fff; }
+
+.progress-bar {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: none !important; }
 
 /*# sourceMappingURL=style.css.map */
