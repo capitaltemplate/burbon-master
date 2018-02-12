@@ -52,13 +52,13 @@ section#progress {
       padding: 3rem; } }
 
 section#about .inner {
-  padding: 0; }
+  padding: 1rem; }
   @media (min-width: 120em) {
     section#about .inner {
       padding: 1rem; } }
 
 section#team .inner {
-  padding: 0;
+  padding: 1rem;
   text-align: center; }
   @media (min-width: 120em) {
     section#team .inner {
@@ -97,7 +97,8 @@ section#team .inner {
   padding-bottom: 0; }
 
 .plans div h2 {
-  font-size: 3rem; }
+  font-size: 3rem;
+  letter-spacing: 0.1rem; }
 
 .plans div h4 {
   font-size: 0.6rem; }
@@ -262,5 +263,88 @@ section#team .inner {
 .progress-bar {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: none !important; }
+
+.navbar {
+  border-bottom: 1px solid black;
+  position: fixed;
+  z-index: 99999;
+  width: 100%; }
+
+.navbar-brand {
+  padding: 0;
+  display: inline;
+  overflow: hidden; }
+
+.navbar-brand img {
+  float: left;
+  height: 2.5rem; }
+
+.navbar-default {
+  background-color: transparent;
+  border-bottom: transparent; }
+
+.navbar-toggler {
+  padding: 0; }
+
+.navbar-toggler-icon {
+  background-image: url(../images/menu-icon.png);
+  margin: 0 0.5rem;
+  max-height: 25px; }
+  @media (min-width: 64em) {
+    .navbar-toggler-icon {
+      max-height: 18px; } }
+
+.navbar-nav > li > a {
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  text-align: center; }
+  @media (min-width: 64em) {
+    .navbar-nav > li > a {
+      font-size: 0.6rem; } }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #fff; }
+
+.navbar-nav > li > a:hover {
+  color: rgba(255, 255, 255, 0.75); }
+
+.dropdown-menu {
+  background-color: #313131; }
+
+.dropdown-menu > li > a {
+  display: block;
+  clear: both;
+  font-weight: 100;
+  line-height: 1.82857143;
+  color: #fff;
+  white-space: nowrap; }
+
+.dropdown-menu > li > a:hover {
+  background-color: #3e3e3e;
+  color: #fff; }
+
+.dropdown-item {
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff; }
+
+.navbar-scroll-background {
+  position: fixed;
+  top: 0;
+  background: transparent; }
+
+.navbar-scroll-background ul {
+  list-style-type: none;
+  padding: 0; }
+
+.navbar-scroll-background ul li {
+  display: inline-block;
+  color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
