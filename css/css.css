@@ -1323,73 +1323,6 @@ ul.count-down li p {
 /* 13. gallery*/
 /*---------------------------------------------------------------*/
 
-.controls {
-    padding: 0rem 3rem 3rem 3rem;
-    font-size: 0.7rem;
-    text-align: right;
-}
-
-.control {
-    position: relative;
-    display: inline-block;
-    width: 6rem;
-    height: 2rem;
-    background: transparent;
-    border: 1px solid;
-    cursor: pointer;
-    font-size: 1.2em;
-    color: white;
-    transition: background 150ms;
-    margin-right: 6px;
-    text-transform: uppercase;
-}
-
-.control:hover {
-    background: #3f3f3f;
-}
-
-.controls h1 {
-    color: #fff;
-    margin-bottom: 3rem;
-}
-
-.control[data-filter]:after {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: calc(50% - 6px);
-    left: calc(50% - 6px);
-    transition: background-color 150ms, border-color 150ms;
-}
-
-.control[data-sort]:after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: calc(50% - 6px);
-    left: calc(50% - 6px);
-    transform:  translateY(1px) rotate(45deg);
-}
-
-.control[data-sort*=":desc"]:after {
-    transform:  translateY(-4px) rotate(-135deg);
-}
-
-.mixitup-control-active[data-filter]:after {
-    background: transparent;
-}
-
-.control:first-of-type {
-    margin-right: 2em;
-}
-
-.control:last-of-type {
-}
-
-.control[data-filter] + .control[data-sort] {
-    margin-left: .75rem;
-}
 
 .project2 h2{
     padding-top: 15px;
@@ -1494,19 +1427,10 @@ ul.count-down li p {
     height: 80%;
 }
 
-.gallery-box {
-    background-image: url('../images/background1.jpg');
-    padding: 3rem 0 3rem;
 
-}
 
 .works-buttons {
     display: inline-block;
-}
-
-#gallery {
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 #gallery h1 {
@@ -1633,17 +1557,7 @@ a:hover figcaption {
 /*---------------------------------------------------------------*/
 /* 14. download */
 /*---------------------------------------------------------------*/
-#home {
-    height: auto;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-}
 
-.download {
-    text-align: center;
-    margin: 5rem auto 5rem;
-}
 
 .subpage {
     margin: 0rem auto 0rem;
@@ -1680,127 +1594,127 @@ a:hover figcaption {
 /*---------------------------------------------------------------*/
 /* 15. Contact*/
 /*---------------------------------------------------------------*/
-.contact-background {
-    background-image: url(../images/background1.jpg);/* path to your background image -contact */
-}
+/*.contact-background {*/
+    /*background-image: url(../images/background1.jpg);!* path to your background image -contact *!*/
+/*}*/
 
-.contact-us {
-    text-align: center;
-    color: #fff;
-}
+/*.contact-us {*/
+    /*text-align: center;*/
+    /*color: #fff;*/
+/*}*/
 
-.contact-us h2 {
-    margin-bottom: 1.5em;
-    font-weight: 100;
-    font-size: 1.3rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
+/*.contact-us h2 {*/
+    /*margin-bottom: 1.5em;*/
+    /*font-weight: 100;*/
+    /*font-size: 1.3rem;*/
+    /*letter-spacing: 5px;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
-.contact-form {
-    margin-right: 10em;
-}
+/*.contact-form {*/
+    /*margin-right: 10em;*/
+/*}*/
 
-.form-control {
-    display: block;
-    width: 100%;
-    height: 50px;
-    padding: 0px 0px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #313131;
-    background-color: transparent;
-    background-image: none;
-    border-radius: 0px;
-    border: 1px solid #fff;
-}
+/*.form-control {*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 50px;*/
+    /*padding: 0px 0px;*/
+    /*font-size: 14px;*/
+    /*line-height: 1.42857143;*/
+    /*color: #313131;*/
+    /*background-color: transparent;*/
+    /*background-image: none;*/
+    /*border-radius: 0px;*/
+    /*border: 1px solid #fff;*/
+/*}*/
 
-.input-group-addon {
-    padding: 6px 12px;
-     font-size: 0px;
-     line-height: 1;
-     color: transparent;
-     text-align: center;
-     background-color: transparent;
-     border: 1px solid transparent;
-     border-radius: 0px;
-}
+/*.input-group-addon {*/
+    /*padding: 6px 12px;*/
+     /*font-size: 0px;*/
+     /*line-height: 1;*/
+     /*color: transparent;*/
+     /*text-align: center;*/
+     /*background-color: transparent;*/
+     /*border: 1px solid transparent;*/
+     /*border-radius: 0px;*/
+/*}*/
 
-.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child>.btn-group:not(:last-child)>.btn {
-    padding:10px;
-    color: #fff;
-}
+/*.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child>.btn-group:not(:last-child)>.btn {*/
+    /*padding:10px;*/
+    /*color: #fff;*/
+/*}*/
 
-#InputMessage {
-    height: 13em;
-    background: transparent;
-}
+/*#InputMessage {*/
+    /*height: 13em;*/
+    /*background: transparent;*/
+/*}*/
 
-input[type="text"]{
-    background-color:transparent !important;
-}input[type="email"]{
-     background-color:transparent !important;
- }
+/*input[type="text"]{*/
+    /*background-color:transparent !important;*/
+/*}input[type="email"]{*/
+     /*background-color:transparent !important;*/
+ /*}*/
 
-#inputmessage{
-    background-color:transparent;
-}
+/*#inputmessage{*/
+    /*background-color:transparent;*/
+/*}*/
 
-.form-control:focus {
-    border-color: #fff;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0),0 0 0px rgba(0, 0, 0, 0);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.0),0 0 8px rgba(0, 0, 0, 0);
-}
+/*.form-control:focus {*/
+    /*border-color: #fff;*/
+    /*outline: 0;*/
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0),0 0 0px rgba(0, 0, 0, 0);*/
+    /*box-shadow: inset 0 1px 1px rgba(0,0,0,.0),0 0 8px rgba(0, 0, 0, 0);*/
+/*}*/
 
-.contact .contact-btn {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-    font-weight: 100;
-    font-size: 0.9em;
-    padding: .5em 3em;
-    margin-bottom: 6em;
-    height: 3em;
-    text-transform: uppercase;
-    margin-right: 1.8em;
-}
+/*.contact .contact-btn {*/
+    /*color: #fff;*/
+    /*background-color: transparent;*/
+    /*border: 1px solid #fff;*/
+    /*font-weight: 100;*/
+    /*font-size: 0.9em;*/
+    /*padding: .5em 3em;*/
+    /*margin-bottom: 6em;*/
+    /*height: 3em;*/
+    /*text-transform: uppercase;*/
+    /*margin-right: 1.8em;*/
+/*}*/
 
-.contact .contact-btn:hover {
-    color: #313131;
-    background-color: #fff;
-    border: solid 2px #fff;
-}
+/*.contact .contact-btn:hover {*/
+    /*color: #313131;*/
+    /*background-color: #fff;*/
+    /*border: solid 2px #fff;*/
+/*}*/
 
-address {
-    color: #fff;
-    font-weight: 100;
-}
+/*address {*/
+    /*color: #fff;*/
+    /*font-weight: 100;*/
+/*}*/
 
-.h2-contact {
-    color: #fff;
-    font-weight: 100;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-size: 16px;
-}
+/*.h2-contact {*/
+    /*color: #fff;*/
+    /*font-weight: 100;*/
+    /*letter-spacing: 4px;*/
+    /*text-transform: uppercase;*/
+    /*font-size: 16px;*/
+/*}*/
 
-.lead {
-    font-size: 1em;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.9)
-}
+/*.lead {*/
+    /*font-size: 1em;*/
+    /*font-weight: 400;*/
+    /*color: rgba(255, 255, 255, 0.9)*/
+/*}*/
 
-hr {
-    border: 0;
-    border-top: 0px solid;
-}
+/*hr {*/
+    /*border: 0;*/
+    /*border-top: 0px solid;*/
+/*}*/
 
-.contact-icon {
-    display: inline-block;
-    font-size: 25px;
-    margin-right: 20px;
-}
+/*.contact-icon {*/
+    /*display: inline-block;*/
+    /*font-size: 25px;*/
+    /*margin-right: 20px;*/
+/*}*/
 
 /*---------------------------------------------------------------*/
 /* contact-end*/

@@ -377,22 +377,23 @@
         <div class="row about-content">
             <div class="col-md-6">
                 <div class="inner">
-                <div class="about-icons-content">
-                    <div class="lnr lnr-chart-bars about-icon"
-                         data-anijs="if:mouseover, do: rubberBand animated"
-                         data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
-                    <div class="about-icon-text">
-                        <p>Progress is our motivation</p>
+                    <div class="about-icons-content">
+                        <div class="lnr lnr-chart-bars about-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"
+                             data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
+                        <div class="about-icon-text">
+                            <p>Progress is our motivation</p>
+                        </div>
                     </div>
-                </div>
-                <div class="text-justify">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                        eget dolor.
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
-                    </p>
-                </div>
+                    <div class="text-justify">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                            eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -444,9 +445,9 @@
 
 <!--[Gallery]-->
 <section id="works">
-<div class="container-fluid gallery-box">
+    <div class="container-fluid gallery-box">
+        <h2>OUR WORKS</h2>
         <div class="controls">
-            <h2 class="pull-left">OUR WORKS</h2>
             <div class="works-buttons">
                 <button type="button" class="control" data-filter="all">All</button>
                 <button type="button" class="control" data-filter=".people">People</button>
@@ -562,19 +563,13 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
 </section>
 <!--[Gallery-end]-->
 
 <!--[What we do]-->
 <section id="what_we_do">
     <div class="container-fluid what-we">
-        <!--<div class="row what_we_do">-->
-        <!--<div class="col">-->
-        <!--<h2>Services</h2>-->
-        <!--<div class="testimonial-border"></div>-->
-        <!--</div>-->
-        <!--</div>-->
         <h2>Services</h2>
         <div class="testimonial-border"></div>
         <div class="row what">
@@ -724,7 +719,7 @@
 
 <!--[download]-->
 <section id="home" data-speed="4" data-type="background">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row download">
             <div class="col-md-12">
                 <h2>Bourbon Co - AMAZING THEME FOR YOUR BUSINESS</h2>
@@ -745,57 +740,62 @@
 <!--[download-end]-->
 
 <!--[contact]-->
-<div class="container-fluid contact-background">
-    <div id="contact">
-        <div class="col contact-us" data-sr="wait 0.1s, then enter top and hustle 20px over 1s">
-            <h2>Contact with Bourbon Co Team</h2>
-            <div class="testimonial-border-white"></div>
-        </div>
-    </div>
-    <div class="row contact justify-content-center">
-        <div class="col-md-5 col-sm-12 contact-form">
-            <div class="form-group">
-                <div class="input-group">
-                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Name" required>
-                    <span class="input-group-addon"><i></i></span></div>
+<section id="contact">
+
+    <div class="container-fluid contact-background">
+        <div class="inner">
+            <div class="col contact-us" data-sr="wait 0.1s, then enter top and hustle 20px over 1s">
+                <h2>Contact with Bourbon Co Team</h2>
+                <div class="testimonial-border-white"></div>
             </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email"
-                           required>
-                    <span class="input-group-addon"><i></i></span></div>
-            </div>
-            <div class="form-group">
-                <div class="input-group">
+            <div class="row contact justify-content-center">
+                <div class="col-md-5 col-sm-12 contact-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Name"
+                                   required>
+                            <span class="input-group-addon"><i></i></span></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="InputEmail" name="InputEmail"
+                                   placeholder="Email"
+                                   required>
+                            <span class="input-group-addon"><i></i></span></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
                     <textarea name="InputMessage" id="InputMessage" class="form-control" rows="10" placeholder="Message"
                               required></textarea>
-                    <span class="input-group-addon"><i></i></span></div>
-            </div>
-            <div class="form-group">
-            </div>
-            <button type="submit" name="submit" id="buttonContact" class="btn contact-btn pull-right"
-                    data-anijs="if: mouseover, do: pulse animated">Send
-            </button>
-        </div>
-        <div class="">
-            <address>
-                <div class="lead">
-                    <div class="lnr lnr-map-marker contact-icon"></div>
-                    75 New York - Bourbon Street 10/555<br/>
-                    <br/>
-                    <div class="lnr lnr-smartphone contact-icon"></div>
-                    Phone: 555-123-458<br/>
-                    <br/>
-                    <div class="lnr lnr-printer contact-icon"></div>
-                    Fax: 555-321-582<br/>
-                    <br/>
-                    <div class="lnr lnr-envelope contact-icon"></div>
-                    email@youradress.com<br/>
+                            <span class="input-group-addon"><i></i></span></div>
+                    </div>
+                    <div class="form-group">
+                    </div>
+                    <button type="submit" name="submit" id="buttonContact" class="btn contact-btn pull-right"
+                            data-anijs="if: mouseover, do: pulse animated">Send
+                    </button>
                 </div>
-            </address>
+                <div class="">
+                    <address>
+                        <div class="lead">
+                            <div class="lnr lnr-map-marker contact-icon"></div>
+                            75 New York - Bourbon Street 10/555<br/>
+                            <br/>
+                            <div class="lnr lnr-smartphone contact-icon"></div>
+                            Phone: 555-123-458<br/>
+                            <br/>
+                            <div class="lnr lnr-printer contact-icon"></div>
+                            Fax: 555-321-582<br/>
+                            <br/>
+                            <div class="lnr lnr-envelope contact-icon"></div>
+                            email@youradress.com<br/>
+                        </div>
+                    </address>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 <!--[contact-end]-->
 
 <!--[googlemaps]-->
