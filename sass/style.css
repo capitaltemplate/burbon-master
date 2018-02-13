@@ -1,32 +1,32 @@
 html {
-  font-size: 0.8rem;
-  line-height: calc(0.8rem * 1.2); }
+  font-size: 0.7rem;
+  line-height: calc(0.7rem * 1.2); }
   @media (min-width: 48em) {
     html {
-      font-size: calc(0.8rem*1.2);
-      line-height: calc(0.8rem * 1.4); } }
+      font-size: calc(0.7rem*1.2);
+      line-height: calc(0.7rem * 1.4); } }
   @media (min-width: 64em) {
     html {
-      font-size: calc(0.8rem * 1.4);
-      line-height: calc(0.8rem * 1.6); } }
+      font-size: calc(0.7rem * 1.4);
+      line-height: calc(0.7rem * 1.6); } }
   @media (min-width: 85.375em) {
     html {
-      font-size: calc(0.8rem * 1.6);
-      line-height: calc(0.8rem * 1.8); } }
+      font-size: calc(0.7rem * 1.6);
+      line-height: calc(0.7rem * 1.8); } }
   @media (min-width: 120em) {
     html {
-      font-size: calc(0.8rem * 1.8);
-      line-height: calc(0.8rem * 2); } }
+      font-size: calc(0.7rem * 1.8);
+      line-height: calc(0.7rem * 2); } }
   @media (min-width: 160em) {
     html {
-      font-size: calc(0.8rem * 4);
-      line-height: calc(0.8rem * 2.2); } }
+      font-size: calc(0.7rem * 4);
+      line-height: calc(0.7rem * 2.2); } }
 
 .tlt span {
-  font-size: 3rem; }
+  font-size: 2rem; }
 
 .tlt p {
-  font-size: calc(0.8rem*0.8); }
+  font-size: 1.5rem; }
 
 section h2 {
   font-weight: 100;
@@ -97,6 +97,13 @@ section#progress .inner {
     section#progress .inner {
       padding: 1rem; } }
 
+.jumbotron {
+  margin-bottom: 0px;
+  background-image: url(../images/b1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%; }
+
 .about-icons-content {
   display: flex;
   align-items: center;
@@ -143,13 +150,13 @@ section#progress .inner {
   letter-spacing: 0.1rem; }
 
 .plans div h4 {
-  font-size: 0.6rem; }
+  font-size: 0.8rem; }
 
 .plans div h3 {
   font-size: 1.2rem; }
 
 .plans div p {
-  font-size: 0.6rem; }
+  font-size: 0.8rem; }
 
 .plans > div {
   text-align: center;
@@ -158,29 +165,29 @@ section#progress .inner {
 
 .plans-border {
   border: 1px solid #becfd3;
-  width: 80%;
+  width: 60%;
   padding-top: 2rem;
   margin-bottom: 3rem; }
-  @media (min-width: 48em) {
+  @media (min-width: 30em) {
     .plans-border {
       width: 25%;
       margin-bottom: 0; } }
 
 .plans-border2 {
   border: 3px solid #fff;
-  width: 80%;
+  width: 60%;
   padding-top: 2rem;
   margin-bottom: 3rem; }
-  @media (min-width: 48em) {
+  @media (min-width: 30em) {
     .plans-border2 {
       width: 25%;
       margin-bottom: 0; } }
 
 .plans-border3 {
   border: 1px solid #becfd3;
-  width: 80%;
+  width: 60%;
   padding-top: 2rem; }
-  @media (min-width: 48em) {
+  @media (min-width: 30em) {
     .plans-border3 {
       width: 25%;
       margin-bottom: 0; } }
@@ -325,11 +332,12 @@ section#works h2 {
       padding-top: 4rem; } }
 
 .controls {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 0.7rem;
   text-align: center; }
   @media (min-width: 48em) {
     .controls {
+      margin-bottom: 1rem;
       margin-top: 0rem;
       margin-right: 0rem; } }
 
@@ -396,13 +404,13 @@ section#works h2 {
 
 .input-group-addon {
   padding: 6px 12px;
-    padding-font-size: 0px;
-    padding-line-height: 1;
-    padding-color: transparent;
-    padding-text-align: center;
-    padding-background-color: transparent;
-    padding-border: 1px solid transparent;
-    padding-border-radius: 0px; }
+  font-size: 0px;
+  line-height: 1;
+  color: transparent;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0px; }
 
 .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
   padding: 10px;
@@ -459,6 +467,15 @@ address {
   font-size: 1em;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9); }
+
+hr {
+  border: 0;
+  border-top: 0px solid; }
+
+.contact-icon {
+  display: inline-block;
+  font-size: 25px;
+  margin-right: 20px; }
 
 .navbar {
   border-bottom: 1px solid black;

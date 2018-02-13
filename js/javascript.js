@@ -168,8 +168,11 @@ $(document).ready(function( $ ) {
 
 
     if( $('.gallery').length ) {
-        var containerEl = document.querySelector('.gallery');
-        mixitup(containerEl);
+        mixitup('.gallery', {
+            controls: {
+                scope: 'local'
+            }
+        });
     }
 });
 

@@ -1,5 +1,5 @@
 // Breakpoints
-//$base-mobile: 20em // 320px
+$base-mobile: 30em
 $base-s: 48em // 768px
 $base-m: 64em // 1024px
 $base-l: 85.375em // 1366px
@@ -7,6 +7,7 @@ $base-xl: 120em // 1920px
 $base-xxl: 160em // 2560px
 
 // Media Queries
+$media-mobile: "(min-width: #{$base-mobile})"
 $media-s: "(min-width: #{$base-s})"
 $media-m: "(min-width: #{$base-m})"
 $media-l: "(min-width: #{$base-l})"
@@ -14,7 +15,7 @@ $media-xl: "(min-width: #{$base-xl})"
 $media-xxl: "(min-width: #{$base-xxl})"
 $media-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
 
-$baseFontSize: 0.8rem
+$baseFontSize: 0.7rem
 
 html
     font-size: #{$baseFontSize}
@@ -38,10 +39,10 @@ html
 
 //ENTER PAGE
 .tlt span
-    font-size: 3rem
+    font-size: 2rem
 
 .tlt p
-    font-size: calc(#{$baseFontSize}*0.8)
+    font-size: 1.5rem
 
 // SECTIONS
 section h2
@@ -49,6 +50,8 @@ section h2
     letter-spacing: .33em
     text-transform: uppercase
     text-align: center
+
+section#start
 
 section#about
     padding: 2rem 1rem
@@ -102,6 +105,14 @@ section#progress .inner
     text-align: center
     @media #{$media-xl}
         padding: 1rem
+
+// JUMBOTRON
+.jumbotron
+    margin-bottom: 0px
+    background-image: url(../images/b1.jpg) /* path to your background image at static.html */
+    background-size: cover
+    background-repeat: no-repeat
+    height: 100%
 
 // ABOUT US
 
@@ -185,11 +196,11 @@ section#progress .inner
     font-size: 3rem
     letter-spacing: 0.1rem
 .plans div h4
-    font-size: 0.6rem
+    font-size: 0.8rem
 .plans div h3
     font-size: 1.2rem
 .plans div p
-    font-size: 0.6rem
+    font-size: 0.8rem
 
 .plans > div
     text-align: center
@@ -199,27 +210,27 @@ section#progress .inner
 
 .plans-border
     border: 1px solid #becfd3
-    width: 80%
+    width: 60%
     padding-top: 2rem
     margin-bottom: 3rem
-    @media #{$media-s}
+    @media #{$media-mobile}
         width: 25%
         margin-bottom: 0
 
 .plans-border2
     border: 3px solid #fff
-    width: 80%
+    width: 60%
     padding-top: 2rem
     margin-bottom: 3rem
-    @media #{$media-s}
+    @media #{$media-mobile}
         width: 25%
         margin-bottom: 0
 
 .plans-border3
     border: 1px solid #becfd3
-    width: 80%
+    width: 60%
     padding-top: 2rem
-    @media #{$media-s}
+    @media #{$media-mobile}
         width: 25%
         margin-bottom: 0
 
@@ -371,10 +382,11 @@ section#works h2
         padding-top: 4rem
 
 .controls
-    margin-top: 1rem
+    margin-bottom: 1rem
     font-size: 0.7rem
     text-align: center
     @media #{$media-s}
+        margin-bottom: 1rem
         margin-top: 0rem
         margin-right: 0rem
 
@@ -452,13 +464,13 @@ section#works h2
 
 .input-group-addon
     padding: 6px 12px
-        font-size: 0px
-        line-height: 1
-        color: transparent
-        text-align: center
-        background-color: transparent
-        border: 1px solid transparent
-        border-radius: 0px
+    font-size: 0px
+    line-height: 1
+    color: transparent
+    text-align: center
+    background-color: transparent
+    border: 1px solid transparent
+    border-radius: 0px
 
 .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child>.btn-group:not(:last-child)>.btn
     padding: 10px
@@ -514,18 +526,15 @@ address
     font-size: 1em
     font-weight: 400
     color: rgba(255, 255, 255, 0.9)
-//
-//
-//hr
-//    border: 0
-//    border-top: 0px solid
-//
-//
-//.contact-icon
-//    display: inline-block
-//    font-size: 25px
-//    margin-right: 20px
-//
+hr
+    border: 0
+    border-top: 0px solid
+
+.contact-icon
+    display: inline-block
+    font-size: 25px
+    margin-right: 20px
+
 
 // NAVBAR
 .navbar

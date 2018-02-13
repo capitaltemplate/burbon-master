@@ -386,14 +386,7 @@ body{
 /*---------------------------------------------------------------*/
 /* 5. jumbotron */
 /*---------------------------------------------------------------*/
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url(../images/b1.jpg); /* path to your background image at static.html */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
+
 
 .jumbo  {
     text-align: center;
