@@ -866,47 +866,47 @@ blockquote footer, blockquote small, blockquote .small{
 /*---------------------------------------------------------------*/
 /* 9. about us */
 /*---------------------------------------------------------------*/
-.about-text {
-    text-align: center;
-    color: #313131;
-    font-size: 0.8rem;
-}
-
-/*.about-text h2 {*/
-    /*font-weight: 100;*/
-    /*font-size: 1.3rem;*/
-    /*letter-spacing: .33em;*/
-    /*text-transform: uppercase;*/
+/*.about-text {*/
+    /*text-align: center;*/
+    /*color: #313131;*/
+    /*font-size: 0.8rem;*/
 /*}*/
 
-.about-text h3 {
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-size: 10px;
-    color: #313131;
-    text-align: center;
-}
+/*!*.about-text h2 {*!*/
+    /*!*font-weight: 100;*!*/
+    /*!*font-size: 1.3rem;*!*/
+    /*!*letter-spacing: .33em;*!*/
+    /*!*text-transform: uppercase;*!*/
+/*!*}*!*/
 
-.about-oontent h4 {
-    font-size: .9em;
-    text-transform: none;
-    letter-spacing: 0px;
-    line-height: 180%;
-}
+/*.about-text h3 {*/
+    /*letter-spacing: 4px;*/
+    /*text-transform: uppercase;*/
+    /*font-size: 10px;*/
+    /*color: #313131;*/
+    /*text-align: center;*/
+/*}*/
 
-.text-aboutus {
-    color: #313131;
-    text-align: justify;
-    font-size: 1.1em;
-}
-.text-aboutteam {
-    color: #313131;
-    text-align: justify;
+/*.about-oontent h4 {*/
+    /*font-size: .9em;*/
+    /*text-transform: none;*/
+    /*letter-spacing: 0px;*/
+    /*line-height: 180%;*/
+/*}*/
 
-}
-.text-aboutprogress p {
-    font-size: .9em;
-}
+/*.text-aboutus {*/
+    /*color: #313131;*/
+    /*text-align: justify;*/
+    /*font-size: 1.1em;*/
+/*}*/
+/*.text-aboutteam {*/
+    /*color: #313131;*/
+    /*text-align: justify;*/
+
+/*}*/
+/*.text-aboutprogress p {*/
+    /*font-size: .9em;*/
+/*}*/
 
 /*---------------------------------------------------------------*/
 /* about us end */
@@ -1171,49 +1171,40 @@ ul.count-down li p {
     background-color: #aba7a8;
 }
 
-.icons {
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
 
-.services-icon {
-    font-size: 40px !important;
-}
 
-.what_we_do {
-    text-align: center;
-}
+/*.what_we_do {*/
+    /*text-align: center;*/
+/*}*/
 
-.what_we_do h2 {
-    font-weight: 100;
-    font-size: 1.3rem;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
+/*.what_we_do h2 {*/
+    /*font-weight: 100;*/
+    /*font-size: 1.3rem;*/
+    /*letter-spacing: 5px;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
-.what {
-    text-align: center;
-}
-.what h2 {
-    text-align: center;
-    font-weight: 100;
-    font-size: .9em;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
+/*.what {*/
+    /*text-align: center;*/
+/*}*/
+/*.what h2 {*/
+    /*text-align: center;*/
+    /*font-weight: 100;*/
+    /*font-size: .9em;*/
+    /*letter-spacing: 5px;*/
+    /*text-transform: uppercase;*/
+/*}*/
 
-.what p {
-    color: #313131;
-    font-size: .9em;
-    text-align: justify;
-}
+/*.what p {*/
+    /*color: #313131;*/
+    /*font-size: .9em;*/
+    /*text-align: justify;*/
+/*}*/
 
-.webdesign {
-    padding-left: 20px;
-    padding-right: 20px;
-}
+/*.webdesign {*/
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+/*}*/
 
 /*---------------------------------------------------------------*/
 /* what we do - end*/

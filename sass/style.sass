@@ -48,6 +48,7 @@ section h2
     font-weight: 100
     letter-spacing: .33em
     text-transform: uppercase
+    text-align: center
 
 section#about
     padding: 2rem 1rem
@@ -64,12 +65,29 @@ section#progress
     @media #{$media-s}
         padding: 3rem
 
+section#what_we_do
+    padding: 2rem 1rem
+    @media #{$media-s}
+        padding: 3rem
+
 section#about .inner
     padding: 1rem
     @media #{$media-xl}
         padding: 1rem
 
 section#team .inner
+    padding: 1rem
+    text-align: center
+    @media #{$media-xl}
+        padding: 1rem
+
+section#what_we_do .inner
+    padding: 1rem
+    text-align: center
+    @media #{$media-xl}
+        padding: 1rem
+
+section#progress .inner
     padding: 1rem
     text-align: center
     @media #{$media-xl}
@@ -102,6 +120,7 @@ section#team .inner
     letter-spacing: 0.2rem
     margin-left: 0.4rem
     height: 100%
+    width: 80%
 
 .about-icon-text p
     vertical-align: middle
@@ -110,6 +129,46 @@ section#team .inner
     margin-bottom: 0
     padding-bottom: 0
 
+//    .about-text {
+//    text-align: center;
+//    color: #313131;
+//    font-size: 0.8rem;
+//}
+//
+///*.about-text h2 {*/
+//    /*font-weight: 100;*/
+//    /*font-size: 1.3rem;*/
+//    /*letter-spacing: .33em;*/
+//    /*text-transform: uppercase;*/
+///*}*/
+//
+//.about-text h3 {
+//    letter-spacing: 4px;
+//    text-transform: uppercase;
+//    font-size: 10px;
+//    color: #313131;
+//    text-align: center;
+//}
+//
+//.about-oontent h4 {
+//    font-size: .9em;
+//    text-transform: none;
+//    letter-spacing: 0px;
+//    line-height: 180%;
+//}
+//
+.text-aboutus
+    color: #313131
+    text-align: justify
+
+.text-aboutteam
+    color: #313131
+    text-align: justify
+
+//}
+//.text-aboutprogress p {
+//    font-size: .9em;
+//}
 
 // PRICING:
 .plans div h2
@@ -244,10 +303,7 @@ section#team .inner
 .number-white p
     color: #313131
 
-// PROGRESS
-.prog-bar h2
-    text-align: center
-
+// SKILLS and PROGRESS
 .progress_bar
     text-align: center
 
@@ -256,9 +312,9 @@ section#team .inner
 
 .progress
     position: relative
-    height: 2rem
-    width: 80%
-    margin: 0 auto
+    height: 1.5rem
+    width: 100%
+    margin: 1.5rem auto
     margin-top: 1rem
     border-radius: 0px
     background-color: transparent
@@ -268,13 +324,12 @@ section#team .inner
     position: absolute
     left: 0px
     font-weight: 300
-    font-size: 1rem
     padding: 0.2rem 2rem 0.1rem 1rem
     color: #313131
 
 .progress > .progress-completed
     position: absolute
-    right: 0px
+    right: 0
     font-weight: 400
     padding: 0.2rem 1rem 0.1rem
     color: #fff
@@ -284,6 +339,31 @@ section#team .inner
     background-color: rgba(0,0,0,0.2)
     box-shadow: none !important
 
+// GALLERY
+section#works h2
+    color: white
+
+
+
+// WHAT WE DO
+.what h3
+    text-align: center
+    font-weight: 100
+    font-size: .9em
+    letter-spacing: 0.4rem
+    text-transform: uppercase
+
+.what p
+    color: #313131
+    font-size: .9em
+    text-align: justify
+
+.icons
+    padding: 1rem
+    text-align: center
+
+.icons .lnr
+    font-size: 2rem
 
 // NAVBAR
 .navbar
@@ -305,12 +385,8 @@ section#team .inner
     background-color: transparent
     border-bottom: transparent
 
-.navbar-toggler
-    padding: 0
-    
 .navbar-toggler-icon
     background-image: url(../images/menu-icon.png)
-    margin: 0 0.5rem
     max-height: 25px
     @media #{$media-m}
         max-height: 18px

@@ -31,7 +31,8 @@ html {
 section h2 {
   font-weight: 100;
   letter-spacing: 0.33em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 section#about {
   padding: 2rem 1rem; }
@@ -51,6 +52,12 @@ section#progress {
     section#progress {
       padding: 3rem; } }
 
+section#what_we_do {
+  padding: 2rem 1rem; }
+  @media (min-width: 48em) {
+    section#what_we_do {
+      padding: 3rem; } }
+
 section#about .inner {
   padding: 1rem; }
   @media (min-width: 120em) {
@@ -62,6 +69,20 @@ section#team .inner {
   text-align: center; }
   @media (min-width: 120em) {
     section#team .inner {
+      padding: 1rem; } }
+
+section#what_we_do .inner {
+  padding: 1rem;
+  text-align: center; }
+  @media (min-width: 120em) {
+    section#what_we_do .inner {
+      padding: 1rem; } }
+
+section#progress .inner {
+  padding: 1rem;
+  text-align: center; }
+  @media (min-width: 120em) {
+    section#progress .inner {
       padding: 1rem; } }
 
 .about-icons-content {
@@ -87,7 +108,8 @@ section#team .inner {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-left: 0.4rem;
-  height: 100%; }
+  height: 100%;
+  width: 80%; }
 
 .about-icon-text p {
   vertical-align: middle;
@@ -95,6 +117,14 @@ section#team .inner {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0; }
+
+.text-aboutus {
+  color: #313131;
+  text-align: justify; }
+
+.text-aboutteam {
+  color: #313131;
+  text-align: justify; }
 
 .plans div h2 {
   font-size: 3rem;
@@ -226,9 +256,6 @@ section#team .inner {
 .number-white p {
   color: #313131; }
 
-.prog-bar h2 {
-  text-align: center; }
-
 .progress_bar {
   text-align: center; }
 
@@ -237,9 +264,9 @@ section#team .inner {
 
 .progress {
   position: relative;
-  height: 2rem;
-  width: 80%;
-  margin: 0 auto;
+  height: 1.5rem;
+  width: 100%;
+  margin: 1.5rem auto;
   margin-top: 1rem;
   border-radius: 0px;
   background-color: transparent;
@@ -249,13 +276,12 @@ section#team .inner {
   position: absolute;
   left: 0px;
   font-weight: 300;
-  font-size: 1rem;
   padding: 0.2rem 2rem 0.1rem 1rem;
   color: #313131; }
 
 .progress > .progress-completed {
   position: absolute;
-  right: 0px;
+  right: 0;
   font-weight: 400;
   padding: 0.2rem 1rem 0.1rem;
   color: #fff; }
@@ -263,6 +289,28 @@ section#team .inner {
 .progress-bar {
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: none !important; }
+
+section#works h2 {
+  color: white; }
+
+.what h3 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 0.9em;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase; }
+
+.what p {
+  color: #313131;
+  font-size: 0.9em;
+  text-align: justify; }
+
+.icons {
+  padding: 1rem;
+  text-align: center; }
+
+.icons .lnr {
+  font-size: 2rem; }
 
 .navbar {
   border-bottom: 1px solid black;
@@ -283,12 +331,8 @@ section#team .inner {
   background-color: transparent;
   border-bottom: transparent; }
 
-.navbar-toggler {
-  padding: 0; }
-
 .navbar-toggler-icon {
   background-image: url(../images/menu-icon.png);
-  margin: 0 0.5rem;
   max-height: 25px; }
   @media (min-width: 64em) {
     .navbar-toggler-icon {

@@ -3,7 +3,7 @@
 var $navbarHeight = undefined;
 $(document).ready(function( $ ) {
     if ($navbarHeight===undefined) {
-        $navbarHeight = $('.navbar').outerHeight();
+        $navbarHeight = $('.navbar-expand-lg').outerHeight();
     }
 });
 
@@ -21,10 +21,12 @@ $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
 
-
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - $navbarHeight
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+        var offset = $($anchor.attr('href')).offset();
+        if (offset!==undefined) {
+            $('html, body').stop().animate({
+                scrollTop: offset.top - $navbarHeight
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        }
     });
 });
