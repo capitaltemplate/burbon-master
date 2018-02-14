@@ -945,10 +945,10 @@ blockquote footer, blockquote small, blockquote .small{
     text-align: center;
 }
 
-.team-text p {
-    font-size: 1.1em;
-    text-align: justify;
-}
+/*.team-text p {*/
+    /*font-size: 1.1em;*/
+    /*text-align: justify;*/
+/*}*/
 
 .photo {
     border: 1px solid #313131;

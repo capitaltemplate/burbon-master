@@ -15,7 +15,7 @@ $media-xl: "(min-width: #{$base-xl})"
 $media-xxl: "(min-width: #{$base-xxl})"
 $media-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
 
-$baseFontSize: 0.7rem
+$baseFontSize: 0.8rem
 
 html
     font-size: #{$baseFontSize}
@@ -36,6 +36,9 @@ html
     @media #{$media-xxl}
         font-size: calc(#{$baseFontSize} * 4)
         line-height: calc(#{$baseFontSize} * 2.2)
+
+body
+    font-size: #{$baseFontSize}
 
 //ENTER PAGE
 .tlt span
