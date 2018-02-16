@@ -1,29 +1,29 @@
 html {
-  font-size: 0.8rem;
-  line-height: calc(0.8rem * 1.2); }
+  font-size: 0.875rem;
+  line-height: calc(0.875rem * 1.2); }
   @media (min-width: 48em) {
     html {
-      font-size: calc(0.8rem*1.2);
-      line-height: calc(0.8rem * 1.4); } }
+      font-size: calc(0.875rem*1.2);
+      line-height: calc(0.875rem * 1.4); } }
   @media (min-width: 64em) {
     html {
-      font-size: calc(0.8rem * 1.4);
-      line-height: calc(0.8rem * 1.6); } }
+      font-size: calc(0.875rem * 1.4);
+      line-height: calc(0.875rem * 1.6); } }
   @media (min-width: 85.375em) {
     html {
-      font-size: calc(0.8rem * 1.6);
-      line-height: calc(0.8rem * 1.8); } }
+      font-size: calc(0.875rem * 1.6);
+      line-height: calc(0.875rem * 1.8); } }
   @media (min-width: 120em) {
     html {
-      font-size: calc(0.8rem * 1.8);
-      line-height: calc(0.8rem * 2); } }
+      font-size: calc(0.875rem * 1.8);
+      line-height: calc(0.875rem * 2); } }
   @media (min-width: 160em) {
     html {
-      font-size: calc(0.8rem * 4);
-      line-height: calc(0.8rem * 2.2); } }
+      font-size: calc(0.875rem * 4);
+      line-height: calc(0.875rem * 2.2); } }
 
 body {
-  font-size: 0.8rem; }
+  font-size: 0.875rem; }
 
 .tlt span {
   font-size: 2rem; }
@@ -35,7 +35,8 @@ section h2 {
   font-weight: 100;
   letter-spacing: 0.33em;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.5rem; }
 
 section#about {
   padding: 2rem 1rem; }
@@ -67,10 +68,10 @@ section#home {
     section#home {
       padding: 3rem; } }
 
-section#contact .inner {
+section#contact {
   padding: 2rem 1rem; }
   @media (min-width: 48em) {
-    section#contact .inner {
+    section#contact {
       padding: 3rem; } }
 
 section#about .inner {
@@ -98,6 +99,12 @@ section#progress .inner {
   text-align: center; }
   @media (min-width: 120em) {
     section#progress .inner {
+      padding: 1rem; } }
+
+section#contact .inner {
+  padding: 1rem; }
+  @media (min-width: 120em) {
+    section#contact .inner {
       padding: 1rem; } }
 
 .jumbotron {
@@ -389,39 +396,46 @@ section#works h2 {
   text-align: center;
   color: #fff; }
 
-.contact-form {
-  margin-right: 10em; }
+.contact .contact-btn {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-weight: 100;
+  padding: 0.5rem 3rem;
+  height: 3rem;
+  text-transform: uppercase; }
+
+.contact .contact-btn:hover {
+  color: #313131;
+  background-color: #fff;
+  border: solid 2px #fff; }
 
 .form-control {
-  display: block;
-  width: 100%;
-  height: 50px;
-  padding: 0px 0px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #313131;
-  background-color: transparent;
-  background-image: none;
-  border-radius: 0px;
-  border: 1px solid #fff; }
+  border-radius: 0;
+  padding: 0.8rem;
+  color: #ffffff;
+  border: 1px solid #fff;
+  font-size: 0.8rem; }
 
-.input-group-addon {
-  padding: 6px 12px;
-  font-size: 0px;
-  line-height: 1;
-  color: transparent;
-  text-align: center;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0px; }
+.form-group *:focus {
+  color: #ffffff;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 0px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0); }
 
 .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
-  padding: 10px;
+  padding: 0.8rem;
   color: #fff; }
 
 #InputMessage {
-  height: 13em;
-  background: transparent; }
+  background: transparent;
+  height: 10rem; }
+  @media (min-width: 64em) {
+    #InputMessage {
+      height: 7rem; } }
+  @media (min-width: 120em) {
+    #InputMessage {
+      height: 5rem; } }
 
 input[type="text"] {
   background-color: transparent !important; }
@@ -429,47 +443,14 @@ input[type="text"] {
 input[type="email"] {
   background-color: transparent !important; }
 
-#inputmessage {
-  background-color: transparent; }
-
-.form-control:focus {
-  border-color: #fff;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 0px rgba(0, 0, 0, 0);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0); }
-
-.contact .contact-btn {
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  font-weight: 100;
-  font-size: 0.9em;
-  padding: 0.5em 3em;
-  margin-bottom: 6em;
-  height: 3em;
-  text-transform: uppercase;
-  margin-right: 1.8em; }
-
-.contact .contact-btn:hover {
-  color: #313131;
-  background-color: #fff;
-  border: solid 2px #fff; }
-
 address {
   color: #fff;
   font-weight: 100; }
 
-.h2-contact {
-  color: #fff;
-  font-weight: 100;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-size: 16px; }
-
 .lead {
-  font-size: 1em;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.9); }
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.8rem; }
 
 hr {
   border: 0;
@@ -477,8 +458,34 @@ hr {
 
 .contact-icon {
   display: inline-block;
-  font-size: 25px;
-  margin-right: 20px; }
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem; }
+
+.contact-icons-content {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-align: left;
+  height: 3rem;
+  width: 100%;
+  vertical-align: middle; }
+
+.contact-icons-text {
+  display: table;
+  vertical-align: middle;
+  font-size: 0.9em;
+  letter-spacing: 0.2rem;
+  margin-left: 0.4rem;
+  height: 100%;
+  width: 80%; }
+
+.contact-icons-text p {
+  vertical-align: middle;
+  display: table-cell;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0; }
 
 .navbar {
   border-bottom: 1px solid black;
