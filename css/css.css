@@ -1818,108 +1818,108 @@ a:hover figcaption {
 /*---------------------------------------------------------------*/
 /* 14 footer*/
 /*---------------------------------------------------------------*/
-.footer {
-    height: 170px;
-    background: url(../images/background1.jpg);/* path to your background image -footer */
+/*.footer {*/
+    /*height: 170px;*/
+    /*background: url(../images/background1.jpg);!* path to your background image -footer *!*/
 
-}
+/*}*/
 
-.footer h4 {
-    color: #fff;
-    text-align: center;
-    margin-top: 1em;
-    font-weight: 100;
-    font-size: .9em;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    opacity: 0.8;
-}
+/*.footer h4 {*/
+    /*color: #fff;*/
+    /*text-align: center;*/
+    /*margin-top: 1em;*/
+    /*font-weight: 100;*/
+    /*font-size: .9em;*/
+    /*letter-spacing: 5px;*/
+    /*text-transform: uppercase;*/
+    /*opacity: 0.8;*/
+/*}*/
 
-.footer p {
-    color: #fff;
-    text-align: center;
-    font-weight: 100;
-    font-size: .5em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: 0.8;
-}
+/*.footer p {*/
+    /*color: #fff;*/
+    /*text-align: center;*/
+    /*font-weight: 100;*/
+    /*font-size: .5em;*/
+    /*letter-spacing: 2px;*/
+    /*text-transform: uppercase;*/
+    /*opacity: 0.8;*/
+/*}*/
 
-.footer-text {
-    position: relative;
-    text-align: right;
-}
-
-.social-icon {
-   display: table;
-   margin: 0 auto;
-   margin-top: 10px;
-   padding-left: 0px;
-
-}
-
-.social-icon li {
-    display: table-cell;
+/*.footer-text {*/
+    /*position: relative;*/
     /*text-align: right;*/
-    padding: 10px;
-}
+/*}*/
 
-#footerPinterest {
-    background-image: url('../images/social-icons/white/pinterest.png');/* path to your social icons image */
-}
+/*.social-icon {*/
+   /*display: table;*/
+   /*margin: 0 auto;*/
+   /*margin-top: 10px;*/
+   /*padding-left: 0px;*/
 
-#footerFacebook {
-    background-image: url('../images/social-icons/white/facebook.png');/* path to your social icons image */
-}
+/*}*/
 
-#footerTwitter {
-    background-image: url('../images/social-icons/white/twitter.png');/* path to your social icons image */
-}
+/*.social-icon li {*/
+    /*display: table-cell;*/
+    /*!*text-align: right;*!*/
+    /*padding: 10px;*/
+/*}*/
 
-.icon {
-    list-style: none;
-    display: inline-block;
-    height: 30px;
-    width: 41px;
-    vertical-align: middle;
-    margin: 0;
-    padding: 10px;
-}
+/*#footerPinterest {*/
+    /*background-image: url('../images/social-icons/white/pinterest.png');!* path to your social icons image *!*/
+/*}*/
 
-.icon a {
-    display: block;
-    background-size: 33px, 33px;
-    width: 33px;
-    height: 33px;
-    opacity: 0.8;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
+/*#footerFacebook {*/
+    /*background-image: url('../images/social-icons/white/facebook.png');!* path to your social icons image *!*/
+/*}*/
 
-}
+/*#footerTwitter {*/
+    /*background-image: url('../images/social-icons/white/twitter.png');!* path to your social icons image *!*/
+/*}*/
 
-.icon a:hover {
-    opacity: 0.9;
-    -webkit-transform: scale(1.2,1.2);
-    -moz-transform: scale(1.2,1.2);
-    -o-transform: scale(1.2,1.2);
-    -ms-transform: scale(1.2,1.2);
-}
+/*.icon {*/
+    /*list-style: none;*/
+    /*display: inline-block;*/
+    /*height: 30px;*/
+    /*width: 41px;*/
+    /*vertical-align: middle;*/
+    /*margin: 0;*/
+    /*padding: 10px;*/
+/*}*/
+
+/*.icon a {*/
+    /*display: block;*/
+    /*background-size: 33px, 33px;*/
+    /*width: 33px;*/
+    /*height: 33px;*/
+    /*opacity: 0.8;*/
+    /*-webkit-transition: all 0.5s ease-in-out;*/
+    /*-moz-transition: all 0.5s ease-in-out;*/
+    /*-o-transition: all 0.5s ease-in-out;*/
+    /*-ms-transition: all 0.5s ease-in-out;*/
+
+/*}*/
+
+/*.icon a:hover {*/
+    /*opacity: 0.9;*/
+    /*-webkit-transform: scale(1.2,1.2);*/
+    /*-moz-transform: scale(1.2,1.2);*/
+    /*-o-transform: scale(1.2,1.2);*/
+    /*-ms-transform: scale(1.2,1.2);*/
+/*}*/
 
 
 
-.footerPinterestteam {
-    background-image: url('../images/social-icons/grey/pinterest.png');/* path to your social icons image in team */
-}
+/*.footerPinterestteam {*/
+    /*background-image: url('../images/social-icons/grey/pinterest.png');!* path to your social icons image in team *!*/
+/*}*/
 
-.footerFacebookteam {
-    background-image: url('../images/social-icons/grey/facebook.png');/* path to your social icons image in team*/
-}
+/*.footerFacebookteam {*/
+    /*background-image: url('../images/social-icons/grey/facebook.png');!* path to your social icons image in team*!*/
+/*}*/
 
-.footerTwitterteam {
-    background-image: url('../images/social-icons/grey/twitter.png');/* path to your social icons image in team*/
-}
+/*.footerTwitterteam {*/
+    /*background-image: url('../images/social-icons/grey/twitter.png');!* path to your social icons image in team*!*/
+/*}*/
 
 
 /*---------------------------------------------------------------*/
