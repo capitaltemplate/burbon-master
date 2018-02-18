@@ -46,7 +46,7 @@ h2 {
   font-size: 1.5rem; }
 
 section {
-  padding: 2rem 1rem; }
+  padding: 5rem 1rem; }
   @media (min-width: 48em) {
     section {
       padding: 3rem; } }
@@ -56,47 +56,29 @@ section#start {
   margin: 0; }
 
 section#works {
-  padding: 0;
-  margin: 0; }
+  background-image: url("../images/background1.jpg"); }
 
-section#about .inner {
+section .inner {
   padding: 1rem; }
   @media (min-width: 120em) {
-    section#about .inner {
+    section .inner {
       padding: 1rem; } }
 
 section#team .inner {
-  padding: 1rem;
   text-align: center; }
-  @media (min-width: 120em) {
-    section#team .inner {
-      padding: 1rem; } }
 
-section#what_we_do .inner {
-  padding: 1rem;
+.logo-brand-space {
+  padding: 5rem 1rem; }
+  @media (min-width: 48em) {
+    .logo-brand-space {
+      padding: 3rem; } }
+
+.logo-brand h2 {
+  color: #313131;
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-transform: uppercase;
   text-align: center; }
-  @media (min-width: 120em) {
-    section#what_we_do .inner {
-      padding: 1rem; } }
-
-section#progress .inner {
-  padding: 1rem;
-  text-align: center; }
-  @media (min-width: 120em) {
-    section#progress .inner {
-      padding: 1rem; } }
-
-section#contact .inner {
-  padding: 1rem; }
-  @media (min-width: 120em) {
-    section#contact .inner {
-      padding: 1rem; } }
-
-section#download .inner {
-  padding: 1rem; }
-  @media (min-width: 120em) {
-    section#download .inner {
-      padding: 1rem; } }
 
 .jumbotron {
   margin-bottom: 0px;
@@ -324,8 +306,7 @@ section#works h2 {
       margin-left: 4rem; } }
 
 .gallery-box {
-  padding: 2rem 0 2rem;
-  background-image: url("../images/background1.jpg"); }
+  padding: 2rem 0 2rem; }
   @media (min-width: 48em) {
     .gallery-box {
       padding: 3rem 0 3rem; } }
@@ -566,19 +547,6 @@ hr {
 .logo-brand {
   border-top: 1px solid #d1d1d1; }
 
-.logo-brand-space {
-  padding: 2rem 1rem; }
-  @media (min-width: 48em) {
-    .logo-brand-space {
-      padding: 3rem; } }
-
-.logo-brand h2 {
-  color: #313131;
-  font-weight: 100;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-align: center; }
-
 /*--------------------------------------------------------------- */
 /* 8. testimonial */
 /*--------------------------------------------------------------- */
@@ -620,19 +588,18 @@ hr {
   color: #fff; }
 
 blockquote {
-  font-style: italic;
-  padding: 2rem 1rem; }
-  @media (min-width: 48em) {
-    blockquote {
-      padding: 3rem; } }
-
-#quote-carousel {
-  margin-top: 30px; }
+  font-style: italic; }
 
 #quote-carousel .carousel-control {
   background: none;
   color: #fff;
   text-shadow: none; }
+
+.carousel-item {
+  padding: 5rem 1rem; }
+  @media (min-width: 48em) {
+    .carousel-item {
+      padding: 3rem; } }
 
 .carousel-inner {
   color: #fff;
@@ -786,7 +753,7 @@ blockquote footer, blockquote small, blockquote .small {
   background-position: center; }
 
 .video-container {
-  max-height: 100%;
+  height: 100%;
   object-fit: contain;
   text-align: center;
   padding: 0;
@@ -795,7 +762,7 @@ blockquote footer, blockquote small, blockquote .small {
   overflow: hidden; }
 
 .youtube {
-  max-height: 100%;
+  min-height: 100vh;
   object-fit: contain;
   text-align: center;
   color: #fff;

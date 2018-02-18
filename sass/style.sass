@@ -17,6 +17,14 @@ $media-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
 
 $baseFontSize: 0.875rem // 0.875 * 16 = 14px
 
+$basePadding: 3rem
+$basePaddingV: 5rem
+$basePaddingH: 1rem
+$baseMarginV: 5rem
+$baseMarginH: 1rem
+
+$innerPadding: 1rem
+
 html
     font-size: #{$baseFontSize}
     line-height: calc(#{$baseFontSize} * 1.2)
@@ -63,85 +71,37 @@ h2
     font-size: 1.5rem
 
 section
-    padding: 2rem 1rem
+    padding: #{$basePaddingV} #{$basePaddingH}
     @media #{$media-s}
-        padding: 3rem
+        padding: #{$basePadding}
 
 section#start
     padding: 0
     margin: 0
 
 section#works
-    padding: 0
-    margin: 0
+    background-image: url("../images/background1.jpg")
 
-//section#about
-//    padding: 2rem 1rem
-//    @media #{$media-s}
-//        padding: 3rem
-//
-//section#team
-//    padding: 2rem 1rem
-//    @media #{$media-s}
-//        padding: 3rem
-//
-//section#progress
-//    padding: 2rem 1rem
-//    @media #{$media-s}
-//        padding: 3rem
-//
-//section#what_we_do
-//    padding: 2rem 1rem
-//    @media #{$media-s}
-//        padding: 3rem
-//
-//section#home
-//    padding: 2rem 1rem
-//    @media #{$media-s}
-//        padding: 3rem
-//
-//section#contact
-//    padding: 2rem 1rem
-//    @media #{$media-s}
-//        padding: 3rem
-//
-//section#download
-//    padding: 2rem 1rem
-//    @media #{$media-s}
-//        padding: 3rem
-
-section#about .inner
-    padding: 1rem
+section .inner
+    padding: #{$innerPadding}
     @media #{$media-xl}
-        padding: 1rem
+        padding: #{$innerPadding}
 
 section#team .inner
-    padding: 1rem
     text-align: center
-    @media #{$media-xl}
-        padding: 1rem
 
-section#what_we_do .inner
-    padding: 1rem
+
+.logo-brand-space
+    padding: #{$basePaddingV} #{$basePaddingH}
+    @media #{$media-s}
+        padding: #{$basePadding}
+
+.logo-brand h2
+    color: #313131
+    font-weight: 100
+    font-size: 1.5rem
+    text-transform: uppercase
     text-align: center
-    @media #{$media-xl}
-        padding: 1rem
-
-section#progress .inner
-    padding: 1rem
-    text-align: center
-    @media #{$media-xl}
-        padding: 1rem
-
-section#contact .inner
-    padding: 1rem
-    @media #{$media-xl}
-        padding: 1rem
-
-section#download .inner
-    padding: 1rem
-    @media #{$media-xl}
-        padding: 1rem
 
 // JUMBOTRON
 .jumbotron
@@ -415,7 +375,6 @@ section#works h2
 
 .gallery-box
     padding: 2rem 0 2rem
-    background-image: url("../images/background1.jpg")
     @media #{$media-s}
         padding: 3rem 0 3rem
 
@@ -663,18 +622,6 @@ hr
 .logo-brand
     border-top: 1px solid #d1d1d1
 
-.logo-brand-space
-    padding: 2rem 1rem
-    @media #{$media-s}
-        padding: 3rem
-
-.logo-brand h2
-    color: #313131
-    font-weight: 100
-    font-size: 1.5rem
-    text-transform: uppercase
-    text-align: center
-
 // testimonial
 /*---------------------------------------------------------------*/
 /* 8. testimonial */
@@ -717,27 +664,22 @@ hr
     padding-top: 0.8rem
     margin: 0 auto
 
-
 .testimonial-text
     color: #fff
 
-
 blockquote
     font-style: italic
-    padding: 2rem 1rem
-    @media #{$media-s}
-        padding: 3rem
-
-
-#quote-carousel
-    margin-top: 30px
-
 
 #quote-carousel .carousel-control
     background: none
     color: #fff
     text-shadow: none
 
+
+.carousel-item
+    padding: #{$basePaddingV} #{$basePaddingH}
+    @media #{$media-s}
+        padding: #{$basePadding}
 
 .carousel-inner
     color: #fff
@@ -916,8 +858,7 @@ blockquote footer, blockquote small, blockquote .small
 // VIDEO
 
 .video-container
-    //min-height: 100%
-    max-height: 100%
+    height: 100%
     object-fit: contain
     text-align: center
     padding: 0
@@ -927,8 +868,7 @@ blockquote footer, blockquote small, blockquote .small
 
 
 .youtube
-    //min-height: 100%
-    max-height: 100%
+    min-height: 100vh
     object-fit: contain
     text-align: center
     color: #fff
