@@ -31,6 +31,13 @@ body {
 .tlt p {
   font-size: 1rem; }
 
+.title h1 {
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.carousel-center p {
+  font-size: 1rem; }
+
 h2 {
   font-weight: 100;
   letter-spacing: 0.33em;
@@ -38,47 +45,19 @@ h2 {
   text-align: center;
   font-size: 1.5rem; }
 
-section#about {
+section {
   padding: 2rem 1rem; }
   @media (min-width: 48em) {
-    section#about {
+    section {
       padding: 3rem; } }
 
-section#team {
-  padding: 2rem 1rem; }
-  @media (min-width: 48em) {
-    section#team {
-      padding: 3rem; } }
+section#start {
+  padding: 0;
+  margin: 0; }
 
-section#progress {
-  padding: 2rem 1rem; }
-  @media (min-width: 48em) {
-    section#progress {
-      padding: 3rem; } }
-
-section#what_we_do {
-  padding: 2rem 1rem; }
-  @media (min-width: 48em) {
-    section#what_we_do {
-      padding: 3rem; } }
-
-section#home {
-  padding: 2rem 1rem; }
-  @media (min-width: 48em) {
-    section#home {
-      padding: 3rem; } }
-
-section#contact {
-  padding: 2rem 1rem; }
-  @media (min-width: 48em) {
-    section#contact {
-      padding: 3rem; } }
-
-section#download {
-  padding: 2rem 1rem; }
-  @media (min-width: 48em) {
-    section#download {
-      padding: 3rem; } }
+section#works {
+  padding: 0;
+  margin: 0; }
 
 section#about .inner {
   padding: 1rem; }
@@ -607,7 +586,10 @@ hr {
   background: url("../images/testimonial.jpg");
   background-position: 50% 0;
   background-attachment: fixed;
-  background-size: 100%; }
+  background-size: 400%; }
+  @media (min-width: 48em) {
+    .testimonial {
+      background-size: 100% 100%; } }
 
 .testimonial-video {
   background: url("../images/background1.jpg"); }
@@ -780,5 +762,27 @@ blockquote footer, blockquote small, blockquote .small {
   color: #313131;
   text-transform: uppercase;
   padding: 1rem; }
+
+.opac-carousel {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  margin-top: -100vh;
+  position: relative; }
+
+#preloader {
+  position: fixed;
+  background-color: #fff;
+  z-index: 99;
+  width: 100%;
+  margin: 0; }
+
+#status {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  background-image: url("../images/status.gif");
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /*# sourceMappingURL=style.css.map */
