@@ -372,18 +372,13 @@ section#works h2
         float: left
         margin-left: 4rem
 
-
-.gallery-box
-    padding: 2rem 0 2rem
-    @media #{$media-s}
-        padding: 3rem 0 3rem
-
 #gallery
     padding-top: 3rem
     @media #{$media-s}
         padding-top: 4rem
 
 .controls
+    margin-top: 3rem
     margin-bottom: 1rem
     font-size: 0.7rem
     text-align: center
@@ -534,7 +529,6 @@ hr
 
 // NAVBAR
 .navbar
-    border-bottom: 1px solid black
     position: fixed
     z-index: 99999
     width: 100%
@@ -607,7 +601,6 @@ hr
     position: fixed
     top: 0
     background: transparent
-    //width: 100%
 
 .navbar-scroll-background ul
     list-style-type: none
@@ -621,7 +614,7 @@ hr
 
 // logo-brand
 .logo-brand
-    border-top: 1px solid #d1d1d1
+    //border-top: 1px solid #d1d1d1
 
 // testimonial
 /*---------------------------------------------------------------*/
@@ -676,8 +669,7 @@ blockquote
     color: #fff
     text-shadow: none
 
-
-.carousel-item
+.testimonial
     padding: #{$basePaddingV} #{$basePaddingH}
     @media #{$media-s}
         padding: #{$basePadding}
@@ -687,6 +679,8 @@ blockquote
     line-height: 180%
     text-align: center
 
+.carousel-item
+    min-height: 200px
 
 .item h2
     font-weight: 100
@@ -769,7 +763,6 @@ blockquote footer, blockquote small, blockquote .small
     list-style: none
     display: inline-block
     height: 3rem
-    //width: 41px
     vertical-align: middle
     margin: 0
     padding: 0.8rem
@@ -917,3 +910,7 @@ blockquote footer, blockquote small, blockquote .small
 .button-yt
     display: inline
 
+// SUBPAGES:
+#headSubPage
+    margin: 0
+    padding: 0

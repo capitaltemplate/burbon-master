@@ -7,9 +7,10 @@ $(document).ready(function(){
         if (scroll > 100) {
             $(".navbar-scroll-background").css("background" , "rgba(49, 49, 49, 0.8)");
         }
-
         else{
-            $(".navbar-scroll-background").css("background" , "transparent");
+            if ($(".navbar").hasClass("collapsed")) {
+                $(".navbar-scroll-background").css("background", "transparent");
+            }
         }
     })
 })
@@ -17,6 +18,9 @@ $(document).ready(function(){
 $(".navbar-toggler").on("click", function(){
     if ($(".navbar").hasClass("collapsed")) {
         $(".navbar-scroll-background").css("background", "rgba(49, 49, 49, 0.8)");
+        $(".navbar").removeClass("collapsed");
+    } else {
+        $(".navbar").addClass("collapsed");
     }
 });
 
