@@ -513,6 +513,9 @@ hr {
 .dropdown-menu {
   background-color: #313131; }
 
+.nav-link {
+  padding: 1rem; }
+
 .dropdown-menu > li > a {
   display: block;
   clear: both;

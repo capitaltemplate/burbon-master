@@ -14,7 +14,11 @@ $(document).ready(function(){
     })
 })
 // background color - navigation -end
-
+$(".navbar-toggler").on("click", function(){
+    if ($(".navbar").hasClass("collapsed")) {
+        $(".navbar-scroll-background").css("background", "rgba(49, 49, 49, 0.8)");
+    }
+});
 
 $(document).ready(function( $ ) {
     // subscribe:
