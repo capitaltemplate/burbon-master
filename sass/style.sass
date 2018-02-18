@@ -48,7 +48,7 @@ body
     font-size: 1rem
 
 // SECTIONS
-section h2
+h2
     font-weight: 100
     letter-spacing: .33em
     text-transform: uppercase
@@ -87,6 +87,11 @@ section#contact
     @media #{$media-s}
         padding: 3rem
 
+section#download
+    padding: 2rem 1rem
+    @media #{$media-s}
+        padding: 3rem
+
 section#about .inner
     padding: 1rem
     @media #{$media-xl}
@@ -115,12 +120,18 @@ section#contact .inner
     @media #{$media-xl}
         padding: 1rem
 
+section#download .inner
+    padding: 1rem
+    @media #{$media-xl}
+        padding: 1rem
+
 // JUMBOTRON
 .jumbotron
     margin-bottom: 0px
-    background-image: url(../images/b1.jpg) /* path to your background image at static.html */
+    background-image: url("../images/b1.jpg") /* path to your background image at static.html */
     background-size: cover
     background-repeat: no-repeat
+    background-position: center
     height: 100%
 
 // ABOUT US
@@ -316,16 +327,16 @@ section#contact .inner
         padding: 1.5rem
 
 .count1
-    background-image: url('../images/background1.jpg')
+    background-image: url("../images/background1.jpg")
 
 .count2
-    background-image: url('../images/background1.jpg')
+    background-image: url("../images/background1.jpg")
 
 .count3
-    background-image: url('../images/background1.jpg')
+    background-image: url("../images/background1.jpg")
 
 .count4
-    background-image: url('../images/background1.jpg')
+    background-image: url("../images/background1.jpg")
 
 
 .count1-white
@@ -386,7 +397,7 @@ section#works h2
 
 .gallery-box
     padding: 2rem 0 2rem
-    background-image: url('../images/background1.jpg')
+    background-image: url("../images/background1.jpg")
     @media #{$media-s}
         padding: 3rem 0 3rem
 
@@ -565,7 +576,7 @@ hr
     border-bottom: transparent
 
 .navbar-toggler-icon
-    background-image: url(../images/menu-icon.png)
+    background-image: url("../images/menu-icon.png")
     max-height: 25px
     @media #{$media-m}
         max-height: 18px
@@ -630,6 +641,116 @@ hr
     color: transparent
 
 
+// logo-brand
+.logo-brand
+    border-top: 1px solid #d1d1d1
+
+.logo-brand-space
+    padding: 2rem 1rem
+    @media #{$media-s}
+        padding: 3rem
+
+.logo-brand h2
+    color: #313131
+    font-weight: 100
+    font-size: 1.5rem
+    text-transform: uppercase
+    text-align: center
+
+// testimonial
+/*---------------------------------------------------------------*/
+/* 8. testimonial */
+/*---------------------------------------------------------------*/
+.testimonial
+    background: url("../images/testimonial.jpg") // 50% 0 fixed //* path to your background image -testimonial */
+    background-position: 50% 0
+    background-attachment: fixed
+    background-size: 100%
+
+.testimonial-video
+    background: url("../images/background1.jpg") //* path to your background image -testimonial-video */
+
+
+.testimonial-border
+    border-top: 1px solid #313131
+    width: 5vw
+    margin: 1.5rem auto 1.5rem
+
+
+.testimonial-border-white
+    border-top: 1px solid #fff
+    width: 5vw
+    margin: 1.5rem auto 1.5rem
+
+
+.testimonial-border-us
+    border-top: 2px solid #aba7a8
+    width: 3rem
+    //padding-bottom: 0.8rem
+    margin: 0 auto
+
+
+.testimonial-border-numbers
+    border-top: 2px solid #d1c0b8
+    width: 3rem
+    padding-bottom: 0.8rem
+    padding-top: 0.8rem
+    margin: 0 auto
+
+
+.testimonial-text
+    color: #fff
+
+
+blockquote
+    font-style: italic
+    padding: 2rem 1rem
+    @media #{$media-s}
+        padding: 3rem
+
+
+#quote-carousel
+    margin-top: 30px
+
+
+#quote-carousel .carousel-control
+    background: none
+    color: #fff
+    text-shadow: none
+
+
+.carousel-inner
+    color: #fff
+    line-height: 180%
+    text-align: center
+
+
+.item h2
+    font-weight: 100
+    font-size: 18px
+    letter-spacing: 5px
+    text-transform: uppercase
+    font-style: normal
+
+
+.item blockquote
+    border-left: none
+    margin: 0
+
+
+blockquote footer, blockquote small, blockquote .small
+    //margin-top: 20px
+    //font-size: .8em
+    color: #fff
+    font-style: normal
+    font-weight: 100
+    letter-spacing: 3px
+    text-transform: uppercase
+
+/*---------------------------------------------------------------*/
+/* testimonial-end */
+/*---------------------------------------------------------------*/
+
 // footer
 .footer
     height: 10rem
@@ -670,21 +791,21 @@ hr
 
 
 #footerPinterest
-    background-image: url('../images/social-icons/white/pinterest.png') //* path to your social icons image */
+    background-image: url("../images/social-icons/white/pinterest.png") //* path to your social icons image */
 
 
 #footerFacebook
-    background-image: url('../images/social-icons/white/facebook.png') //* path to your social icons image */
+    background-image: url("../images/social-icons/white/facebook.png") //* path to your social icons image */
 
 
 #footerTwitter
-    background-image: url('../images/social-icons/white/twitter.png') //* path to your social icons image */
+    background-image: url("../images/social-icons/white/twitter.png") //* path to your social icons image */
 
 
 .icon
     list-style: none
     display: inline-block
-    height: 3grem
+    height: 3rem
     //width: 41px
     vertical-align: middle
     margin: 0
@@ -710,11 +831,40 @@ hr
     -ms-transform: scale(1.2,1.2)
 
 .footerPinterestteam
-    background-image: url('../images/social-icons/grey/pinterest.png') //* path to your social icons image in team */
+    background-image: url("../images/social-icons/grey/pinterest.png") //* path to your social icons image in team */
 
 .footerFacebookteam
-    background-image: url('../images/social-icons/grey/facebook.png') //* path to your social icons image in team*/
+    background-image: url("../images/social-icons/grey/facebook.png") //* path to your social icons image in team*/
 
 .footerTwitterteam
-    background-image: url('../images/social-icons/grey/twitter.png') //* path to your social icons image in team*/
+    background-image: url("../images/social-icons/grey/twitter.png") //* path to your social icons image in team*/
+
+// download
+.subpage
+    margin: 0rem auto 0rem
+
+
+.download h2
+    color: #313131
+    font-weight: 100
+    //font-size: 1.3rem
+    text-transform: uppercase
+    //letter-spacing: 10px
+
+
+.download p
+    background-repeat: no-repeat
+    margin: 0 auto 1.5rem
+    color: #313131
+    font-size: .9em
+
+.down
+    margin-bottom: 75px
+
+
+.buy-theme
+    border: 1px solid #313131
+    color: #313131
+    text-transform: uppercase
+    padding: 1rem
 

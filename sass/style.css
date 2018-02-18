@@ -31,7 +31,7 @@ body {
 .tlt p {
   font-size: 1rem; }
 
-section h2 {
+h2 {
   font-weight: 100;
   letter-spacing: 0.33em;
   text-transform: uppercase;
@@ -74,6 +74,12 @@ section#contact {
     section#contact {
       padding: 3rem; } }
 
+section#download {
+  padding: 2rem 1rem; }
+  @media (min-width: 48em) {
+    section#download {
+      padding: 3rem; } }
+
 section#about .inner {
   padding: 1rem; }
   @media (min-width: 120em) {
@@ -107,11 +113,18 @@ section#contact .inner {
     section#contact .inner {
       padding: 1rem; } }
 
+section#download .inner {
+  padding: 1rem; }
+  @media (min-width: 120em) {
+    section#download .inner {
+      padding: 1rem; } }
+
 .jumbotron {
   margin-bottom: 0px;
-  background-image: url(../images/b1.jpg);
+  background-image: url("../images/b1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 100%; }
 
 .about-icons-content {
@@ -512,7 +525,7 @@ hr {
   border-bottom: transparent; }
 
 .navbar-toggler-icon {
-  background-image: url(../images/menu-icon.png);
+  background-image: url("../images/menu-icon.png");
   max-height: 25px; }
   @media (min-width: 64em) {
     .navbar-toggler-icon {
@@ -571,6 +584,100 @@ hr {
   display: inline-block;
   color: transparent; }
 
+.logo-brand {
+  border-top: 1px solid #d1d1d1; }
+
+.logo-brand-space {
+  padding: 2rem 1rem; }
+  @media (min-width: 48em) {
+    .logo-brand-space {
+      padding: 3rem; } }
+
+.logo-brand h2 {
+  color: #313131;
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+/*--------------------------------------------------------------- */
+/* 8. testimonial */
+/*--------------------------------------------------------------- */
+.testimonial {
+  background: url("../images/testimonial.jpg");
+  background-position: 50% 0;
+  background-attachment: fixed;
+  background-size: 100%; }
+
+.testimonial-video {
+  background: url("../images/background1.jpg"); }
+
+.testimonial-border {
+  border-top: 1px solid #313131;
+  width: 5vw;
+  margin: 1.5rem auto 1.5rem; }
+
+.testimonial-border-white {
+  border-top: 1px solid #fff;
+  width: 5vw;
+  margin: 1.5rem auto 1.5rem; }
+
+.testimonial-border-us {
+  border-top: 2px solid #aba7a8;
+  width: 3rem;
+  margin: 0 auto; }
+
+.testimonial-border-numbers {
+  border-top: 2px solid #d1c0b8;
+  width: 3rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+  margin: 0 auto; }
+
+.testimonial-text {
+  color: #fff; }
+
+blockquote {
+  font-style: italic;
+  padding: 2rem 1rem; }
+  @media (min-width: 48em) {
+    blockquote {
+      padding: 3rem; } }
+
+#quote-carousel {
+  margin-top: 30px; }
+
+#quote-carousel .carousel-control {
+  background: none;
+  color: #fff;
+  text-shadow: none; }
+
+.carousel-inner {
+  color: #fff;
+  line-height: 180%;
+  text-align: center; }
+
+.item h2 {
+  font-weight: 100;
+  font-size: 18px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-style: normal; }
+
+.item blockquote {
+  border-left: none;
+  margin: 0; }
+
+blockquote footer, blockquote small, blockquote .small {
+  color: #fff;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
+/*--------------------------------------------------------------- */
+/* testimonial-end */
+/*--------------------------------------------------------------- */
 .footer {
   height: 10rem;
   background: url("../images/background1.jpg"); }
@@ -619,7 +726,7 @@ hr {
 .icon {
   list-style: none;
   display: inline-block;
-  height: 3grem;
+  height: 3rem;
   vertical-align: middle;
   margin: 0;
   padding: 0.8rem; }
@@ -650,5 +757,28 @@ hr {
 
 .footerTwitterteam {
   background-image: url("../images/social-icons/grey/twitter.png"); }
+
+.subpage {
+  margin: 0rem auto 0rem; }
+
+.download h2 {
+  color: #313131;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.download p {
+  background-repeat: no-repeat;
+  margin: 0 auto 1.5rem;
+  color: #313131;
+  font-size: 0.9em; }
+
+.down {
+  margin-bottom: 75px; }
+
+.buy-theme {
+  border: 1px solid #313131;
+  color: #313131;
+  text-transform: uppercase;
+  padding: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

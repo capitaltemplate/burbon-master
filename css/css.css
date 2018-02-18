@@ -760,103 +760,6 @@ body{
 /* video-end */
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-/* 8. testimonial */
-/*---------------------------------------------------------------*/
-.testimonial {
-    background: url(../images/testimonial.jpg)50% 0 fixed;/* path to your background image -testimonial */
-}
-
-.testimonial-video {
-    background: url(../images/background1.jpg);/* path to your background image -testimonial-video */
-}
-
-.testimonial-border {
-    border-top: 1px solid #313131;
-    width: 5vw;
-    margin: 1.5rem auto 1.5rem;
-}
-
-.testimonial-border-white {
-    border-top: 1px solid #fff;
-    width: 5vw;
-    margin: 1.5rem auto 1.5rem;
-}
-
-.testimonial-border-us {
-    border-top: 2px solid #aba7a8;
-    width: 50px;
-    padding-bottom: 10px;
-    margin: 0 auto;
-}
-
-.testimonial-border-numbers {
-    border-top: 2px solid #d1c0b8;
-    width: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin: 0 auto;
-}
-
-.testimonial-text  {
-    padding-top: 20px;
-    font-size: 1em;
-    color: #fff;
-}
-
-blockquote {
-    padding: 100px 20px 100px;
-    margin: 0 0 20px;
-    font-size: 13px;
-    font-style: italic;
-}
-
-#quote-carousel {
-    padding: 0 10px 10px 10px;
-    margin-top: 30px;
-}
-
-#quote-carousel .carousel-control {
-    background: none;
-    color: #fff;
-    font-size: 2.3em;
-    text-shadow: none;
-    margin-top: 0px;
-}
-
-.carousel-inner {
-    min-height: 220px;
-    color: #fff;
-    line-height: 180%;
-    text-align: center;
-}
-
-.item h2 {
-    font-weight: 100;
-    font-size: 18px;
-    margin-bottom: 20px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-style: normal;
-}
-
-.item blockquote {
-    border-left: none;
-    margin: 0;
-}
-
-blockquote footer, blockquote small, blockquote .small{
-    margin-top: 20px;
-    font-size: .8em;
-    color: #fff;
-    font-style: normal;
-    font-weight: 100;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-/*---------------------------------------------------------------*/
-/* testimonial-end */
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
 /* 9. about us */
 /*---------------------------------------------------------------*/
 /*.about-text {*/
@@ -1552,35 +1455,35 @@ a:hover figcaption {
 /*---------------------------------------------------------------*/
 
 
-.subpage {
-    margin: 0rem auto 0rem;
-}
+/*.subpage {*/
+    /*margin: 0rem auto 0rem;*/
+/*}*/
 
-.download h2 {
-    color: #313131;
-    font-weight: 100;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-}
+/*.download h2 {*/
+    /*color: #313131;*/
+    /*font-weight: 100;*/
+    /*font-size: 1.3rem;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 10px;*/
+/*}*/
 
-.download p {
-    background-repeat: no-repeat;
-    margin: 0 auto 1.5rem;
-    color: #313131;
-    font-size: .9em;
-}
+/*.download p {*/
+    /*background-repeat: no-repeat;*/
+    /*margin: 0 auto 1.5rem;*/
+    /*color: #313131;*/
+    /*font-size: .9em;*/
+/*}*/
 
-.down {
-    margin-bottom: 75px;
-}
+/*.down {*/
+    /*margin-bottom: 75px;*/
+/*}*/
 
-.buy-theme {
-    border: 1px solid #313131;
-    color: #313131;
-    text-transform: uppercase;
-    padding: 1em;
-}
+/*.buy-theme {*/
+    /*border: 1px solid #313131;*/
+    /*color: #313131;*/
+    /*text-transform: uppercase;*/
+    /*padding: 1em;*/
+/*}*/
 /*---------------------------------------------------------------*/
 /* download end */
 /*---------------------------------------------------------------*/
@@ -1740,23 +1643,6 @@ a:hover figcaption {
     vertical-align: middle;
 }
 
-.logo-brand {
-    border-top: 1px solid #d1d1d1;
-
-}
-
-.logo-brand-space {
-    margin: 3rem auto 3rem;
-}
-
-.logo-brand h2 {
-    color: #313131;
-    font-weight: 100;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-align: center;
-}
 /*---------------------------------------------------------------*/
 /* owl-carousel-end*/
 /*---------------------------------------------------------------*/
