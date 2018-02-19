@@ -869,70 +869,7 @@ ul.count-down li p {
     }
 }
 
-.images-gallery{
-    position:relative;
-    padding: 0;
-    height: 80%;
-}
 
-
-
-.works-buttons {
-    display: inline-block;
-}
-
-#gallery h1 {
-    position: relative;
-    font-size: 18px;
-    font-weight: 100;
-    letter-spacing: 7px;
-    text-align: center;
-    color: #fff;
-    text-transform: capitalize;
-}
-
-.link-gallery {
-    font-size: 35px;
-    margin-top: 35px;
-}
-
-.lupa {
-    position: relative;
-    padding-left: 280px;
-}
-
-figure {
-    height: 150px;
-    display: block;
-    overflow: hidden;
-    z-index: 100;
-    margin: 0px;
-}
-
-figcaption {
-    height: 400px;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    padding: 5px;
-}
-
-.sort-gallery a {
-    color: #fff;
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
-}
-
-a:hover figcaption {
-    opacity: 0.7;
-    background-image: url('../images/background1.jpg');
-    top: 0;
-    color: #fff;
-    transition: all 1.2s;
-}
 /*---------------------------------------------------------------*/
  /*modal*/
 /*---------------------------------------------------------------*/
@@ -1173,38 +1110,7 @@ a:hover figcaption {
 .contact-subpage-map {
     margin-top: 150px;
 }
-/*---------------------------------------------------------------*/
-/* project-page 1*/
-/*---------------------------------------------------------------*/
-.project img {
-    margin-top: 50px;
-    padding: 50px;
-}
 
-.project-description {
-    margin-top: 40px;
-}
-
-.project-description-1 {
-    margin-top: 80px;
-}
-
-.project-description h2 {
-    text-align: center;
-}
-
-.text-project h5{
-    text-align: center;
-}
-
-.text-project p {
-    text-align: center;
-}
-
-.about-project {
-    margin-left: 7%;
-    margin-right: 7%;
-}
 /*---------------------------------------------------------------*/
 /* FAQ*/
 /*---------------------------------------------------------------*/

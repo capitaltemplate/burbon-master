@@ -377,8 +377,79 @@ section#works h2
     @media #{$media-s}
         padding-top: 4rem
 
+.works-buttons button
+    margin: 0.2rem
+
+.images-gallery
+    position: relative
+    padding: 0
+    height: 10rem
+
+.works-buttons
+    display: inline-block
+
+
+#gallery h1
+    position: relative
+    font-size: 18px
+    font-weight: 100
+    letter-spacing: 7px
+    text-align: center
+    color: #fff
+    text-transform: capitalize
+
+
+.link-gallery
+    font-size: 35px
+    margin-top: 35px
+
+
+.lupa
+    position: relative
+    padding-left: 280px
+
+.sort-gallery a
+    color: #fff
+    font-weight: 400
+    font-size: 24px
+    text-align: center
+
+figure
+    height: 150px
+    display: block
+    overflow: hidden
+    z-index: 100
+    margin: 0
+
+figcaption
+    height: 100%
+    width: 100%
+    text-align: center
+    position: absolute
+    opacity: 0
+    padding: 5px
+    display: table
+    border: 1px solid red
+    vertical-align: middle
+
+//a:hover figcaption
+a figcaption
+    opacity: 0.7
+    background-image: url('../images/background1.jpg')
+    top: 0
+    color: #fff
+    transition: all 1.2s
+
+.gallery-over
+    display: table-cell
+    vertical-align: middle
+    width: 5rem
+    height: 5rem
+    margin: 0 auto
+    background-color: red
+
 .controls
-    margin-top: 3rem
+    //margin-top: 3rem
     margin-bottom: 1rem
     font-size: 0.7rem
     text-align: center
@@ -622,11 +693,14 @@ hr
 /*---------------------------------------------------------------*/
 .testimonial
     background: url("../images/testimonial.jpg") // 50% 0 fixed //* path to your background image -testimonial */
-    background-position: 50% 0
+
     background-attachment: fixed
-    background-size: 400%
-    @media #{$media-s}
-        background-size: 100% 100%
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+    overflow-x: hidden
+    overflow-y: auto
 
 .testimonial-video
     background: url("../images/background1.jpg") //* path to your background image -testimonial-video */
@@ -914,3 +988,36 @@ blockquote footer, blockquote small, blockquote .small
 #headSubPage
     margin: 0
     padding: 0
+
+/*---------------------------------------------------------------*/
+/* project-page 1*/
+/*---------------------------------------------------------------*/
+//.project img {
+//    margin-top: 50px;
+//    padding: 50px;
+//}
+//
+//.project-description {
+//    margin-top: 40px;
+//}
+//
+//.project-description-1 {
+//    margin-top: 80px;
+//}
+//
+//.project-description h2 {
+//    text-align: center;
+//}
+//
+//.text-project h5{
+//    text-align: center;
+//}
+//
+//.text-project p {
+//    text-align: center;
+//}
+//
+//.about-project {
+//    margin-left: 7%;
+//    margin-right: 7%;
+//}
