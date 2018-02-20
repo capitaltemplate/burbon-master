@@ -1,5 +1,5 @@
 // Breakpoints
-$base-mobile: 30em
+$base-mobile: 20em
 $base-s: 48em // 768px
 $base-m: 64em // 1024px
 $base-l: 85.375em // 1366px
@@ -30,20 +30,20 @@ html
     line-height: calc(#{$baseFontSize} * 1.2)
 
     @media #{$media-s}
-        font-size: calc(#{$baseFontSize}*1.2)
-        line-height: calc(#{$baseFontSize} * 1.4)
+        font-size: calc(#{$baseFontSize}*1.1)
+        line-height: calc(#{$baseFontSize} * 1.1)
     @media #{$media-m}
-        font-size: calc(#{$baseFontSize} * 1.4)
-        line-height: calc(#{$baseFontSize} * 1.6)
+        font-size: calc(#{$baseFontSize} * 1.2)
+        line-height: calc(#{$baseFontSize} * 1.2)
     @media #{$media-l}
-        font-size: calc(#{$baseFontSize} * 1.6)
-        line-height: calc(#{$baseFontSize} * 1.8)
+        font-size: calc(#{$baseFontSize} * 1.3)
+        line-height: calc(#{$baseFontSize} * 1.3)
     @media #{$media-xl}
-        font-size: calc(#{$baseFontSize} * 1.8)
-        line-height: calc(#{$baseFontSize} * 2)
+        font-size: calc(#{$baseFontSize} * 1.4)
+        line-height: calc(#{$baseFontSize} * 1.4)
     @media #{$media-xxl}
-        font-size: calc(#{$baseFontSize} * 4)
-        line-height: calc(#{$baseFontSize} * 2.2)
+        font-size: calc(#{$baseFontSize} * 3.0)
+        line-height: calc(#{$baseFontSize} * 3.0)
 
 body
     font-size: #{$baseFontSize}
@@ -74,6 +74,12 @@ section
     padding: #{$basePaddingV} #{$basePaddingH}
     @media #{$media-s}
         padding: #{$basePadding}
+    @media #{$media-l}
+        padding-left: 8rem
+        padding-right: 8rem
+    @media #{$media-xl}
+        padding-left: 12rem
+        padding-right: 12rem
 
 section#start
     padding: 0
@@ -213,29 +219,18 @@ section#team .inner
 
 .plans-border
     border: 1px solid #becfd3
-    width: 60%
+    width: 20rem
     padding-top: 2rem
     margin-bottom: 3rem
+    //margin-left: 0
+    //margin-right: 0
     @media #{$media-mobile}
-        width: 25%
-        margin-bottom: 0
+        //margin-left: 2rem
+        //margin-right: 2rem
+        margin-bottom: 2rem
 
-.plans-border2
+.extra-border
     border: 3px solid #fff
-    width: 60%
-    padding-top: 2rem
-    margin-bottom: 3rem
-    @media #{$media-mobile}
-        width: 25%
-        margin-bottom: 0
-
-.plans-border3
-    border: 1px solid #becfd3
-    width: 60%
-    padding-top: 2rem
-    @media #{$media-mobile}
-        width: 25%
-        margin-bottom: 0
 
 .plans-configurations
     margin-top: 3rem
@@ -383,26 +378,22 @@ section#works h2
 .images-gallery
     position: relative
     padding: 0
-    height: 10rem
+    height: 100%
 
 .works-buttons
     display: inline-block
 
-
-#gallery h1
+#gallery h3
     position: relative
-    font-size: 18px
+    font-size: 1rem
     font-weight: 100
-    letter-spacing: 7px
     text-align: center
     color: #fff
     text-transform: capitalize
 
-
 .link-gallery
-    font-size: 35px
-    margin-top: 35px
-
+    font-size: 1rem
+    //margin-top: 35px
 
 .lupa
     position: relative
@@ -411,17 +402,17 @@ section#works h2
 .sort-gallery a
     color: #fff
     font-weight: 400
-    font-size: 24px
     text-align: center
 
 figure
-    height: 150px
+    //height: 150px
     display: block
     overflow: hidden
     z-index: 100
     margin: 0
 
 figcaption
+    background-color: red
     height: 100%
     width: 100%
     text-align: center
@@ -429,11 +420,11 @@ figcaption
     opacity: 0
     padding: 5px
     display: table
-    border: 1px solid red
+    border: 1px solid black
     vertical-align: middle
 
-//a:hover figcaption
-a figcaption
+//a:hover
+figcaption
     opacity: 0.7
     background-image: url('../images/background1.jpg')
     top: 0
@@ -446,10 +437,8 @@ a figcaption
     width: 5rem
     height: 5rem
     margin: 0 auto
-    background-color: red
 
 .controls
-    //margin-top: 3rem
     margin-bottom: 1rem
     font-size: 0.7rem
     text-align: center

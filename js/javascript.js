@@ -144,7 +144,7 @@ $(document).ready(function( $ ) {
     });
 
     // ScrollReveal
-    window.sr = new scrollReveal();
+    // window.sr = new scrollReveal();
 
     $('section[data-type="background"]').each(function(){
 // declare the variable to affect the defined data-type
