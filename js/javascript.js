@@ -144,7 +144,8 @@ $(document).ready(function( $ ) {
     });
 
     // ScrollReveal
-    // window.sr = new scrollReveal();
+    window.sr = new ScrollReveal(); //{ reset: true }
+    sr.reveal('.row');
 
     $('section[data-type="background"]').each(function(){
 // declare the variable to affect the defined data-type
@@ -160,7 +161,7 @@ $(document).ready(function( $ ) {
 
 // move the background
             $scroll.css({ backgroundPosition: coords });
-        }); // end window scroll
+        }); // end windowreveal scroll
     });  // end section function
 
     $("#owl").owlCarousel({

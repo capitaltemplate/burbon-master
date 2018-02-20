@@ -199,8 +199,6 @@ section#team .inner
 //}
 
 // PRICING:
-
-
 .plans div h2
     font-size: 3rem
     letter-spacing: 0.1rem
@@ -216,17 +214,12 @@ section#team .inner
     color: #fff
     position: relative
 
-
 .plans-border
     border: 1px solid #becfd3
     width: 20rem
     padding-top: 2rem
     margin-bottom: 3rem
-    //margin-left: 0
-    //margin-right: 0
     @media #{$media-mobile}
-        //margin-left: 2rem
-        //margin-right: 2rem
         margin-bottom: 2rem
 
 .extra-border
@@ -405,13 +398,13 @@ section#works h2
     text-align: center
 
 figure
-    //height: 150px
     display: block
     overflow: hidden
     z-index: 100
     margin: 0
 
 figcaption
+    display: table-row
     background-color: red
     height: 100%
     width: 100%
@@ -419,12 +412,11 @@ figcaption
     position: absolute
     opacity: 0
     padding: 5px
-    display: table
     border: 1px solid black
     vertical-align: middle
+    top: 100%
 
-//a:hover
-figcaption
+a:hover figcaption
     opacity: 0.7
     background-image: url('../images/background1.jpg')
     top: 0
@@ -432,11 +424,15 @@ figcaption
     transition: all 1.2s
 
 .gallery-over
-    display: table-cell
+    display: table
     vertical-align: middle
-    width: 5rem
-    height: 5rem
+    height: 100%
     margin: 0 auto
+
+.gallery-over-center
+    display: table-cell
+    margin: 0 auto
+    vertical-align: middle
 
 .controls
     margin-bottom: 1rem
