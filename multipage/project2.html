@@ -21,6 +21,7 @@
     <!-- scroll Plugin -->
     <link href="../css/scrolling-nav.css" rel="stylesheet">
     <link href="../css/css.css" rel="stylesheet">
+    <link href="../sass/style.css" rel="stylesheet">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
@@ -31,24 +32,33 @@
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Preloader -->
-<div id="preloader">
-    <div id="status"></div>
+<div id="preloader" class="row h-100">
+    <div class="col-sm-12 my-auto">
+        <div id="status"></div>
+    </div>
 </div>
 <!-- Preloader-end -->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-scroll-background">
-    <a class="navbar-brand navbar-brand-sub" href="#preloader">
-        <img alt="Brand" src="../images/logo.png">
+<nav class="navbar navbar-expand-lg navbar-scroll-background collapsed">
+    <a class="navbar-brand" href="#preloader">
+        <img srcset="../images/logo/logo-white-200x54.png 300w,
+                        ../images/logo/logo-white-400x107.png 2000w,
+                      ../images/logo/logo-white-700x187.png 3000w"
+             sizes="100vh"
+             src="images/logo/logo-white-700x187.png"
+             alt="Your Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
         <ul class="navbar-nav ">
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     Home
                 </a>
                 <div class="dropdown-menu">
@@ -60,7 +70,8 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     About Us
                 </a>
                 <div class="dropdown-menu">
@@ -70,7 +81,8 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navbarDropdown" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     Gallery
                 </a>
                 <div class="dropdown-menu">
@@ -82,7 +94,8 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     Contact
                 </a>
                 <div class="dropdown-menu">
@@ -98,7 +111,8 @@
                 <a class="nav-link" href="../multipage/faq.html">Faq</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     Features
                 </a>
                 <div class="dropdown-menu">
@@ -113,7 +127,7 @@
 <!-- Navbar end-->
 
 <!--[jumotron]-->
-<section id="container-fluid">
+<section id="headSubPage" class="container-fluid">
     <div class="jumbotron-sub jumbo img-fluid">
         <div class="text-subpages align-items-center">
             <h2>projects</h2>
@@ -127,12 +141,13 @@
 
 <!--[Project container]-->
 <div class="container-fluid">
-    <div class="about-project">
+    <section class="about-project">
         <div class="row">
             <div class="col-md-3 project2">
                 <h2>Here I am</h2>
                 <p class="mt-4">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet,
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit.Lorem ipsum dolor sit amet,
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet,
                 </p>
             </div>
@@ -141,7 +156,8 @@
                     <div class="lnr lnr-coffee-cup about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
                     <p class="about-icon-text">Working 24h</p>
                 </div>
-                <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                <p class="text-aboutus">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor.
                     Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
                 </p>
             </div>
@@ -150,7 +166,8 @@
                     <div class="lnr lnr-rocket about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
                     <p class="about-icon-text">What We Can</p>
                 </div>
-                <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                <p class="text-aboutus">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor.
                     Aenean massa.
                 </p>
             </div>
@@ -159,13 +176,16 @@
                     <div class="lnr lnr-diamond about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
                     <p class="about-icon-text">Fantastic Team</p>
                 </div>
-                <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                <p class="text-aboutus">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor.
                 </p>
             </div>
         </div>
-    </div>
-    <div class="col-md-12 project">
-        <img class="img img-fluid" src="../images/works/3.jpg" alt="" />
+    </section>
+    <div class="row justify-content-center">
+        <div class="col-md-8 project">
+            <img class="img img-fluid" src="../images/works/3.jpg" alt=""/>
+        </div>
     </div>
 </div>
 <!--[project container end]-->
@@ -183,50 +203,62 @@
             <div class="row what">
                 <div class="col-md-4 col-sm-4 webdesign">
                     <div class="icons">
-                        <div class="lnr lnr-picture services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                        <div class="lnr lnr-picture services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"></div>
                     </div>
                     <h2>Webdesign</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-4 webdesign">
                     <div class="icons">
-                        <div class="lnr lnr-rocket services-icon"  data-anijs="if:mouseover, do: rubberBand animated"></div>
+                        <div class="lnr lnr-rocket services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"></div>
                     </div>
                     <h2>24 Support</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-4 webdesign">
                     <div class="icons">
-                        <div class="lnr lnr-code services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                        <div class="lnr lnr-code services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"></div>
                     </div>
                     <h2>Coding</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-4 webdesign">
                     <div class="icons">
-                        <div class="lnr lnr-laptop-phone services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                        <div class="lnr lnr-laptop-phone services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"></div>
                     </div>
                     <h2>Responive</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-4 webdesign">
                     <div class="icons">
-                        <div class="lnr lnr-bullhorn services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                        <div class="lnr lnr-bullhorn services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"></div>
                     </div>
                     <h2>Creative</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-4 webdesign">
                     <div class="icons">
-                        <div class="lnr lnr-dice services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                        <div class="lnr lnr-dice services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"></div>
                     </div>
                     <h2>Minimalism</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
 
@@ -265,7 +297,6 @@
 
 <!-- jQuery Plugin -->
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/jquery.countdown.js"></script>
 <script src="../js/html5shiv.min.js"></script>
 <script src="../js/respond.min.js"></script>
 <!--[animate-number]-->

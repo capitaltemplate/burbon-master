@@ -19,6 +19,10 @@ html {
       line-height: calc(0.875rem * 1.4); } }
   @media (min-width: 160em) {
     html {
+      font-size: calc(0.875rem * 2.0);
+      line-height: calc(0.875rem * 2.0); } }
+  @media (min-width: 212em) {
+    html {
       font-size: calc(0.875rem * 3.0);
       line-height: calc(0.875rem * 3.0); } }
 

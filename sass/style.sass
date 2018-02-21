@@ -5,6 +5,7 @@ $base-m: 64em // 1024px
 $base-l: 85.375em // 1366px
 $base-xl: 120em // 1920px
 $base-xxl: 160em // 2560px
+$base-4k: 212em // 3392px
 
 // Media Queries
 $media-mobile: "(min-width: #{$base-mobile})"
@@ -13,7 +14,8 @@ $media-m: "(min-width: #{$base-m})"
 $media-l: "(min-width: #{$base-l})"
 $media-xl: "(min-width: #{$base-xl})"
 $media-xxl: "(min-width: #{$base-xxl})"
-$media-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+$media-4k: "(min-width: #{$base-4k})"
+//$media-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
 
 $baseFontSize: 0.875rem // 0.875 * 16 = 14px
 
@@ -42,6 +44,9 @@ html
         font-size: calc(#{$baseFontSize} * 1.4)
         line-height: calc(#{$baseFontSize} * 1.4)
     @media #{$media-xxl}
+        font-size: calc(#{$baseFontSize} * 2.0)
+        line-height: calc(#{$baseFontSize} * 2.0)
+    @media #{$media-4k}
         font-size: calc(#{$baseFontSize} * 3.0)
         line-height: calc(#{$baseFontSize} * 3.0)
 
