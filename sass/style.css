@@ -1001,4 +1001,39 @@ blockquote footer, blockquote small, blockquote .small {
   color: #fff;
   text-transform: uppercase; }
 
+.gallery {
+  text-align: center;
+  font-size: 0.1px; }
+
+.gallery:after {
+  content: "";
+  display: inline-block;
+  width: 100%; }
+
+.mix, .gap {
+  display: inline-block;
+  vertical-align: top; }
+
+.mix {
+  background: #fff;
+  position: relative; }
+
+.mix:before {
+  display: inline-block; }
+
+.mix, .gap {
+  width: calc(100%/2 - (((2 - 1) * 1rem) / 2)); }
+  @media (min-width: 64em) {
+    .mix, .gap {
+      width: calc(100%/3 - (((3 - 1) * 1rem) / 3)); } }
+
+.mix-full, .gap {
+  width: calc(100%/2 - (((2 - 1) * 1rem) / 2)); }
+  @media (min-width: 64em) {
+    .mix-full, .gap {
+      width: calc(100%/3 - (((3 - 1) * 1rem) / 3)); } }
+  @media (min-width: 85.375em) {
+    .mix-full, .gap {
+      width: calc(100%/4 - (((4 - 1) * 1rem) / 4)); } }
+
 /*# sourceMappingURL=style.css.map */
