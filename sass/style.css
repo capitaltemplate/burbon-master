@@ -30,9 +30,11 @@ body {
   font-size: 0.875rem; }
 
 .tlt span {
+  color: white;
   font-size: 2rem; }
 
 .tlt p {
+  color: white;
   font-size: 1rem; }
 
 .title h1 {
@@ -102,6 +104,7 @@ section#team .inner {
 
 .jumbotron {
   margin-bottom: 0;
+  padding: 0;
   background-image: url("../images/b1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,7 +130,7 @@ section#team .inner {
   display: table;
   vertical-align: middle;
   font-weight: 100;
-  font-size: 1.1em;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-left: 0.4rem;
@@ -174,10 +177,18 @@ section#team .inner {
   border: 1px solid #becfd3;
   width: 20rem;
   padding-top: 2rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem; }
   @media (min-width: 20em) {
     .plans-border {
+      width: 15rem;
+      margin-left: 0;
+      margin-right: 0;
       margin-bottom: 2rem; } }
+  @media (min-width: 120em) {
+    .plans-border {
+      width: 18rem; } }
 
 .extra-border {
   border: 3px solid #fff; }
@@ -806,7 +817,7 @@ blockquote footer, blockquote small, blockquote .small {
 #preloader {
   position: fixed;
   background-color: #fff;
-  z-index: 99;
+  z-index: 999999;
   width: 100%;
   margin: 0; }
 
@@ -820,10 +831,12 @@ blockquote footer, blockquote small, blockquote .small {
   background-position: center; }
 
 .jumbotron-table {
+  position: absolute;
   display: table;
   height: 100%;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  z-index: 1000; }
 
 .jumbotron-center {
   height: 100%;
@@ -948,5 +961,44 @@ blockquote footer, blockquote small, blockquote .small {
 /*--------------------------------------------------------------- */
 /* project-page 1 */
 /*--------------------------------------------------------------- */
+.rounded-img {
+  border-radius: 0.85rem; }
+
+/*--------------------------------------------------------------- */
+/*  jumbotron-subpages */
+/*--------------------------------------------------------------- */
+.jumbotron-sub {
+  color: #ffffff;
+  display: table;
+  margin-bottom: 0px;
+  background-image: url("../images/b1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 100%;
+  background-position: center; }
+
+.text-subpages {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.text-subpages-inner {
+  position: relative;
+  z-index: 1000; }
+
+.text-subpages h1 {
+  font-size: 3rem;
+  letter-spacing: 0.3rem; }
+
+.text-subpages h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem; }
+
+.text-subpages p {
+  font-size: 0.7rem;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,7 +23,7 @@ $basePadding: 3rem
 $basePaddingV: 5rem
 $basePaddingH: 1rem
 $baseMarginV: 5rem
-$baseMarginH: 1rem
+$baseMarginH: 2rem
 
 $innerPadding: 1rem
 
@@ -55,9 +55,11 @@ body
 
 //ENTER PAGE
 .tlt span
+    color: white
     font-size: 2rem
 
 .tlt p
+    color: white
     font-size: 1rem
 
 .title h1
@@ -123,6 +125,7 @@ section#team .inner
 // JUMBOTRON
 .jumbotron
     margin-bottom: 0
+    padding: 0
     background-image: url("../images/b1.jpg") /* path to your background image at static.html */
     background-size: cover
     background-repeat: no-repeat
@@ -151,7 +154,7 @@ section#team .inner
     display: table
     vertical-align: middle
     font-weight: 100
-    font-size: 1.1em
+    font-size: 0.9rem
     text-transform: uppercase
     letter-spacing: 0.2rem
     margin-left: 0.4rem
@@ -230,8 +233,15 @@ section#team .inner
     width: 20rem
     padding-top: 2rem
     margin-bottom: 3rem
+    margin-left: #{$baseMarginH}
+    margin-right: #{$baseMarginH}
     @media #{$media-mobile}
+        width: 15rem
+        margin-left: 0
+        margin-right: 0
         margin-bottom: 2rem
+    @media #{$media-xl}
+        width: 18rem
 
 .extra-border
     border: 3px solid #fff
@@ -905,7 +915,7 @@ blockquote footer, blockquote small, blockquote .small
 #preloader
     position: fixed
     background-color: #fff
-    z-index: 99
+    z-index: 999999
     width: 100%
     margin: 0
 
@@ -920,10 +930,12 @@ blockquote footer, blockquote small, blockquote .small
 
 // STATIC
 .jumbotron-table
+    position: absolute
     display: table
     height: 100%
     width: 100%
     text-align: center
+    z-index: 1000
 
 .jumbotron-center
     height: 100%
@@ -1006,7 +1018,7 @@ blockquote footer, blockquote small, blockquote .small
     display: inline
 
 // MODAL
-.modalDialog 
+.modalDialog
     position: fixed
     top: 0
     right: 0
@@ -1021,11 +1033,11 @@ blockquote footer, blockquote small, blockquote .small
     pointer-events: none
 
 
-.modalDialog:target 
+.modalDialog:target
     opacity: 1
     pointer-events: auto
 
-.modalDialog > div 
+.modalDialog > div
     width: 80vw
     height: 80vh
     color: #000
@@ -1034,14 +1046,14 @@ blockquote footer, blockquote small, blockquote .small
     padding: 5px 20px 13px 20px
 
 
-.modalDialog p 
+.modalDialog p
     color: #000
     margin-top: 7px
 
-.modalDialog img 
+.modalDialog img
     width: 100%
 
-.close 
+.close
     color: #aba7a8
     line-height: 25px
     position: absolute
@@ -1058,7 +1070,7 @@ blockquote footer, blockquote small, blockquote .small
     -ms-transition: all 1.3s ease-in-out
 
 
-.close:hover 
+.close:hover
     color: #7a9697
     -webkit-transform: rotate(360deg)
     -moz-transform: rotate(360deg)
@@ -1103,3 +1115,45 @@ blockquote footer, blockquote small, blockquote .small
 //    margin-right: 7%;
 //}
 
+// PROJECT 2
+.rounded-img
+    border-radius: .85rem
+
+/*---------------------------------------------------------------*/
+/*  jumbotron-subpages */
+/*---------------------------------------------------------------*/
+.jumbotron-sub
+    color: #ffffff
+    display: table
+    margin-bottom: 0px
+    background-image: url("../images/b1.jpg") //* path to your sub-page hero image background */
+    background-size: cover
+    background-repeat: no-repeat
+    height: 20rem
+    width: 100%
+    background-position: center
+
+
+.text-subpages
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+
+.text-subpages-inner
+    position: relative
+    z-index: 1000
+
+.text-subpages h1
+    font-size: 3rem
+    letter-spacing: 0.3rem
+
+.text-subpages h2
+    font-size: 1.5rem
+    letter-spacing: 0.3rem
+
+.text-subpages p
+    font-size: 0.7rem
+    letter-spacing: 0.3rem
+    color: #fff
+    //padding: 2vh
+    text-transform: uppercase

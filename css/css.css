@@ -955,39 +955,7 @@ ul.count-down li p {
 /*  subpages */
 /*---------------------------------------------------------------*/
 
-/*---------------------------------------------------------------*/
-/*  jumbotron-subpages */
-/*---------------------------------------------------------------*/
-.jumbotron-sub {
-    display: table;
-    margin-bottom: 0px;
-    background-image: url(../images/b1.jpg);/* path to your sub-page hero image background */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 45vh;
-    width: 100%;
-    background-position: center;
-}
 
-.text-subpages {
-    display: table-cell;
-    vertical-align: middle;
-    padding-top: 30px;
-}
-
-.text-subpages h2 {
-    font-size: 4vh;
-    padding-bottom: 2vh;
-    letter-spacing: 1.7vh;
- }
-
-.text-subpages p {
-    font-size: 1.2vh;
-    letter-spacing: .4vh;
-    color: #fff;
-    padding: 2vh;
-    text-transform: uppercase;
-}
 /*---------------------------------------------------------------*/
 /*  download */
 /*---------------------------------------------------------------*/
