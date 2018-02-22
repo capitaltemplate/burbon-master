@@ -83,11 +83,11 @@ section
         padding-left: 2rem
         padding-right: 2rem
     @media #{$media-l}
-        padding-left: 4rem
-        padding-right: 4rem
+        padding-left: 8rem
+        padding-right: 8rem
     @media #{$media-xl}
-        padding-left: 6rem
-        padding-right: 6rem
+        padding-left: 8rem
+        padding-right: 8rem
     @media #{$media-xxl}
         padding-left: 8rem
         padding-right: 8rem
@@ -122,7 +122,7 @@ section#team .inner
 
 // JUMBOTRON
 .jumbotron
-    margin-bottom: 0px
+    margin-bottom: 0
     background-image: url("../images/b1.jpg") /* path to your background image at static.html */
     background-size: cover
     background-repeat: no-repeat
@@ -416,7 +416,6 @@ figure
 
 figcaption
     display: table-row
-    background-color: red
     height: 100%
     width: 100%
     text-align: center
@@ -745,6 +744,7 @@ blockquote
         padding: #{$basePadding}
 
 .carousel-inner
+    height: 100%
     color: #fff
     line-height: 180%
     text-align: center
@@ -894,8 +894,8 @@ blockquote footer, blockquote small, blockquote .small
     text-transform: uppercase
     padding: 1rem
 
-// SLIDER
-.opac-carousel
+// s
+.opac
     background-color: rgba(0,0,0,0.5)
     height: 100vh
     margin-top: -100vh
@@ -918,9 +918,39 @@ blockquote footer, blockquote small, blockquote .small
     background-repeat:  no-repeat
     background-position:  center
 
+// STATIC
+.jumbotron-table
+    display: table
+    height: 100%
+    width: 100%
+    text-align: center
+
+.jumbotron-center
+    height: 100%
+    width: 100%
+    display: table-cell
+    vertical-align: middle
+
+//.jumbotron-center .tlt
+//    position: absolute
+//    font-size: 2vmax
+//    letter-spacing: 1.5vw
+//    top: 50%
+//    left: 50%
+//    width: 80%
+//    z-index: 3
+//    color: #fff
+//    text-align: center
+//    text-transform: uppercase
+//    font-weight: 100
+//    text-shadow: 1px 1px 0 rgba(0,0,0,.75)
+//    -webkit-transform: translate3d(-50%,-50%,0)
+//    -moz-transform: translate3d(-50%,-50%,0)
+//    -ms-transform: translate3d(-50%,-50%,0)
+//    -o-transform: translate3d(-50%,-50%,0)
+//    transform: translate3d(-50%,-50%,0)
 
 // VIDEO
-
 .video-container
     height: 100%
     object-fit: contain
@@ -929,7 +959,6 @@ blockquote footer, blockquote small, blockquote .small
     z-index: -1200
     max-width: 100vw
     overflow: hidden
-
 
 .youtube
     min-height: 100vh
@@ -943,7 +972,6 @@ blockquote footer, blockquote small, blockquote .small
     top: 30vmin
     z-index: 500
     text-align: center
-
 
 .youtube-overflow .tlt
     position: absolute
@@ -964,21 +992,78 @@ blockquote footer, blockquote small, blockquote .small
     -o-transform: translate3d(-50%,-50%,0)
     transform: translate3d(-50%,-50%,0)
 
-
 .youtube-gallery
     width: auto
     height: 400px
     text-align: center
     color: #fff
 
-
 .yt h2
     font-weight: 700
     font-size: 84px
 
-
 .button-yt
     display: inline
+
+// MODAL
+.modalDialog 
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0,0,0, 0.8)
+    z-index: 99999
+    opacity: 0
+    -webkit-transition: opacity 400ms ease-in
+    -moz-transition: opacity 400ms ease-in
+    transition: opacity 400ms ease-in
+    pointer-events: none
+
+
+.modalDialog:target 
+    opacity: 1
+    pointer-events: auto
+
+.modalDialog > div 
+    width: 80vw
+    height: 80vh
+    color: #000
+    position: relative
+    margin: 7% auto
+    padding: 5px 20px 13px 20px
+
+
+.modalDialog p 
+    color: #000
+    margin-top: 7px
+
+.modalDialog img 
+    width: 100%
+
+.close 
+    color: #aba7a8
+    line-height: 25px
+    position: absolute
+    right: -26px
+    text-align: center
+    top: -10px
+    width: 24px
+    text-decoration: none
+    font-weight: normal
+    font-size: 30px
+    -webkit-transition: all 1.3s ease-in-out
+    -moz-transition: all 1.3s ease-in-out
+    -o-transition: all 1.3s ease-in-out
+    -ms-transition: all 1.3s ease-in-out
+
+
+.close:hover 
+    color: #7a9697
+    -webkit-transform: rotate(360deg)
+    -moz-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    -ms-transform: rotate(360deg)
 
 // SUBPAGES:
 #headSubPage
@@ -1017,3 +1102,4 @@ blockquote footer, blockquote small, blockquote .small
 //    margin-left: 7%;
 //    margin-right: 7%;
 //}
+

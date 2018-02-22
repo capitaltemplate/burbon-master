@@ -229,45 +229,45 @@ body{
 /*---------------------------------------------------------------*/
 
 
-.jumbo  {
-    text-align: center;
-    color: #fff;
-}
+/*.jumbo  {*/
+    /*text-align: center;*/
+    /*color: #fff;*/
+/*}*/
 
-.jumbotron .tlt  {
-    position: absolute;
-    font-size: 2vmax;
-    letter-spacing: 1.5vw;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    z-index: 3;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-    -webkit-transform: translate3d(-50%,-50%,0);
-    -moz-transform: translate3d(-50%,-50%,0);
-    -ms-transform: translate3d(-50%,-50%,0);
-    -o-transform: translate3d(-50%,-50%,0);
-    transform: translate3d(-50%,-50%,0);
-}
+/*.jumbotron .tlt  {*/
+    /*!*position: absolute;*!*/
+    /*font-size: 2vmax;*/
+    /*letter-spacing: 1.5vw;*/
+    /*!*top: 50%;*!*/
+    /*!*left: 50%;*!*/
+    /*!*width: 80%;*!*/
+    /*z-index: 3;*/
+    /*color: #fff;*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: 100;*/
+    /*text-shadow: 1px 1px 0 rgba(0,0,0,.75);*/
+    /*-webkit-transform: translate3d(-50%,-50%,0);*/
+    /*-moz-transform: translate3d(-50%,-50%,0);*/
+    /*-ms-transform: translate3d(-50%,-50%,0);*/
+    /*-o-transform: translate3d(-50%,-50%,0);*/
+    /*transform: translate3d(-50%,-50%,0);*/
+/*}*/
 
-.tlt p {
-    font-size: 1vmax;
-    padding-top: 4vh;
-    letter-spacing: .8vh;
-    font-weight: 100;
-    color: #fff;
-    opacity: 0.8;
-}
+/*.tlt p {*/
+    /*font-size: 1vmax;*/
+    /*padding-top: 4vh;*/
+    /*letter-spacing: .8vh;*/
+    /*font-weight: 100;*/
+    /*color: #fff;*/
+    /*opacity: 0.8;*/
+/*}*/
 
-.opac {
-    background-color: rgba(0,0,0,0.5);
-    height: 100vmax;
-    margin-top: -100vmax;
-}
+/*.opac {*/
+    /*background-color: rgba(0,0,0,0.5);*/
+    /*height: 100vmax;*/
+    /*margin-top: -100vmax;*/
+/*}*/
 
 #start {
     height: 100%;
@@ -350,10 +350,6 @@ body{
 .carousel,
 .item,
 .active {
-    height: 100%;
-}
-
-.carousel-inner {
     height: 100%;
 }
 
@@ -869,73 +865,6 @@ ul.count-down li p {
     }
 }
 
-
-/*---------------------------------------------------------------*/
- /*modal*/
-/*---------------------------------------------------------------*/
-.modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0, 0.8);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-}
-
-.modalDialog:target {
-    opacity:1;
-    pointer-events: auto;
-}
-
-.modalDialog > div {
-    width: 80vw;
-    height: 80vh;
-    color: #000;
-    position: relative;
-    margin: 7% auto;
-    padding: 5px 20px 13px 20px;
-}
-
-.modalDialog p {
-    color: #000;
-    margin-top: 7px;
-}
-
-.modalDialog img {
-    height: 75%;
-}
-
-.close {
-    color: #aba7a8;
-    line-height: 25px;
-    position: absolute;
-    right: -26px;
-    text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 30px;
-    -webkit-transition: all 1.3s ease-in-out;
-    -moz-transition: all 1.3s ease-in-out;
-    -o-transition: all 1.3s ease-in-out;
-    -ms-transition: all 1.3s ease-in-out;
-}
-
-.close:hover {
-    color: #7a9697;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-}
 
 /*---------------------------------------------------------------*/
 /* 16. Google-maps*/
