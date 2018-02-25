@@ -21,6 +21,7 @@
     <!-- scroll Plugin -->
     <link href="../css/scrolling-nav.css" rel="stylesheet">
     <link href="../css/css.css" rel="stylesheet">
+    <link href="../sass/style.css" rel="stylesheet">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
@@ -31,15 +32,22 @@
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Preloader -->
-<div id="preloader">
-    <div id="status"></div>
+<div id="preloader" class="row h-100">
+    <div class="col-sm-12 my-auto">
+        <div id="status"></div>
+    </div>
 </div>
 <!-- Preloader-end -->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-scroll-background">
-    <a class="navbar-brand navbar-brand-sub" href="#preloader">
-        <img alt="Brand" src="../images/logo.png">
+<nav class="navbar navbar-expand-lg navbar-scroll-background collapsed">
+    <a class="navbar-brand" href="#preloader">
+        <img srcset="../images/logo/logo-white-200x54.png 300w,
+                        ../images/logo/logo-white-400x107.png 2000w,
+                      ../images/logo/logo-white-700x187.png 3000w"
+             sizes="100vh"
+             src="../images/logo/logo-white-700x187.png"
+             alt="Your Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -113,12 +121,14 @@
 <!-- Navbar end-->
 
 <!--[jumotron]-->
-<section id="container-fluid">
+<section id="headSubPage" class="container-fluid">
     <div class="jumbotron-sub jumbo img-fluid">
-        <div class="text-subpages align-items-center">
-            <h2>Features</h2>
-            <h4>We Deliver - You Explore</h4>
-            <p>Home/Features</p>
+        <div class="text-subpages">
+            <div class="text-subpages-inner">
+                <h1>Features</h1>
+                <h2>We Deliver - You Explore</h2>
+                <p>Home/Features</p>
+            </div>
         </div>
     </div>
     <div class="opac"></div>
@@ -286,7 +296,7 @@
                 </ul>
             </div>
             <div id="footer-text">
-                <h4>Bourbon Co. Creative Agency</h4>
+                <h3>Bourbon Co Creative Agency</h3>
                 <p>Made with love - All rights Reserved</p>
             </div>
         </div>
@@ -296,7 +306,6 @@
 
 <!-- jQuery Plugin -->
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/jquery.countdown.js"></script>
 <script src="../js/html5shiv.min.js"></script>
 <script src="../js/respond.min.js"></script>
 <!--[animate-number]-->

@@ -21,6 +21,7 @@
     <!-- scroll Plugin -->
     <link href="../css/scrolling-nav.css" rel="stylesheet">
     <link href="../css/css.css" rel="stylesheet">
+    <link href="../sass/style.css" rel="stylesheet">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
@@ -31,15 +32,22 @@
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Preloader -->
-<div id="preloader">
-    <div id="status"></div>
+<div id="preloader" class="row h-100">
+    <div class="col-sm-12 my-auto">
+        <div id="status"></div>
+    </div>
 </div>
 <!-- Preloader-end -->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-scroll-background">
-    <a class="navbar-brand navbar-brand-sub" href="#preloader">
-        <img alt="Brand" src="../images/logo.png">
+<nav class="navbar navbar-expand-lg navbar-scroll-background collapsed">
+    <a class="navbar-brand" href="#preloader">
+        <img srcset="../images/logo/logo-white-200x54.png 300w,
+                        ../images/logo/logo-white-400x107.png 2000w,
+                      ../images/logo/logo-white-700x187.png 3000w"
+             sizes="100vh"
+             src="../images/logo/logo-white-700x187.png"
+             alt="Your Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -113,12 +121,13 @@
 <!-- Navbar end-->
 
 <!--[jumotron]-->
-<section id="container-fluid">
+<section id="headSubPage" class="container-fluid">
     <div class="jumbotron-sub jumbo img-fluid">
-        <div class="text-subpages align-items-center">
-            <h2>About Me</h2>
-            <h4>We Deliver - You Explore</h4>
-            <p>Home/About Me</p>
+        <div class="text-subpages">
+            <div class="text-subpages-inner">
+                <h1>About us</h1>
+                <div class="testimonial-border-white"></div>
+            </div>
         </div>
     </div>
     <div class="opac"></div>
@@ -126,21 +135,20 @@
 <!--[jumotron end]-->
 
 <!--[Our Team]-->
-<div class="container">
-    <section id="team">
-        <div class="row our-team">
+<section id="team">
+    <div class="container-fluid">
+        <h2>Our Team</h2>
+        <div class="testimonial-border"></div>
+        <div class="row our-team justify-content-around">
 
-            <div class="col-8 offset-2 team-text">
-                <div>
+            <div class="col-sm-6 team-text">
+                <div class="inner">
                     <img class="img  photo" src="../images/team/clarke.jpg" alt=""/>
                     <div>
                         <h2>Emilia Foster</h2>
                         <div class="testimonial-border"></div>
-                        <h4>Illustrator</h4>
+                        <h3>Illustrator</h3>
                         <p class="text-aboutteam">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum
-                            dolor Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum
-                            dolor Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum
-                            dolor Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum
                             dolor
                             sit amet, consectetuer adipiscing elit.Lorem ipsum dolor. </p>
                         <div class="social-icon-team" data-sr="wait 0.1s, then enter and hustle 125px over 1.5s">
@@ -163,166 +171,189 @@
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 <!--[Our Team end]-->
 
+
 <!--[download]-->
-<div class="container-fluid download-cont">
-    <div class="row download subpage">
-        <div class="container">
-            <h2>Bourbon Co - AMAZING THEME FOR YOUR BUSINESS</h2>
-            <div class="testimonial-border-white"></div>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-                iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                vel illum dolore eu feugiat nulla facilisis.
-            </p>
-            <a class="btn buy-theme-white" href="#" role="button" data-anijs="if: mouseover, do: pulse animated">Buy Theme</a>
+<section id="download" class="download-cont" data-speed="4" data-type="background">
+    <div class="container-fluid">
+        <div class="inner">
+            <div class="row download download-w justify-content-md-center">
+                <div class="col-12 col-md-8 col-xl-6">
+                    <h2>Bourbon Co - AMAZING THEME FOR YOUR BUSINESS</h2>
+                    <div class="testimonial-border-white"></div>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                        lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                        iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                        vel illum dolore eu feugiat nulla facilisis.
+                    </p>
+                    <a class="btn buy-theme-white" href="#" role="button" data-anijs="if: mouseover, do: pulse animated">Buy
+                        Theme</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 <!--[download-end]-->
 
-<div class="container">
-    <section id="about">
-        <div class="row About-Us">
-            <div class="col-md-12 about-text">
-                <div>
-                    <h2 data-sr="wait 0.1s, then enter bottom and hustle 125px over 1.5s">About My Studio</h2>
-                    <div class="testimonial-border"></div>
+<!--[About Us]-->
+<section id="about">
+    <div class="container-fluid">
+        <div class="about-text">
+            <div>
+                <h2>About Studio</h2>
+                <div class="testimonial-border"></div>
 
-                    <div class="row about-oontent">
-                        <div class="col-md-6">
-                            <p class="about-icon-text">Fantastic Team</p>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                <div class="row about-content justify-content-around">
+                    <div class="col-sm-6">
+                        <div class="inner">
+                            <div class="about-icons-content">
+                                <div class="lnr lnr-diamond about-icon"
+                                     data-anijs="if:mouseover, do: rubberBand animated"
+                                     data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
+                                <div class="about-icon-text">
+                                    <p>Fantastic Team</p>
+                                </div>
+                            </div>
+                            <p class="text-aboutus">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
                             </p>
                         </div>
-                        <div class="col-md-6">
-                            <p class="about-icon-text">What We Can Do</p>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="inner">
+                            <div class="about-icons-content">
+                                <div class="lnr lnr-rocket about-icon"
+                                     data-anijs="if:mouseover, do: rubberBand animated"
+                                     data-sr="wait 0.5s, then enter and hustle 125px over 1.5s"></div>
+                                <div class="about-icon-text"><p>What We Can Do</p></div>
+                            </div>
+                            <p class="text-aboutus">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.
+                                Donec quam felis, ultricies nec, pellentesque eu. Donec quam felis, ultricies nec,
+                                pellentesque eu, pretium quis.
+                                Donec quam felis.
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
-    </section>
-</div>
-
+    </div>
+</section>
 <!--[Animate Numbers]-->
 <div class="container-fluid animate-numbers">
     <div class="row number">
-        <div class="col-md-3 count1 count">
+        <div class="col-sm-3 count1 count">
             <div class="testimonial-border-white"></div>
-            <span class="counter">55</span>
-            <!--<h2>/</h2>-->
+            <span class="counter counterup-nums">55</span>
             <p>Awards</p>
         </div>
-        <div class="col-md-3 count2 count">
+        <div class="col-sm-3 count2 count">
             <div class="testimonial-border-white"></div>
             <span class="counter">156</span>
-            <!--<h2>/</h2>-->
             <p>Coffe Cups</p>
         </div>
-        <div class="col-md-3 count3 count">
+        <div class="col-sm-3 count3 count">
             <div class="testimonial-border-white"></div>
             <span class="counter ">160</span>
-            <!--<h2>/</h2>-->
             <p>Clients</p>
         </div>
-        <div class="col-md-3 count4 count">
+        <div class="col-sm-3 count4 count">
             <div class="testimonial-border-white"></div>
             <span class="counter">99</span>
-            <!--<h2>/</h2>-->
             <p>Projects</p>
         </div>
     </div>
 </div>
 <!--[Animate Numbers end]-->
 
-<div class="container">
-        <div class="row About-Us">
-            <div class="col-md-12 about-text">
-                <div>
-                    <h2 data-sr="wait 0.1s, then enter bottom and hustle 125px over 1.5s">We are for you</h2>
-                    <div class="testimonial-border"></div>
-
-                    <div class="row about-oontent">
-                        <div class="col-md-4">
-                            <div class="about-icons-content">
-                                <div class="lnr lnr-diamond about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                                <p class="about-icon-text">Fantastic Team and Great People</p>
-                            </div>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="about-icons-content">
-                                <div class="lnr lnr-coffee-cup about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                                <p class="about-icon-text">We Are Working 24h</p>
-                            </div>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="about-icons-content">
-                                <div class="lnr lnr-rocket about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                                <p class="about-icon-text">What We Can Do For You</p>
-                            </div>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="about-icons-content">
-                                <div class="lnr lnr-pie-chart about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                                <p class="about-icon-text">Life we Love</p>
-                            </div>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="about-icons-content">
-                                <div class="lnr lnr-construction about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                                <p class="about-icon-text">We are Great</p>
-                            </div>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="about-icons-content">
-                                <div class="lnr lnr-cog about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                                <p class="about-icon-text">We live for you</p>
-                            </div>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            </p>
-                        </div>
+<!--[What we do]-->
+<section id="what_we_do">
+    <div class="container-fluid what-we">
+        <h2>We are for you</h2>
+        <div class="testimonial-border"></div>
+        <div class="row what">
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-diamond about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
                     </div>
+                    <h3>Fantastic Team and Great People</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
                 </div>
             </div>
-
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-coffee-cup about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                    </div>
+                    <h3>We Are Working 24h</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-rocket about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                    </div>
+                    <h3>What We Can Do For You</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-pie-chart about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                    </div>
+                    <h3>Life we Love</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-construction about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                    </div>
+                    <h3>We are Great</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-cog about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
+                    </div>
+                    <h3>We live for you</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
         </div>
-</div>
+    </div>
+</section>
+<!--[What we do - end]-->
 
 <!--[footer]-->
 <div class="container-fluid footer">
@@ -342,7 +373,7 @@
                 </ul>
             </div>
             <div id="footer-text">
-                <h4>Bourbon Co. Creative Agency</h4>
+                <h3>Bourbon Co Creative Agency</h3>
                 <p>Made with love - All rights Reserved</p>
             </div>
         </div>
@@ -352,7 +383,6 @@
 
 <!-- jQuery Plugin -->
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/jquery.countdown.js"></script>
 <script src="../js/html5shiv.min.js"></script>
 <script src="../js/respond.min.js"></script>
 <!--[animate-number]-->

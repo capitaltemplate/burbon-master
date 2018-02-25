@@ -21,6 +21,7 @@
     <!-- scroll Plugin -->
     <link href="../css/scrolling-nav.css" rel="stylesheet">
     <link href="../css/css.css" rel="stylesheet">
+    <link href="../sass/style.css" rel="stylesheet">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
@@ -31,15 +32,22 @@
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Preloader -->
-<div id="preloader">
-    <div id="status"></div>
+<div id="preloader" class="row h-100">
+    <div class="col-sm-12 my-auto">
+        <div id="status"></div>
+    </div>
 </div>
 <!-- Preloader-end -->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-scroll-background">
-    <a class="navbar-brand navbar-brand-sub" href="#preloader">
-        <img alt="Brand" src="../images/logo.png">
+<nav class="navbar navbar-expand-lg navbar-scroll-background collapsed">
+    <a class="navbar-brand" href="#preloader">
+        <img srcset="../images/logo/logo-white-200x54.png 300w,
+                        ../images/logo/logo-white-400x107.png 2000w,
+                      ../images/logo/logo-white-700x187.png 3000w"
+             sizes="100vh"
+             src="../images/logo/logo-white-700x187.png"
+             alt="Your Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -113,82 +121,106 @@
 <!-- Navbar end-->
 
 <!--[jumotron]-->
-<section id="container-fluid">
+<section id="headSubPage" class="container-fluid">
     <div class="jumbotron-sub jumbo img-fluid">
-        <div class="text-subpages align-items-center">
-            <h2>What We Do</h2>
-            <h4>We Deliver - You Explore</h4>
-            <p>Home/What we do</p>
+        <div class="text-subpages">
+            <div class="text-subpages-inner">
+                <h1>What we do</h1>
+                <h2>We Deliver - You Explore</h2>
+                <p>Home/What we do</p>
+            </div>
         </div>
     </div>
     <div class="opac"></div>
 </section>
 <!--[jumotron end]-->
 
-<!--[What we do]-->
-<div class="container-fluid what-we">
-    <section id="what_we_do">
-        <div class="row what_we_do">
-            <div class="col-md-12">
-                <h2>Services</h2>
-                <div class="testimonial-border"></div>
+<section id="what_we_do">
+    <div class="container-fluid what-we">
+        <h2>Services</h2>
+        <div class="testimonial-border"></div>
+        <div class="row what">
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-picture services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"
+                             data-sr="wait 0.1s, then enter and hustle 50px over 0.8s"></div>
+                    </div>
+                    <h3>Webdesign</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-rocket services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"
+                             data-sr="wait 0.3s, then enter and hustle 50px over 0.8s"></div>
+                    </div>
+                    <h3>24 Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-code services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"
+                             data-sr="wait 0.5s, then enter and hustle 50px over 0.8s"></div>
+                    </div>
+                    <h3>Coding</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-laptop-phone services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"
+                             data-sr="wait 0.6s, then enter and hustle 50px over 0.8s"></div>
+                    </div>
+                    <h3>Responive</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-bullhorn services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"
+                             data-sr="wait 0.8s, then enter and hustle 50px over 0.8s"></div>
+                    </div>
+                    <h3>Creative</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
+                    <div class="icons">
+                        <div class="lnr lnr-dice services-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"
+                             data-sr="wait 1s, then enter and hustle 50px over 0.8s"></div>
+                    </div>
+                    <h3>Minimalism</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row what">
-                <div class="col-md-4 col-sm-4 webdesign">
-                    <div class="icons">
-                        <div class="lnr lnr-picture services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                    </div>
-                    <h2>Webdesign</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-4 webdesign">
-                    <div class="icons">
-                        <div class="lnr lnr-rocket services-icon"  data-anijs="if:mouseover, do: rubberBand animated"></div>
-                    </div>
-                    <h2>24 Support</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-4 webdesign">
-                    <div class="icons">
-                        <div class="lnr lnr-code services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                    </div>
-                    <h2>Coding</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-4 webdesign">
-                    <div class="icons">
-                        <div class="lnr lnr-laptop-phone services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                    </div>
-                    <h2>Responive</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-4 webdesign">
-                    <div class="icons">
-                        <div class="lnr lnr-bullhorn services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                    </div>
-                    <h2>Creative</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-4 webdesign">
-                    <div class="icons">
-                        <div class="lnr lnr-dice services-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                    </div>
-                    <h2>Minimalism</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-</div>
+    </div>
+</section>
 <!--[What we do - end]-->
 
 <!--[plans-pricing]-->
@@ -199,100 +231,127 @@
                 <h2>Plans & Pricing</h2>
                 <div class="testimonial-border-white"></div>
             </div>
-            <div class="row plans mt-5 mb-5 justify-content-around">
-                <div class="col-md-auto col-sm-auto  plans-border ">
+            <div class="row plans justify-content-around">
+                <div class="plans-border">
                     <h2 data-sr="wait 0.1s, then enter top and hustle 20px over 1s">19$</h2>
-                    <h4>/ month</h4>
-                    <h3>Basic</h3>
-                    <p>24 hour support</p>
-                    <p>25 Photos</p>
-                    <p>5 Free Sessions</p>
-                    <p>up to 10 users</p>
+                    <h3>/ month</h3>
+                    <div class="plans-configurations">
+                        <h4>Basic</h4>
+                        <p>24 hour support</p>
+                        <p>25 Photos</p>
+                        <p>5 Free Sessions</p>
+                        <p>up to 10 users</p>
+                    </div>
                     <div class="button-plans">
                         <a class="btn btn-plans1 btn-lg" href="#" role="button"
                            data-anijs="if: mouseover, do: pulse animated">PURCHASE</a>
                     </div>
                 </div>
-                <div class=" col-md-auto col-sm-auto plans-border2 ">
+                <div class="plans-border extra-border">
                     <h2 data-sr="wait 0.3s, then enter top and hustle 20px over 1s">49$</h2>
-                    <h4>/ month</h4>
-                    <h3>Standard</h3>
-                    <p>24 hour support</p>
-                    <p>50 Photos</p>
-                    <p>50 Free Sesions</p>
-                    <p>up to 50 users</p>
+                    <h3>/ month</h3>
+                    <div class="plans-configurations">
+                        <h4>Standard</h4>
+                        <p>24 hour support</p>
+                        <p>50 Photos</p>
+                        <p>50 Free Sesions</p>
+                        <p>up to 50 users</p>
+                    </div>
                     <div class="button-plans">
                         <a class="btn btn-plans1 btn-lg" href="#" role="button"
                            data-anijs="if: mouseover, do: pulse animated">PURCHASE</a>
                     </div>
                 </div>
-                <div class="col-md-auto col-sm-auto plans-border3 ">
+                <div class="plans-border">
                     <h2 data-sr="wait 0.5s, then enter top and hustle 20px over 1s">99$</h2>
-                    <h4>/ month</h4>
-                    <h3>Professional</h3>
-                    <p>24 hour support</p>
-                    <p>Unlimited Photos</p>
-                    <p>Unlimited Free Sesions </p>
-                    <p>Unlimited users</p>
+                    <h3>/ month</h3>
+                    <div class="plans-configurations">
+                        <h4>Professional</h4>
+                        <p>24 hour support</p>
+                        <p>Unlimited Photos</p>
+                        <p>Unlimited Free Sesions </p>
+                        <p>Unlimited users</p>
+                    </div>
                     <div class="button-plans">
                         <a class="btn btn-plans1 btn-lg" href="#" role="button"
                            data-anijs="if: mouseover, do: pulse animated">PURCHASE</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 </div>
 <!--[plans-pricing-end]-->
-
 <!--[About Us]-->
-<div class="container">
-    <section id="about">
-        <div class="row About-Us">
-            <div class="col-md-12 about-text">
-                <div>
-                    <h2>what we do </h2>
-                    <div class="testimonial-border"></div>
+<section id="about">
+    <div class="container-fluid">
+        <div class="about-text">
+            <div>
+                <h2>About Studio</h2>
+                <div class="testimonial-border"></div>
 
-                    <div class="row about-oontent">
-                        <div class="col-md-4">
+                <div class="row about-content justify-content-around">
+                    <div class="col-sm-4">
+                        <div class="inner">
                             <div class="about-icons-content">
-                                <div class="lnr lnr-diamond about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                                <p class="about-icon-text">Fantastic Team</p>
+                                <div class="lnr lnr-diamond about-icon"
+                                     data-anijs="if:mouseover, do: rubberBand animated"
+                                     data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
+                                <div class="about-icon-text">
+                                    <p>Fantastic Team</p>
+                                </div>
                             </div>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            <p class="text-aboutus">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.
                                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
                             </p>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="inner">
                             <div class="about-icons-content">
-                                <div class="lnr lnr-coffee-cup about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                                <p class="about-icon-text">We Are Working 24h</p>
+                                <div class="lnr lnr-coffee-cup about-icon"
+                                     data-anijs="if:mouseover, do: rubberBand animated"
+                                     data-sr="wait 0.3s, then enter and hustle 125px over 1.5s"></div>
+                                <div class="about-icon-text"><p>Where We Are</p></div>
                             </div>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
+                            <p class="text-aboutus">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis. Donec quam felis,
+                                ultricies nec, pellentesque eu, pretium quis.
                             </p>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="inner">
                             <div class="about-icons-content">
-                                <div class="lnr lnr-rocket about-icon" data-anijs="if:mouseover, do: rubberBand animated"></div>
-                                <p class="about-icon-text">What We Can</p>
+                                <div class="lnr lnr-rocket about-icon"
+                                     data-anijs="if:mouseover, do: rubberBand animated"
+                                     data-sr="wait 0.5s, then enter and hustle 125px over 1.5s"></div>
+                                <div class="about-icon-text"><p>What We Can</p></div>
                             </div>
-                            <p class="text-aboutus" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                Donec quam felis, ultricies nec, pellentesque eu.
+                            <p class="text-aboutus">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.
+                                Donec quam felis, ultricies nec, pellentesque eu. Donec quam felis, ultricies nec,
+                                pellentesque eu, pretium quis.
+                                Donec quam felis.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
 <!--[About Us end]-->
 
 <!--[footer]-->
@@ -313,7 +372,7 @@
                 </ul>
             </div>
             <div id="footer-text">
-                <h4>Bourbon Co Creative Agency</h4>
+                <h3>Bourbon Co Creative Agency</h3>
                 <p>Made with love - All rights Reserved</p>
             </div>
         </div>
@@ -323,7 +382,6 @@
 
 <!-- jQuery Plugin -->
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/jquery.countdown.js"></script>
 <script src="../js/html5shiv.min.js"></script>
 <script src="../js/respond.min.js"></script>
 <!--[animate-number]-->

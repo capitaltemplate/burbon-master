@@ -21,6 +21,7 @@
     <!-- scroll Plugin -->
     <link href="../css/scrolling-nav.css" rel="stylesheet">
     <link href="../css/css.css" rel="stylesheet">
+    <link href="../sass/style.css" rel="stylesheet">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
@@ -31,15 +32,22 @@
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Preloader -->
-<div id="preloader">
-    <div id="status"></div>
+<div id="preloader" class="row h-100">
+    <div class="col-sm-12 my-auto">
+        <div id="status"></div>
+    </div>
 </div>
 <!-- Preloader-end -->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-scroll-background">
-    <a class="navbar-brand navbar-brand-sub" href="#preloader">
-        <img alt="Brand" src="../images/logo.png">
+<nav class="navbar navbar-expand-lg navbar-scroll-background collapsed">
+    <a class="navbar-brand" href="#preloader">
+        <img srcset="../images/logo/logo-white-200x54.png 300w,
+                        ../images/logo/logo-white-400x107.png 2000w,
+                      ../images/logo/logo-white-700x187.png 3000w"
+             sizes="100vh"
+             src="../images/logo/logo-white-700x187.png"
+             alt="Your Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -113,12 +121,14 @@
 <!-- Navbar end-->
 
 <!--[jumotron]-->
-<section id="container-fluid">
+<section id="headSubPage" class="container-fluid">
     <div class="jumbotron-sub jumbo img-fluid">
-        <div class="text-subpages align-items-center">
-            <h2>Gallery</h2>
-            <h4>We Deliver - You Explore</h4>
-            <p>Home/Gallery 4 col</p>
+        <div class="text-subpages">
+            <div class="text-subpages-inner">
+                <h1>Gallery</h1>
+                <h2>We Deliver - You Explore</h2>
+                <p>Home/Gallery 4 col</p>
+            </div>
         </div>
     </div>
     <div class="opac"></div>
@@ -126,28 +136,40 @@
 <!--[jumotron end]-->
 
 <!--[Gallery]-->
-<div class="container-fluid gallery-box">
-    <section id="works">
-        <div class="controls">
-            <h1 class="pull-left">OUR WORKS</h1>
-            <button type="button" class="control" data-filter="all">All</button>
-            <button type="button" class="control" data-filter=".people">People</button>
-            <button type="button" class="control" data-filter=".nature">Nature</button>
-            <button type="button" class="control" data-filter=".other">Other</button>
-
-            <button type="button" class="control" data-sort="default:asc"><span class="lnr lnr-chevron-down"></span></button>
-            <button type="button" class="control" data-sort="default:desc"><span class="lnr lnr-chevron-up"></span></button>
-        </div>
+<section id="works">
+    <div class="container-fluid">
+        <h2>OUR WORKS</h2>
         <div id="gallery">
-
             <div class="gallery">
+                <div class="controls">
+                    <!-- CONTROLS MUST BE INSIDE GALLERY -->
+                    <div class="works-buttons">
+                        <button type="button" class="control" data-filter="all">All</button>
+                        <button type="button" class="control" data-filter=".people">People</button>
+                        <button type="button" class="control" data-filter=".nature">Nature</button>
+                        <button type="button" class="control" data-filter=".other">Other</button>
+                        <!--<button type="button" class="control" data-filter="none">None</button>-->
+
+                        <button type="button" class="control" data-sort="default:asc"><span
+                            class="lnr lnr-chevron-down"></span>
+                        </button>
+                        <button type="button" class="control" data-sort="default:desc"><span
+                            class="lnr lnr-chevron-up"></span>
+                        </button>
+                    </div>
+                </div>
                 <div class="mix mix-full nature">
                     <a href="#openModal1">
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/1.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -157,8 +179,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/2.jpg" alt="" />
                             <figcaption>
-                                <h1>link to project #1</h1>
-                                <h1 class="link-gallery lnr lnr-link" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>link to project #1</h3>
+                                        <span class="link-gallery lnr lnr-link"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -168,8 +195,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/3.jpg" alt="" />
                             <figcaption>
-                                <h1>link to project #2</h1>
-                                <h1 class="link-gallery lnr lnr-link" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>link to project #2</h3>
+                                        <span class="link-gallery lnr lnr-link"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -179,8 +211,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/4.jpg" alt="" />
                             <figcaption>
-                                <h1>link to project #3</h1>
-                                <h1 class="link-gallery lnr lnr-link" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>link to project #3</h3>
+                                        <span class="link-gallery lnr lnr-link"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -190,8 +227,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/5.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -201,8 +243,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/6.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -212,8 +259,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/1.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>                </div>
@@ -222,8 +274,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/4.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -233,8 +290,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/5.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -244,8 +306,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/1.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -255,8 +322,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/2.jpg" alt="" />
                             <figcaption>
-                                <h1>link to project #1</h1>
-                                <h1 class="link-gallery lnr lnr-link" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>link to project #1</h3>
+                                        <span class="link-gallery lnr lnr-link"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -266,8 +338,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/3.jpg" alt="" />
                             <figcaption>
-                                <h1>link to project #2</h1>
-                                <h1 class="link-gallery lnr lnr-link" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>link to project #2</h3>
+                                        <span class="link-gallery lnr lnr-link"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -277,8 +354,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/4.jpg" alt="" />
                             <figcaption>
-                                <h1>link to project #3</h1>
-                                <h1 class="link-gallery lnr lnr-link" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>link to project #3</h3>
+                                        <span class="link-gallery lnr lnr-link"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -288,8 +370,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/5.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -299,8 +386,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/6.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -310,8 +402,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/1.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>                </div>
@@ -320,8 +417,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/4.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -331,16 +433,18 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="../images/works/5.jpg" alt="" />
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <h1 class="link-gallery lnr lnr-picture" data-anijs="if:mouseover, do: rubberBand animated"></h1>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
                 </div>
 
-                <!--<div class="gap"></div>-->
-                <!--<div class="gap"></div>-->
-                <!--<div class="gap"></div>-->
             </div>
 
             <div id="openModal1" class="modalDialog">
@@ -383,9 +487,10 @@
                     <img class="img" src="../images/works/6.jpg" alt="" />
                 </div>
             </div>
+
         </div>
-    </section>
-</div>
+    </div>
+</section>
 <!--[Gallery-end]-->
 
 <!--[footer]-->
@@ -406,7 +511,7 @@
                 </ul>
             </div>
             <div id="footer-text">
-                <h4>Bourbon Co Creative Agency</h4>
+                <h3>Bourbon Co Creative Agency</h3>
                 <p>Made with love - All rights Reserved</p>
             </div>
         </div>
@@ -416,7 +521,6 @@
 
 <!-- jQuery Plugin -->
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/jquery.countdown.js"></script>
 <script src="../js/html5shiv.min.js"></script>
 <script src="../js/respond.min.js"></script>
 <!--[animate-number]-->

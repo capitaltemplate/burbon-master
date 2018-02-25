@@ -77,7 +77,7 @@ h2
     text-align: center
     font-size: 1.5rem
 
-section
+section, .space404
     padding: #{$basePaddingV} #{$basePaddingH}
     @media #{$media-s}
         padding: #{$basePadding}
@@ -93,6 +93,9 @@ section
     @media #{$media-xxl}
         padding-left: 8rem
         padding-right: 8rem
+
+.space404
+    color: #ffffff
 
 section#start
     padding: 0
@@ -502,6 +505,9 @@ a:hover figcaption
 .download
     text-align: center
 
+.download-cont
+    background: url("../images/background1.jpg") 50% 0 fixed
+
 // CONTACT
 .contact-background
     background-image: url("../images/background1.jpg")
@@ -879,20 +885,22 @@ blockquote footer, blockquote small, blockquote .small
 .subpage
     margin: 0rem auto 0rem
 
-
 .download h2
     color: #313131
     font-weight: 100
-    //font-size: 1.3rem
     text-transform: uppercase
-    //letter-spacing: 10px
 
+.download-w h2
+    color: #ffffff
 
 .download p
     background-repeat: no-repeat
     margin: 0 auto 1.5rem
     color: #313131
     font-size: .9em
+
+.download-w p
+    color: #ffffff
 
 .down
     margin-bottom: 75px
@@ -1144,16 +1152,17 @@ blockquote footer, blockquote small, blockquote .small
     z-index: 1000
 
 .text-subpages h1
-    font-size: 3rem
-    letter-spacing: 0.3rem
+    font-size: 1.8rem
+    letter-spacing: 0.8rem
 
 .text-subpages h2
-    font-size: 1.5rem
-    letter-spacing: 0.3rem
+    font-size: 1.2rem
+    letter-spacing: 0.2rem
+    margin-top: 1rem
+    margin-bottom: 1rem
 
 .text-subpages p
     font-size: 0.7rem
-    letter-spacing: 0.3rem
     color: #fff
     //padding: 2vh
     text-transform: uppercase
