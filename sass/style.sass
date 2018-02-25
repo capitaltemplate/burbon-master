@@ -17,9 +17,11 @@ $media-xxl: "(min-width: #{$base-xxl})"
 $media-4k: "(min-width: #{$base-4k})"
 //$media-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
 
-$baseFontSize: 0.875rem // 0.875 * 16 = 14px
+$baseFontSize: 0.8125rem // 0.8125 * 16 = 13px
 
-$basePadding: 3rem
+
+
+$basePadding: 5rem
 $basePaddingV: 5rem
 $basePaddingH: 1rem
 $baseMarginV: 5rem
@@ -57,10 +59,16 @@ body
 .tlt span
     color: white
     font-size: 2rem
+    text-transform: uppercase
+    letter-spacing: 1.5rem
+    font-weight: 100
 
 .tlt p
     color: white
+    font-weight: 100
     font-size: 1rem
+    letter-spacing: 0.2rem
+    padding-top: 2rem
 
 .title h1
     font-size: 2rem
@@ -72,10 +80,10 @@ body
 // SECTIONS
 h2
     font-weight: 100
-    letter-spacing: .33em
+    letter-spacing: .25em
     text-transform: uppercase
     text-align: center
-    font-size: 1.5rem
+    font-size: 1.4rem
 
 section, .space404
     padding: #{$basePaddingV} #{$basePaddingH}
@@ -121,7 +129,7 @@ section#team .inner
 .logo-brand h2
     color: #313131
     font-weight: 100
-    font-size: 1.5rem
+    font-size: 1.4rem
     text-transform: uppercase
     text-align: center
 
@@ -157,7 +165,7 @@ section#team .inner
     display: table
     vertical-align: middle
     font-weight: 100
-    font-size: 0.9rem
+    font-size: 0.85rem
     text-transform: uppercase
     letter-spacing: 0.2rem
     margin-left: 0.4rem
@@ -200,11 +208,16 @@ section#team .inner
 //}
 //
 #team h3
-    font-size: 1.2rem
+    font-weight: 100
+    font-size: 1em
+    letter-spacing: .35em
+    margin-bottom: 2em
+    text-transform: uppercase
 
 .text-aboutus
     color: #313131
     text-align: justify
+    font-weight: 300
 
 .text-aboutteam
     color: #313131
@@ -306,7 +319,7 @@ section#team .inner
     //padding-right: 10px
 
 .number p
-    font-size: 0.7em
+    font-size: 1em
     text-transform: uppercase
     letter-spacing: 0.2rem
     margin: 1.5rem auto 1.5rem
@@ -381,13 +394,13 @@ section#works h2
     margin: 0
     float: none
     @media #{$media-s}
-        float: left
-        margin-left: 4rem
+        //float: left
+        //margin-left: 4rem
 
 #gallery
-    padding-top: 3rem
+    padding-top: 2rem
     @media #{$media-s}
-        padding-top: 4rem
+        padding-top: 1rem
 
 .works-buttons button
     margin: 0.2rem
@@ -458,11 +471,11 @@ a:hover figcaption
     vertical-align: middle
 
 .controls
-    margin-bottom: 1rem
+    margin-bottom: 2rem
     font-size: 0.7rem
     text-align: center
     @media #{$media-s}
-        margin-bottom: 1rem
+        margin-bottom: 2rem
         margin-top: 0rem
         margin-right: 0rem
 
@@ -485,13 +498,14 @@ a:hover figcaption
 .what h3
     text-align: center
     font-weight: 100
-    font-size: .9em
+    font-size: 1rem
     letter-spacing: 0.4rem
     text-transform: uppercase
+    padding: 1rem 0rem 0.5rem 0rem
 
 .what p
     color: #313131
-    font-size: .9em
+    font-size: 1em
     text-align: justify
 
 .icons
@@ -522,8 +536,8 @@ a:hover figcaption
     background-color: transparent
     border: 1px solid #fff
     font-weight: 100
-    padding: .5rem 3rem
-    height: 3rem
+    padding: 0.5rem 2rem
+    height: 2.5rem
     text-transform: uppercase
 
 .contact .contact-btn:hover
@@ -566,7 +580,7 @@ input[type="email"]
 address
     color: #fff
     font-weight: 100
-    margin-top: 2rem
+    //margin-top: 2rem
     margin-bottom: 0
 
 .lead
@@ -897,7 +911,7 @@ blockquote footer, blockquote small, blockquote .small
     background-repeat: no-repeat
     margin: 0 auto 1.5rem
     color: #313131
-    font-size: .9em
+    font-size: 1em
 
 .download-w p
     color: #ffffff
@@ -910,7 +924,7 @@ blockquote footer, blockquote small, blockquote .small
     border: 1px solid #313131
     color: #313131
     text-transform: uppercase
-    padding: 1rem
+    padding: 0.8rem
 
 // s
 .opac
