@@ -964,12 +964,7 @@ ul.count-down li p {
 }
 
 .active-faq {
-    border-left: 0px solid #888888;
-}
-
-.panel-faq .panel-heading .panel-title span {
-    font-size: 13px;
-    font-weight: normal;
+    border-left: 0 solid #888888;
 }
 
 .nav-tabs {
@@ -977,48 +972,13 @@ ul.count-down li p {
 }
 
 .panel-group .panel {
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .panel-group .panel+.panel {
     margin-top: -1px;
 }
 
-.panel-title {
-    font-size: 1.5vh;
-    font-weight: 300;
-    color: #313131;
-    text-transform: capitalize;
-    text-align: left;
-    letter-spacing: .5vh;
-}
-
-.panel-title:hover {
-    color: #c1a26e;
-}
-
-.panel-default>.panel-heading {
-    padding: 25px;
-    padding-bottom: 44px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
-
-.panel-default>.panel-heading:hover {
-    background-color: #fff;
-}
-
-.panel-default>.panel-heading+.panel-collapse>.panel-body {
-    line-height: 180%;
-    letter-spacing: 1px;
-    font-weight: 100;
-    font-size: 14px;
-    padding-left: 25px;
-    padding-top: 30px;
-    padding-bottom: 1px;
-    background-color: #313131;
-    color: #fff;
-}
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color: #caae85;
@@ -1031,52 +991,3 @@ ul.count-down li p {
     font-size: 14px;
     border-bottom-color: transparent;
 }
-
-.faq {
-    background-color: #fff;
-}
-
-.faq-container {
-    padding-left: 0px;
-    padding-right: 0px;
-    background-color: #fff;
-}
-
-.faq-header {
-    text-align: center;
-}
-
-.faq-header h2 {
-    padding-top: 70px;
-    padding-bottom: 15px;
-}
-
-.sidebar-faq {
-    padding-left:0px;
-    padding-right:0px;
-}
-
-.panel {
-    border-right: none;
-}
-
-.panel-body p {
-    color: #fff;
-    font-weight: 100;
-}
-
-.grid-system h1 {
-    text-align: center;
-    padding-top: 50px;
-}
-
-.grid-system h2 {
-    text-align: center;
-}
-
-.typography {
-    margin-bottom: 8vh;
-}
-/*---------------------------------------------------------------*/
-/* FAQ-end*/
-/*---------------------------------------------------------------*/
