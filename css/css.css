@@ -899,7 +899,7 @@ ul.count-down li p {
     color: #fff;
     text-transform: uppercase;
     padding: 15px;
-    margin: 20px 30px 50px 30px;
+    margin: 15px 5px 0px 5px;
 }
 
 .buy-theme-white:hover {
@@ -918,7 +918,7 @@ ul.count-down li p {
 }
 
 .contact-address-subpage {
-    padding: 10px;
+    padding: 35px 10px 35px 10px;
     display: inline;
 }
 

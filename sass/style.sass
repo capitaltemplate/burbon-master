@@ -126,6 +126,8 @@ section .inner
 section#team .inner
     text-align: center
 
+.logo-brand
+    border-top: 1px solid #ced4da
 
 .logo-brand-space
     padding: #{$basePaddingV} #{$basePaddingH}
@@ -694,6 +696,7 @@ hr
     letter-spacing: 1px
     text-transform: uppercase
     color: #fff
+    font-size: 0.6em
 
 
 .navbar-scroll-background
@@ -761,9 +764,10 @@ hr
 
 .testimonial-text
     color: #fff
+    font-weight: 100
 
 blockquote
-    font-style: italic
+    //font-style: italic
 
 #quote-carousel .carousel-control
     background: none
@@ -801,7 +805,7 @@ blockquote footer, blockquote small, blockquote .small
     //margin-top: 20px
     //font-size: .8em
     color: #fff
-    font-style: normal
+    font-style: italic
     font-weight: 100
     letter-spacing: 3px
     text-transform: uppercase
@@ -930,8 +934,8 @@ blockquote footer, blockquote small, blockquote .small
 
 .opac
     background-color: rgba(0,0,0,0.5)
-    height: 100vh
-    margin-top: -100vh
+    height: 105vh
+    margin-top: -105vh
     position: relative
 
 // PRELOADER
@@ -1170,11 +1174,13 @@ blockquote footer, blockquote small, blockquote .small
     z-index: 1000
 
 .text-subpages h1
-    font-size: 1.8rem
+    font-size: 2.5rem
     letter-spacing: 0.8rem
+    font-weight: 100
+    text-transform: uppercase
 
 .text-subpages h2
-    font-size: 1.2rem
+    font-size: 1rem
     letter-spacing: 0.2rem
     margin-top: 1rem
     margin-bottom: 1rem
@@ -1182,8 +1188,16 @@ blockquote footer, blockquote small, blockquote .small
 .text-subpages p
     font-size: 0.7rem
     color: #fff
-    //padding: 2vh
-    text-transform: uppercase
+    text-transform: capitalize
+    letter-spacing: 0.2em
+
+.address-subpage
+    padding-top: 10px
+    margin-bottom: 5px
+    color: #313131
+
+.adress2-subpage-icon
+    padding-top: 10px
 
 // GALLERY MIX
 .gallery

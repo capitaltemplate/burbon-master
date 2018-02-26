@@ -15,13 +15,13 @@
     <link href="css/full-slider.css" rel="stylesheet">
     <!--font awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style_lnr_icons.css">
     <!--animate-->
     <link rel="stylesheet" href="css/animate.css">
     <!-- scroll Plugin -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
+    <link href="sass/style.css" rel="stylesheet">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl-carousel/owl.theme.css">
@@ -32,22 +32,29 @@
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Preloader -->
-<div id="preloader">
-    <div id="status"></div>
+<div id="preloader" class="row h-100">
+    <div class="col-sm-12 my-auto">
+        <div id="status"></div>
+    </div>
 </div>
 <!-- Preloader-end -->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-scroll-background">
+<nav class="navbar navbar-expand-lg navbar-scroll-background collapsed">
     <a class="navbar-brand" href="#preloader">
-        <img alt="Brand" src="images/logo.png">
+        <img srcset="images/logo/logo-white-200x54.png 300w,
+                        images/logo/logo-white-400x107.png 2000w,
+                      images/logo/logo-white-700x187.png 3000w"
+             sizes="100vh"
+             src="images/logo/logo-white-700x187.png"
+             alt="Your Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="page-scroll nav-link" href="#preloader">Home <span class="sr-only">(current)</span></a>
@@ -136,16 +143,16 @@
 <!--[Carouse-end]-->
 
 <!--[About Us]-->
-<div class="container">
-    <section id="about">
-        <div class="row About-Us">
-            <div class="col-md-12 about-text">
-                <div>
-                    <h2>About Studio</h2>
-                    <div class="testimonial-border"></div>
+<section id="about">
+    <div class="container-fluid">
+        <div class="about-text">
+            <div>
+                <h2>About Studio</h2>
+                <div class="testimonial-border"></div>
 
-                    <div class="row about-oontent">
-                        <div class="col-md-4">
+                <div class="row about-content justify-content-around">
+                    <div class="col-sm-4">
+                        <div class="inner">
                             <div class="about-icons-content">
                                 <div class="lnr lnr-diamond about-icon"
                                      data-anijs="if:mouseover, do: rubberBand animated"
@@ -162,7 +169,9 @@
                                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
                             </p>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="inner">
                             <div class="about-icons-content">
                                 <div class="lnr lnr-coffee-cup about-icon"
                                      data-anijs="if:mouseover, do: rubberBand animated"
@@ -178,7 +187,9 @@
                                 ultricies nec, pellentesque eu, pretium quis.
                             </p>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="inner">
                             <div class="about-icons-content">
                                 <div class="lnr lnr-rocket about-icon"
                                      data-anijs="if:mouseover, do: rubberBand animated"
@@ -198,8 +209,9 @@
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
 <!--[About Us end]-->
 
 <!--[testimonial]-->
@@ -209,55 +221,58 @@
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <blockquote>
-                            <div class="row ">
-                                <div class="slide-1"></div>
+                        <div class="slide-1">
+                            <blockquote>
                                 <div class="col-md-8 offset-md-2">
-                                    <h2>WHAT CLIENTS SAY</h2>
+                                    <h2>WHAT CLIENTS SAY 1</h2>
                                     <div class="testimonial-border-white"></div>
-                                    <p class="testimonial-text">“ Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    <p class="testimonial-text">“ Lorem ipsum dolor sit amet, consectetuer
+                                        adipiscing
                                         elit. Aenean commodo ligula eget dolor cum
-                                        sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit
+                                        sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor
+                                        sit
                                         amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor cum
                                         sociis natoque penatibus et magnis dis parturient montes. ”</p>
                                     <small>- Tom Hais / Country -</small>
                                 </div>
-                            </div>
-                        </blockquote>
+                            </blockquote>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <blockquote>
-                            <div class="row">
-                                <div class="slide-2"></div>
+                        <div class="slide-1">
+                            <blockquote>
                                 <div class="col-md-8 offset-md-2">
-                                    <h2>WHAT CLIENTS SAY</h2>
+                                    <h2>WHAT CLIENTS SAY 2</h2>
                                     <div class="testimonial-border-white"></div>
-                                    <p class="testimonial-text">“ Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    <p class="testimonial-text">“ Lorem ipsum dolor sit amet, consectetuer
+                                        adipiscing
                                         elit. Aenean commodo ligula eget dolor cum
-                                        sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit
+                                        sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor
+                                        sit
                                         amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor cum
                                         sociis natoque penatibus et magnis dis parturient montes. ”</p>
                                     <small>- Christian Bain / Country -</small>
                                 </div>
-                            </div>
-                        </blockquote>
+                            </blockquote>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <blockquote>
-                            <div class="row">
-                                <div class="slide-3"></div>
+                        <div class="slide-3">
+                            <blockquote>
                                 <div class="col-md-8 offset-md-2">
-                                    <h2>WHAT CLIENTS SAY</h2>
+                                    <h2>WHAT CLIENTS SAY 3</h2>
                                     <div class="testimonial-border-white"></div>
-                                    <p class="testimonial-text">“ Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    <p class="testimonial-text">“ Lorem ipsum dolor sit amet, consectetuer
+                                        adipiscing
                                         elit. Aenean commodo ligula eget dolor cum
-                                        sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit
+                                        sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor
+                                        sit
                                         amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor cum
                                         sociis natoque penatibus et magnis dis parturient montes. ”</p>
                                     <small>- John Doe / Country -</small>
                                 </div>
-                            </div>
-                        </blockquote>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,19 +282,19 @@
 <!--[testimonial-end]-->
 
 <!--[Our Team]-->
-<div class="container">
-    <section id="team">
+<section id="team">
+    <div class="container-fluid">
         <h2>Our Team</h2>
         <div class="testimonial-border"></div>
-        <div class="row our-team">
+        <div class="row our-team justify-content-around">
 
-            <div class="col-md-4 team-text">
-                <div>
-                    <img class="img  photo" src="images/team/clarke.jpg" alt=""/>
+            <div class="col-sm-4 team-text">
+                <div class="inner">
+                    <img class="img photo" src="images/team/clarke.jpg" alt=""/>
                     <div>
                         <h2>Emilia Foster</h2>
                         <div class="testimonial-border"></div>
-                        <h4>Illustrator</h4>
+                        <h3>Illustrator</h3>
                         <p class="text-aboutteam">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum
                             dolor
                             sit amet, consectetuer adipiscing elit.Lorem ipsum dolor. </p>
@@ -302,13 +317,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 team-text">
-                <div>
+            <div class="col-sm-4 team-text">
+                <div class="inner">
                     <img class="img photo" src="images/team/blunt.jpg" alt=""/>
                     <div>
                         <h2>Emily Gloss</h2>
                         <div class="testimonial-border"></div>
-                        <h4>President</h4>
+                        <h3>President</h3>
                         <p class="text-aboutteam">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum
                             dolor
                             sit amet, consectetuer adipiscing elit.Lorem ipsum dolor, </p>
@@ -331,13 +346,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 team-text">
-                <div>
+            <div class="col-sm-4 team-text">
+                <div class="inner">
                     <img class="img photo" src="images/team/vickander.jpg" alt=""/>
                     <div>
                         <h2>Alicia DeNico</h2>
                         <div class="testimonial-border"></div>
-                        <h4>Copywriter</h4>
+                        <h3>Copywriter</h3>
                         <p class="text-aboutteam">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum
                             dolor
                             sit amet, consectetuer adipiscing elit.Lorem ipsum dolor, </p>
@@ -362,134 +377,148 @@
             </div>
 
         </div>
-    </section>
-</div>
+    </div>
+</section>
 <!--[Our Team end]-->
 
 <!--[Animate Numbers]-->
 <div class="container-fluid animate-numbers">
     <div class="row number">
-        <div class="col-md-3 count1 count">
+        <div class="col-sm-3 count1 count">
             <div class="testimonial-border-white"></div>
-            <span class="counter">55</span>
+            <span class="counter counterup-nums">55</span>
             <p>Awards</p>
         </div>
-        <div class="col-md-3 count2 count">
+        <div class="col-sm-3 count2 count">
             <div class="testimonial-border-white"></div>
             <span class="counter">156</span>
             <p>Coffe Cups</p>
         </div>
-        <div class="col-md-3 count3 count">
+        <div class="col-sm-3 count3 count">
             <div class="testimonial-border-white"></div>
             <span class="counter ">160</span>
             <p>Clients</p>
         </div>
-        <div class="col-md-3 count4 count">
+        <div class="col-sm-3 count4 count">
             <div class="testimonial-border-white"></div>
             <span class="counter">99</span>
             <p>Projects</p>
         </div>
     </div>
 </div>
+
 <!--[Animate Numbers end]-->
 
 <!--[progress_bar start]-->
-<div class="container prog-bar">
-    <section id="progress">
+<section id="progress">
+    <div class="container-fluid prog-bar">
         <h2>our skills</h2>
         <div class="testimonial-border"></div>
-        <div class="row about-oontent">
-            <div class="col-md">
-                <div class="about-icons-content">
-                    <div class="lnr lnr-chart-bars about-icon"
-                         data-anijs="if:mouseover, do: rubberBand animated"
-                         data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
-                    <div class="about-icon-text">
-                        <p>Progress is our motivation</p>
+        <div class="row about-content">
+            <div class="col-sm-6">
+                <div class="inner">
+                    <div class="about-icons-content">
+                        <div class="lnr lnr-chart-bars about-icon"
+                             data-anijs="if:mouseover, do: rubberBand animated"
+                             data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
+                        <div class="about-icon-text">
+                            <p>Progress is our motivation</p>
+                        </div>
                     </div>
-                </div>
-                <div class="text-aboutprogress">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                        eget dolor.
-                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
-                    </p>
+                    <div class="text-justify">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                            eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            mus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis.
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="progress_bar col-md">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                         aria-valuemax="100"
-                         style="width: 80%;">
-                        <div class="sr-only">60% Complete</div>
+            <div class="col-sm-6 progress_bar align-self-center">
+                <div class="inner">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                             aria-valuemax="100"
+                             style="width: 80%;">
+                            <div class="sr-only">60% Complete</div>
+                        </div>
+                        <div class="progress-type">HTML / HTML5</div>
+                        <div class="progress-completed"></div>
                     </div>
-                    <div class="progress-type">HTML / HTML5</div>
-                    <div class="progress-completed"></div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90"
-                         aria-valuemin="0"
-                         aria-valuemax="100" style="width: 90%">
-                        <span class="sr-only">40% Complete (success)</span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 90%">
+                            <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                        <div class="progress-type">ASP.Net</div>
+                        <div class="progress-completed"></div>
                     </div>
-                    <div class="progress-type">ASP.Net</div>
-                    <div class="progress-completed"></div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                         aria-valuemax="100" style="width: 70%">
-                        <div class="sr-only">20% Complete (info)</div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0"
+                             aria-valuemax="100" style="width: 70%">
+                            <div class="sr-only">20% Complete (info)</div>
+                        </div>
+                        <div class="progress-type">Java</div>
+                        <div class="progress-completed"></div>
                     </div>
-                    <div class="progress-type">Java</div>
-                    <div class="progress-completed"></div>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                         aria-valuemax="100"
-                         style="width: 60%">
-                        <div class="sr-only">60% Complete (warning)</div>
+                    <div class="progress">
+                        <div class="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                             aria-valuemax="100"
+                             style="width: 60%">
+                            <div class="sr-only">60% Complete (warning)</div>
+                        </div>
+                        <div class="progress-type">JavaScript / jQuery</div>
+                        <div class="progress-completed"></div>
                     </div>
-                    <div class="progress-type">JavaScript / jQuery</div>
-                    <div class="progress-completed"></div>
                 </div>
             </div>
 
         </div>
-    </section>
-</div>
+    </div>
+</section>
 <!--[progress_bar end]-->
 
 <!--[Gallery]-->
-<div class="container-fluid gallery-box">
-    <section id="works">
-        <div class="controls">
-            <h1 class="pull-left">OUR WORKS</h1>
-            <div class="works-buttons">
-                <button type="button" class="control" data-filter="all">All</button>
-                <button type="button" class="control" data-filter=".people">People</button>
-                <button type="button" class="control" data-filter=".nature">Nature</button>
-                <button type="button" class="control" data-filter=".other">Other</button>
-                <!--<button type="button" class="control" data-filter="none">None</button>-->
-
-                <button type="button" class="control" data-sort="default:asc"><span class="lnr lnr-chevron-down"></span>
-                </button>
-                <button type="button" class="control" data-sort="default:desc"><span class="lnr lnr-chevron-up"></span>
-                </button>
-            </div>
-        </div>
+<section id="works">
+    <div class="container-fluid">
+        <h2>OUR WORKS</h2>
+        <div class="testimonial-border-white"></div>
         <div id="gallery">
-
             <div class="gallery">
+                <div class="controls">
+                    <!-- CONTROLS MUST BE INSIDE GALLERY -->
+                    <div class="works-buttons">
+                        <button type="button" class="control" data-filter="all">All</button>
+                        <button type="button" class="control" data-filter=".people">People</button>
+                        <button type="button" class="control" data-filter=".nature">Nature</button>
+                        <button type="button" class="control" data-filter=".other">Other</button>
+                        <!--<button type="button" class="control" data-filter="none">None</button>-->
+
+                        <button type="button" class="control" data-sort="default:asc"><span
+                                class="lnr lnr-chevron-down"></span>
+                        </button>
+                        <button type="button" class="control" data-sort="default:desc"><span
+                                class="lnr lnr-chevron-up"></span>
+                        </button>
+                    </div>
+                </div>
                 <div class="mix nature">
                     <a href="#openModal1">
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="images/works/1.jpg" alt=""/>
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <span class="link-gallery lnr lnr-picture"
-                                      data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -499,9 +528,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="images/works/2.jpg" alt=""/>
                             <figcaption>
-                                <h1>link to project #1</h1>
-                                <span class="link-gallery lnr lnr-link"
-                                      data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>link to project #1</h3>
+                                        <span class="link-gallery lnr lnr-link"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -511,9 +544,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="images/works/3.jpg" alt=""/>
                             <figcaption>
-                                <h1>link to project #2</h1>
-                                <span class="link-gallery lnr lnr-link"
-                                      data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>link to project #2</h3>
+                                        <span class="link-gallery lnr lnr-link"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -523,9 +560,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="images/works/4.jpg" alt=""/>
                             <figcaption>
-                                <h1>link to project #3</h1>
-                                <span class="link-gallery lnr lnr-link"
-                                      data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>link to project #3</h3>
+                                        <span class="link-gallery lnr lnr-link"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -535,9 +576,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="images/works/5.jpg" alt=""/>
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <span class="link-gallery lnr lnr-picture"
-                                      data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -547,9 +592,13 @@
                         <figure class="images-gallery">
                             <img class="img gallery img-fluid" src="images/works/6.jpg" alt=""/>
                             <figcaption>
-                                <h1>Modal Picture</h1>
-                                <span class="link-gallery lnr lnr-picture"
-                                      data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                <div class="gallery-over">
+                                    <div class="gallery-over-center">
+                                        <h3>Modal Picture</h3>
+                                        <span class="link-gallery lnr lnr-picture"
+                                              data-anijs="if:mouseover, do: rubberBand animated"></span>
+                                    </div>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
@@ -570,102 +619,108 @@
             <div id="openModal2" class="modalDialog">
                 <div>
                     <a href="#close" title="Close" class="close">X</a>
-                    <img class="img" src="images/works/2.jpg" alt=""/>
+                    <img class="img" src="images/works/5.jpg" alt=""/>
                 </div>
             </div>
 
             <div id="openModal3" class="modalDialog">
                 <div>
                     <a href="#close" title="Close" class="close">X</a>
-                    <img class="img" src="images/works/3.jpg" alt=""/>
+                    <img class="img" src="images/works/6.jpg" alt=""/>
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 <!--[Gallery-end]-->
 
 <!--[What we do]-->
-<div class="container-fluid what-we">
-    <section id="what_we_do">
-        <div class="row what_we_do">
-            <div class="col">
-                <h2>Services</h2>
-                <div class="testimonial-border"></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row what">
-                <div class="col-md-4 col-sm-4 webdesign">
+<section id="what_we_do">
+    <div class="container-fluid what-we">
+        <h2>Services</h2>
+        <div class="testimonial-border"></div>
+        <div class="row what">
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
                     <div class="icons">
                         <div class="lnr lnr-picture services-icon"
                              data-anijs="if:mouseover, do: rubberBand animated"
                              data-sr="wait 0.1s, then enter and hustle 50px over 0.8s"></div>
                     </div>
-                    <h2>Webdesign</h2>
+                    <h3>Webdesign</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
-                <div class="col-md-4 col-sm-4 webdesign">
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
                     <div class="icons">
                         <div class="lnr lnr-rocket services-icon"
                              data-anijs="if:mouseover, do: rubberBand animated"
                              data-sr="wait 0.3s, then enter and hustle 50px over 0.8s"></div>
                     </div>
-                    <h2>24 Support</h2>
+                    <h3>24 Support</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
-                <div class="col-md-4 col-sm-4 webdesign">
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
                     <div class="icons">
                         <div class="lnr lnr-code services-icon"
                              data-anijs="if:mouseover, do: rubberBand animated"
                              data-sr="wait 0.5s, then enter and hustle 50px over 0.8s"></div>
                     </div>
-                    <h2>Coding</h2>
+                    <h3>Coding</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
-                <div class="col-md-4 col-sm-4 webdesign">
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
                     <div class="icons">
                         <div class="lnr lnr-laptop-phone services-icon"
                              data-anijs="if:mouseover, do: rubberBand animated"
                              data-sr="wait 0.6s, then enter and hustle 50px over 0.8s"></div>
                     </div>
-                    <h2>Responive</h2>
+                    <h3>Responive</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
-                <div class="col-md-4 col-sm-4 webdesign">
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
                     <div class="icons">
                         <div class="lnr lnr-bullhorn services-icon"
                              data-anijs="if:mouseover, do: rubberBand animated"
                              data-sr="wait 0.8s, then enter and hustle 50px over 0.8s"></div>
                     </div>
-                    <h2>Creative</h2>
+                    <h3>Creative</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
-                <div class="col-md-4 col-sm-4 webdesign">
+            </div>
+            <div class="col-sm-4 webdesign">
+                <div class="inner">
                     <div class="icons">
                         <div class="lnr lnr-dice services-icon"
                              data-anijs="if:mouseover, do: rubberBand animated"
                              data-sr="wait 1s, then enter and hustle 50px over 0.8s"></div>
                     </div>
-                    <h2>Minimalism</h2>
+                    <h3>Minimalism</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer
                         adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     </p>
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 <!--[What we do - end]-->
 
 <!--[plans-pricing]-->
@@ -676,41 +731,47 @@
                 <h2>Plans & Pricing</h2>
                 <div class="testimonial-border-white"></div>
             </div>
-            <div class="row plans mt-5 mb-5 justify-content-around">
-                <div class="col-md-auto col-sm-auto  plans-border ">
+            <div class="row plans justify-content-around">
+                <div class="plans-border">
                     <h2 data-sr="wait 0.1s, then enter top and hustle 20px over 1s">19$</h2>
-                    <h4>/ month</h4>
-                    <h3>Basic</h3>
-                    <p>24 hour support</p>
-                    <p>25 Photos</p>
-                    <p>5 Free Sessions</p>
-                    <p>up to 10 users</p>
+                    <h3>/ month</h3>
+                    <div class="plans-configurations">
+                        <h4>Basic</h4>
+                        <p>24 hour support</p>
+                        <p>25 Photos</p>
+                        <p>5 Free Sessions</p>
+                        <p>up to 10 users</p>
+                    </div>
                     <div class="button-plans">
                         <a class="btn btn-plans1 btn-lg" href="#" role="button"
                            data-anijs="if: mouseover, do: pulse animated">PURCHASE</a>
                     </div>
                 </div>
-                <div class=" col-md-auto col-sm-auto plans-border2 ">
+                <div class="plans-border extra-border">
                     <h2 data-sr="wait 0.3s, then enter top and hustle 20px over 1s">49$</h2>
-                    <h4>/ month</h4>
-                    <h3>Standard</h3>
-                    <p>24 hour support</p>
-                    <p>50 Photos</p>
-                    <p>50 Free Sesions</p>
-                    <p>up to 50 users</p>
+                    <h3>/ month</h3>
+                    <div class="plans-configurations">
+                        <h4>Standard</h4>
+                        <p>24 hour support</p>
+                        <p>50 Photos</p>
+                        <p>50 Free Sesions</p>
+                        <p>up to 50 users</p>
+                    </div>
                     <div class="button-plans">
                         <a class="btn btn-plans1 btn-lg" href="#" role="button"
                            data-anijs="if: mouseover, do: pulse animated">PURCHASE</a>
                     </div>
                 </div>
-                <div class="col-md-auto col-sm-auto plans-border3 ">
+                <div class="plans-border">
                     <h2 data-sr="wait 0.5s, then enter top and hustle 20px over 1s">99$</h2>
-                    <h4>/ month</h4>
-                    <h3>Professional</h3>
-                    <p>24 hour support</p>
-                    <p>Unlimited Photos</p>
-                    <p>Unlimited Free Sesions </p>
-                    <p>Unlimited users</p>
+                    <h3>/ month</h3>
+                    <div class="plans-configurations">
+                        <h4>Professional</h4>
+                        <p>24 hour support</p>
+                        <p>Unlimited Photos</p>
+                        <p>Unlimited Free Sesions </p>
+                        <p>Unlimited users</p>
+                    </div>
                     <div class="button-plans">
                         <a class="btn btn-plans1 btn-lg" href="#" role="button"
                            data-anijs="if: mouseover, do: pulse animated">PURCHASE</a>
@@ -723,21 +784,23 @@
 <!--[plans-pricing-end]-->
 
 <!--[download]-->
-<section id="home" data-speed="4" data-type="background">
-    <div class="container">
-        <div class="row download">
-            <div class="col-md-12">
-                <h2>Bourbon Co - AMAZING THEME FOR YOUR BUSINESS</h2>
-                <div class="testimonial-border"></div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                    lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-                    iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis.
-                </p>
-                <a class="btn buy-theme" href="#" role="button" data-anijs="if: mouseover, do: pulse animated">Buy
-                    Theme</a>
+<section id="download" data-speed="4" data-type="background">
+    <div class="container-fluid">
+        <div class="inner">
+            <div class="row download justify-content-md-center">
+                <div class="col-12 col-md-8 col-xl-6">
+                    <h2>Bourbon Co - AMAZING THEME FOR YOUR BUSINESS</h2>
+                    <div class="testimonial-border"></div>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                        lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                        iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                        vel illum dolore eu feugiat nulla facilisis.
+                    </p>
+                    <a class="btn buy-theme" href="#" role="button" data-anijs="if: mouseover, do: pulse animated">Buy
+                        Theme</a>
+                </div>
             </div>
         </div>
     </div>
@@ -745,57 +808,83 @@
 <!--[download-end]-->
 
 <!--[contact]-->
-<div class="container-fluid contact-background">
-    <div id="contact">
-        <div class="col contact-us" data-sr="wait 0.1s, then enter top and hustle 20px over 1s">
-            <h2>Contact with Bourbon Co Team</h2>
-            <div class="testimonial-border-white"></div>
-        </div>
-    </div>
-    <div class="row contact justify-content-center">
-        <div class="col-md-5 col-sm-12 contact-form">
-            <div class="form-group">
-                <div class="input-group">
-                    <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Name" required>
-                    <span class="input-group-addon"><i></i></span></div>
+<section id="contact" class="contact-background">
+    <div class="container-fluid">
+        <div class="inner">
+            <div class="col contact-us" data-sr="wait 0.1s, then enter top and hustle 20px over 1s">
+                <h2>Contact with Bourbon Co Team</h2>
+                <div class="testimonial-border-white"></div>
             </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email"
-                           required>
-                    <span class="input-group-addon"><i></i></span></div>
-            </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="10" placeholder="Message"
-                              required></textarea>
-                    <span class="input-group-addon"><i></i></span></div>
-            </div>
-            <div class="form-group">
-            </div>
-            <button type="submit" name="submit" id="buttonContact" class="btn contact-btn pull-right"
-                    data-anijs="if: mouseover, do: pulse animated">Send
-            </button>
-        </div>
-        <div class="">
-            <address>
-                <div class="lead">
-                    <div class="lnr lnr-map-marker contact-icon"></div>
-                    75 New York - Bourbon Street 10/555<br/>
-                    <br/>
-                    <div class="lnr lnr-smartphone contact-icon"></div>
-                    Phone: 555-123-458<br/>
-                    <br/>
-                    <div class="lnr lnr-printer contact-icon"></div>
-                    Fax: 555-321-582<br/>
-                    <br/>
-                    <div class="lnr lnr-envelope contact-icon"></div>
-                    email@youradress.com<br/>
+            <div class="row contact justify-content-center">
+                <div class="col-sm-6 col-xl-5">
+                    <div class="inner">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="InputName" id="InputName"
+                                       placeholder="Name"
+                                       required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="InputEmail" name="InputEmail"
+                                       placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                            <textarea name="InputMessage" id="InputMessage" class="form-control" rows="10"
+                                      placeholder="Message" required></textarea>s
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" name="submit" id="buttonContact"
+                                        class="btn contact-btn pull-right"
+                                        data-anijs="if: mouseover, do: pulse animated">Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </address>
+                <div class="col-sm-6 col-xl-4">
+                    <div class="inner">
+                        <address class="row justify-content-md-center">
+                            <div class="lead">
+                                <div class="contact-icons-content">
+                                    <div class="lnr lnr-map-marker contact-icon"
+                                         data-anijs="if:mouseover, do: rubberBand animated"
+                                         data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
+                                    <div class="contact-icons-text">
+                                        <p>75 New York - Bourbon Street 10/555</p>
+                                    </div>
+                                </div>
+                                <div class="contact-icons-content">
+                                    <div class="lnr lnr-smartphone contact-icon"
+                                         data-anijs="if:mouseover, do: rubberBand animated"
+                                         data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
+                                    <div class="contact-icons-text">
+                                        <p>Phone: 555-123-458</p>
+                                    </div>
+                                </div>
+                                <div class="contact-icons-content">
+                                    <div class="lnr lnr-printer contact-icon"
+                                         data-anijs="if:mouseover, do: rubberBand animated"
+                                         data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
+                                    <div class="contact-icons-text">
+                                        <p>Fax: 555-321-582</p>
+                                    </div>
+                                </div>
+                                <div class="contact-icons-content">
+                                    <div class="lnr lnr-envelope contact-icon"
+                                         data-anijs="if:mouseover, do: rubberBand animated"
+                                         data-sr="wait 0.1s, then enter and hustle 125px over 1.5s"></div>
+                                    <div class="contact-icons-text">
+                                        <p>email@youradress.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 <!--[contact-end]-->
 
 <!--[googlemaps]-->
@@ -855,7 +944,7 @@
                 </ul>
             </div>
             <div id="footer-text">
-                <h4>Bourbon Co Creative Agency</h4>
+                <h3>Bourbon Co Creative Agency</h3>
                 <p>Made with love - All rights Reserved</p>
             </div>
         </div>
@@ -865,7 +954,6 @@
 
 <!-- jQuery Plugin -->
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/jquery.countdown.js"></script>
 <script src="js/html5shiv.min.js"></script>
 <script src="js/respond.min.js"></script>
 <!--[animate-number]-->
@@ -877,7 +965,7 @@
 <script src="js/google.maps.js"></script>
 <!-- Owl carousel js plugin -->
 <script src="owl-carousel/owl.carousel.min.js"></script>
-<script src="js/smoothscroll.js"></script>
+<!--<script src="js/smoothscroll.js"></script>-->
 <!-- bootstrap -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/anijs.js"></script>

@@ -21,6 +21,7 @@
     <!-- scroll Plugin -->
     <link href="../css/scrolling-nav.css" rel="stylesheet">
     <link href="../css/css.css" rel="stylesheet">
+    <link href="../sass/style.css" rel="stylesheet">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
@@ -31,15 +32,22 @@
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Preloader -->
-<div id="preloader">
-    <div id="status"></div>
+<div id="preloader" class="row h-100">
+    <div class="col-sm-12 my-auto">
+        <div id="status"></div>
+    </div>
 </div>
 <!-- Preloader-end -->
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-scroll-background">
-    <a class="navbar-brand navbar-brand-sub" href="#preloader">
-        <img alt="Brand" src="../images/logo.png">
+<nav class="navbar navbar-expand-lg navbar-scroll-background collapsed">
+    <a class="navbar-brand" href="#preloader">
+        <img srcset="../images/logo/logo-white-200x54.png 300w,
+                        ../images/logo/logo-white-400x107.png 2000w,
+                      ../images/logo/logo-white-700x187.png 3000w"
+             sizes="100vh"
+             src="../images/logo/logo-white-700x187.png"
+             alt="Your Logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -74,7 +82,7 @@
                     Gallery
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="../multipage/gallery.html">Gallery Full Width</a>
+                    <a class="dropdown-item" href="../multipage/gallery.html">Gallery 3 Columns</a>
                     <a class="dropdown-item" href="../multipage/galery4col.html">Gallery 4 Columns</a>
                     <a class="dropdown-item" href="../multipage/project1.html">Single 1</a>
                     <a class="dropdown-item" href="../multipage/project2.html">Single 2</a>
@@ -91,12 +99,6 @@
                     <a class="dropdown-item" href="../multipage/contact3.html">contact 3</a>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../multipage/what_we_do.html">WHAT WE DO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../multipage/faq.html">Faq</a>
-            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Features
@@ -107,88 +109,107 @@
                     <a class="dropdown-item" href="../multipage/comingsoon.html">Comingsoon</a>
                 </div>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../multipage/what_we_do.html">WHAT WE DO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../multipage/faq.html">Faq</a>
+            </li>
         </ul>
     </div>
 </nav>
 <!-- Navbar end-->
 
 <!--[jumotron]-->
-<section id="container-fluid">
+<section id="headSubPage" class="container-fluid">
     <div class="jumbotron-sub jumbo img-fluid">
-        <div class="text-subpages align-items-center">
-            <h2>Contact us</h2>
-            <h4>We Deliver - You Explore</h4>
-            <p>Home/contact Us</p>
+        <div class="text-subpages">
+            <div class="text-subpages-inner">
+                <h1>Contact us</h1>
+                <h2>We Deliver - You Explore</h2>
+                <p>Home/Contact us</p>
+            </div>
         </div>
     </div>
     <div class="opac"></div>
 </section>
 <!--[jumotron end]-->
 
-<div class="container">
-    <div class="col-md-12">
-        <div class="col-md-12 contact-us contact-us-subpage">
-            <h2>Stay in touch with Bourbon Team</h2>
-            <div class="testimonial-border"></div>
-            <div class="container address-subpage">
-                <div class="row">
-                <div class="col-md-3 contact-address-subpage">
-                    <div class="lnr lnr-map-marker contact-icon"></div>
-                    New York Burbon St 10/555
-                </div>
-                <div class="col-md-3 contact-address-subpage">
-                    <div class="lnr lnr-smartphone contact-icon"></div>
-                    Phone: 555-123-458
-                </div>
-                <div class="col-md-3 contact-address-subpage">
-                    <div class="lnr lnr-printer contact-icon"></div>
-                    Fax: 555-321-582
-                </div>
-                <div class="col-md-3 contact-address-subpage">
-                    <div class="lnr lnr-envelope contact-icon"></div>
-                    email@youradress.com<br/>
-                </div>
+<section>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="col-md-12 contact-us contact-us-subpage">
+                <h2>Stay in touch with Bourbon Team</h2>
+                <div class="testimonial-border"></div>
+                <div class="container address-subpage">
+                    <div class="row">
+                    <div class="col-md-3 contact-address-subpage">
+                        <div class="lnr lnr-map-marker contact-icon"></div>
+                        New York Burbon St 10/555
+                    </div>
+                    <div class="col-md-3 contact-address-subpage">
+                        <div class="lnr lnr-smartphone contact-icon"></div>
+                        Phone: 555-123-458
+                    </div>
+                    <div class="col-md-3 contact-address-subpage">
+                        <div class="lnr lnr-printer contact-icon"></div>
+                        Fax: 555-321-582
+                    </div>
+                    <div class="col-md-3 contact-address-subpage">
+                        <div class="lnr lnr-envelope contact-icon"></div>
+                        email@youradress.com<br/>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
 
 <!--[contact]-->
-<div class="container-fluid contact-background">
-    <div class="col-md-12">
-        <div class="col-md-12 contact-us">
-            <h2>We are waiting for your message</h2>
-            <div class="testimonial-border-white"></div>
-        </div>
-        <div class="row contact contact-subpage">
-            <div class="col-md-6 offset-3 col-sm-12">
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Name" required>
-                        <span class="input-group-addon"><i></i></span></div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email" required  >
-                        <span class="input-group-addon"><i></i></span></div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="10" placeholder="Message" required></textarea>
-                        <span class="input-group-addon"><i></i></span></div>
-                </div>
-                <div class="form-group">
-                </div>
-                <button type="submit" name="submit" id="buttonContact" class="btn contact-btn pull-right" data-anijs="if: mouseover, do: pulse animated">Send</button>
+<section class="contact-background">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <div class="col-md-12 contact-us">
+                <h2>We are waiting for your message</h2>
+                <div class="testimonial-border-white"></div>
             </div>
-            <hr class="featurette-divider hidden-lg">
+            <div class="row contact contact-subpage">
+                <div class="col-md-6 offset-3 col-xs-6">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Name" required>
+                            <span class="input-group-addon"><i></i></span></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email" required  >
+                            <span class="input-group-addon"><i></i></span></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <textarea name="InputMessage" id="InputMessage" class="form-control" rows="10" placeholder="Message" required></textarea>
+                            <span class="input-group-addon"><i></i></span></div>
+                    </div>
+                    <div class="form-group">
+                    </div>
+                    <button type="submit" name="submit" id="buttonContact" class="btn contact-btn pull-right" data-anijs="if: mouseover, do: pulse animated">Send</button>
+                </div>
+                <hr class="featurette-divider hidden-lg">
 
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12">
+            <div id="map"></div>
+        </div>
         </div>
     </div>
-</div>
+</section>
 <!--[contact-end]-->
-<div id="map"></div>
+
 
 <!--[download]-->
 <section id="home" data-speed="4" data-type="background">
@@ -229,7 +250,7 @@
                 </ul>
             </div>
             <div id="footer-text">
-                <h4>Bourbon Co Creative Agency</h4>
+                <h3>Bourbon Co Creative Agency</h3>
                 <p>Made with love - All rights Reserved</p>
             </div>
         </div>
@@ -239,7 +260,6 @@
 
 <!-- jQuery Plugin -->
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/jquery.countdown.js"></script>
 <script src="../js/html5shiv.min.js"></script>
 <script src="../js/respond.min.js"></script>
 <!--</maps>-->
