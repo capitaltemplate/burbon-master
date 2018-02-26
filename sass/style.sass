@@ -56,17 +56,23 @@ body
     font-size: #{$baseFontSize}
 
 //ENTER PAGE
+.tlt
+    margin-left: #{$baseMarginH}
+    margin-right: #{$baseMarginH}
+
 .tlt span
     color: white
     font-size: 2rem
     text-transform: uppercase
-    letter-spacing: 1.5rem
+    text-indent: 0.7rem
+    letter-spacing: 0.7rem
     font-weight: 100
 
 .tlt p
     color: white
     font-weight: 100
     font-size: 1rem
+    text-indent: 0.2rem
     letter-spacing: 0.2rem
     padding-top: 2rem
 
@@ -253,8 +259,8 @@ section#team .inner
     margin-right: #{$baseMarginH}
     @media #{$media-mobile}
         width: 15rem
-        margin-left: 0
-        margin-right: 0
+        margin-left: 0.5rem
+        margin-right: 0.5rem
         margin-bottom: 2rem
     @media #{$media-xl}
         width: 18rem
@@ -393,14 +399,6 @@ section#works h2
     color: white
     margin: 0
     float: none
-    @media #{$media-s}
-        //float: left
-        //margin-left: 4rem
-
-#gallery
-    padding-top: 2rem
-    @media #{$media-s}
-        padding-top: 1rem
 
 .works-buttons button
     margin: 0.2rem
@@ -523,6 +521,11 @@ a:hover figcaption
     background: url("../images/background1.jpg") 50% 0 fixed
 
 // CONTACT
+#buttonContact
+    margin-bottom: 2rem
+    @media #{$media-m}
+        margin-bottom: 0rem
+
 .contact-background
     background-image: url("../images/background1.jpg")
     // path to your background image -contact
@@ -734,19 +737,18 @@ hr
 .testimonial-border
     border-top: 1px solid #313131
     width: 5vw
-    margin: 1.5rem auto 1.5rem
+    margin: 1.5rem auto 2.5rem
 
 
 .testimonial-border-white
     border-top: 1px solid #fff
     width: 5vw
-    margin: 1.5rem auto 1.5rem
+    margin: 1.5rem auto 2.5rem
 
 
 .testimonial-border-us
     border-top: 2px solid #aba7a8
     width: 3rem
-    //padding-bottom: 0.8rem
     margin: 0 auto
 
 
@@ -926,7 +928,6 @@ blockquote footer, blockquote small, blockquote .small
     text-transform: uppercase
     padding: 0.8rem
 
-// s
 .opac
     background-color: rgba(0,0,0,0.5)
     height: 100vh
@@ -964,6 +965,9 @@ blockquote footer, blockquote small, blockquote .small
     width: 100%
     display: table-cell
     vertical-align: middle
+
+.team-text img
+    margin-bottom: 1rem
 
 //.jumbotron-center .tlt
 //    position: absolute
