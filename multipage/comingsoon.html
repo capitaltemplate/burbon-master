@@ -21,6 +21,7 @@
     <!-- scroll Plugin -->
     <link href="../css/scrolling-nav.css" rel="stylesheet">
     <link href="../css/css.css" rel="stylesheet">
+    <link href="../sass/style.css" rel="stylesheet">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="../owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="../owl-carousel/owl.theme.css">
@@ -31,15 +32,19 @@
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Preloader -->
-<div id="preloader">
-    <div id="status"></div>
+<div id="preloader" class="row h-100">
+    <div class="col-sm-12 my-auto">
+        <div id="status"></div>
+    </div>
 </div>
 <!-- Preloader-end -->
 
-<section id="start">
+
     <div class="jumbotron jumbo img-responsive">
         <div class="container counter-content">
+
             <div class="col-md-12 counters">
+                <section>
                 <h3>STAY TUNED</h3>
                 <div class="testimonial-border-white"></div>
                 <h3>Our project is almost ready. Premiere is coming:</h3>
@@ -73,15 +78,13 @@
                         </li>
                     </ul>
                 </div>
+                </section>
             </div>
         </div>
     </div>
     <div class="opac"></div>
-</section>
+
 <!--[jumotron end]-->
-
-
-
 
 <!--[footer]-->
 <div class="container-fluid footer" style="position: fixed; bottom: 0; width: 100%; height:75px;">
@@ -108,7 +111,6 @@
 
 <!-- jQuery Plugin -->
 <script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/jquery.countdown.js"></script>
 <script src="../js/html5shiv.min.js"></script>
 <script src="../js/respond.min.js"></script>
 <!--[animate-number]-->
