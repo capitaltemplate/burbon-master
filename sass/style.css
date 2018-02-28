@@ -143,6 +143,15 @@ section#team .inner {
   background-position: center;
   height: 100%; }
 
+.jumbotron-ver2 {
+  margin-bottom: 0;
+  padding: 0;
+  background-image: url("../images/b4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%; }
+
 .about-icons-content {
   display: flex;
   align-items: center;
@@ -333,8 +342,10 @@ section#team .inner {
   position: absolute;
   left: 0px;
   font-weight: 300;
-  padding: 0.2rem 2rem 0.1rem 1rem;
-  color: #313131; }
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #313131;
+  line-height: 1.5rem; }
 
 .progress > .progress-completed {
   position: absolute;
@@ -1116,5 +1127,35 @@ blockquote footer, blockquote small, blockquote .small {
   padding-bottom: 3rem;
   background-color: #fff;
   border: 1px solid #ddd; }
+
+.yt-ver2 h1 {
+  font-size: 8vh;
+  font-weight: 700;
+  letter-spacing: 1.3vh;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 2vh; }
+
+.yt h2 {
+  font-size: 2.2vh;
+  letter-spacing: 0.3vh;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 2vh;
+  color: #fff; }
+
+.yt p {
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 0;
+  color: #fff; }
+
+.button-yt {
+  display: inline; }
+
+.button-yt p {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 5px; }
 
 /*# sourceMappingURL=style.css.map */
