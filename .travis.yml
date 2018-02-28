@@ -1,0 +1,6 @@
+env:
+  global:
+    - "FTP_USER=capital"
+    - "FTP_PASSWORD=IC31kqjm50"
+after_success:
+    "curl --ftp-create-dirs -T static.html -u $FTP_USER:$FTP_PASSWORD ftp://s26.zenbox.pl/domains/capitaltemplate.com/public_html/templates/bourbon/demo/"
